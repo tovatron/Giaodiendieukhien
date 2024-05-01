@@ -33,6 +33,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Interop.OPCAutomation, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>..\..\..\source\repos\TestPLCConnect\TestPLCConnect\OPC\Interop.OPCAutomation.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -47,6 +52,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Sources\Accounts.cs" />
+    <Compile Include="Sources\class_KEPServerEX.cs" />
+    <Compile Include="Sources\Class_Watchdog.cs" />
     <Compile Include="Sources\ConnectionLogin.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -150,6 +157,9 @@
     <EmbeddedResource Include="UserControls\UC_Giamsat.resx">
       <DependentUpon>UC_Giamsat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Hethong.resx">
+      <DependentUpon>UC_Hethong.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -162,6 +172,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="OPC\Interop.OPCAutomation.dll" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -36,6 +36,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnCloseappUF = new System.Windows.Forms.Button();
             this.pnlTabsUF = new System.Windows.Forms.Panel();
+            this.pnlChartUF = new System.Windows.Forms.Panel();
+            this.pnlReportUF = new System.Windows.Forms.Panel();
+            this.pnlControlUF = new System.Windows.Forms.Panel();
+            this.pnlMonitorUF = new System.Windows.Forms.Panel();
+            this.pnlCameraUF = new System.Windows.Forms.Panel();
             this.btnChartUF = new System.Windows.Forms.Button();
             this.btnReportUF = new System.Windows.Forms.Button();
             this.btnControlUF = new System.Windows.Forms.Button();
@@ -48,11 +53,6 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnlMainUF = new System.Windows.Forms.Panel();
-            this.pnlCameraUF = new System.Windows.Forms.Panel();
-            this.pnlMonitorUF = new System.Windows.Forms.Panel();
-            this.pnlControlUF = new System.Windows.Forms.Panel();
-            this.pnlReportUF = new System.Windows.Forms.Panel();
-            this.pnlChartUF = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.pnlTabsUF.SuspendLayout();
@@ -141,6 +141,46 @@
             this.pnlTabsUF.Name = "pnlTabsUF";
             this.pnlTabsUF.Size = new System.Drawing.Size(1366, 50);
             this.pnlTabsUF.TabIndex = 2;
+            // 
+            // pnlChartUF
+            // 
+            this.pnlChartUF.BackColor = System.Drawing.Color.White;
+            this.pnlChartUF.Location = new System.Drawing.Point(510, 4);
+            this.pnlChartUF.Name = "pnlChartUF";
+            this.pnlChartUF.Size = new System.Drawing.Size(9, 9);
+            this.pnlChartUF.TabIndex = 10;
+            // 
+            // pnlReportUF
+            // 
+            this.pnlReportUF.BackColor = System.Drawing.Color.White;
+            this.pnlReportUF.Location = new System.Drawing.Point(408, 4);
+            this.pnlReportUF.Name = "pnlReportUF";
+            this.pnlReportUF.Size = new System.Drawing.Size(9, 9);
+            this.pnlReportUF.TabIndex = 10;
+            // 
+            // pnlControlUF
+            // 
+            this.pnlControlUF.BackColor = System.Drawing.Color.White;
+            this.pnlControlUF.Location = new System.Drawing.Point(310, 4);
+            this.pnlControlUF.Name = "pnlControlUF";
+            this.pnlControlUF.Size = new System.Drawing.Size(9, 9);
+            this.pnlControlUF.TabIndex = 10;
+            // 
+            // pnlMonitorUF
+            // 
+            this.pnlMonitorUF.BackColor = System.Drawing.Color.White;
+            this.pnlMonitorUF.Location = new System.Drawing.Point(192, 4);
+            this.pnlMonitorUF.Name = "pnlMonitorUF";
+            this.pnlMonitorUF.Size = new System.Drawing.Size(9, 9);
+            this.pnlMonitorUF.TabIndex = 10;
+            // 
+            // pnlCameraUF
+            // 
+            this.pnlCameraUF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.pnlCameraUF.Location = new System.Drawing.Point(85, 4);
+            this.pnlCameraUF.Name = "pnlCameraUF";
+            this.pnlCameraUF.Size = new System.Drawing.Size(9, 9);
+            this.pnlCameraUF.TabIndex = 9;
             // 
             // btnChartUF
             // 
@@ -305,46 +345,6 @@
             this.pnlMainUF.Name = "pnlMainUF";
             this.pnlMainUF.Size = new System.Drawing.Size(1366, 654);
             this.pnlMainUF.TabIndex = 4;
-            // 
-            // pnlCameraUF
-            // 
-            this.pnlCameraUF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pnlCameraUF.Location = new System.Drawing.Point(85, 4);
-            this.pnlCameraUF.Name = "pnlCameraUF";
-            this.pnlCameraUF.Size = new System.Drawing.Size(9, 9);
-            this.pnlCameraUF.TabIndex = 9;
-            // 
-            // pnlMonitorUF
-            // 
-            this.pnlMonitorUF.BackColor = System.Drawing.Color.White;
-            this.pnlMonitorUF.Location = new System.Drawing.Point(192, 4);
-            this.pnlMonitorUF.Name = "pnlMonitorUF";
-            this.pnlMonitorUF.Size = new System.Drawing.Size(9, 9);
-            this.pnlMonitorUF.TabIndex = 10;
-            // 
-            // pnlControlUF
-            // 
-            this.pnlControlUF.BackColor = System.Drawing.Color.White;
-            this.pnlControlUF.Location = new System.Drawing.Point(310, 4);
-            this.pnlControlUF.Name = "pnlControlUF";
-            this.pnlControlUF.Size = new System.Drawing.Size(9, 9);
-            this.pnlControlUF.TabIndex = 10;
-            // 
-            // pnlReportUF
-            // 
-            this.pnlReportUF.BackColor = System.Drawing.Color.White;
-            this.pnlReportUF.Location = new System.Drawing.Point(408, 4);
-            this.pnlReportUF.Name = "pnlReportUF";
-            this.pnlReportUF.Size = new System.Drawing.Size(9, 9);
-            this.pnlReportUF.TabIndex = 10;
-            // 
-            // pnlChartUF
-            // 
-            this.pnlChartUF.BackColor = System.Drawing.Color.White;
-            this.pnlChartUF.Location = new System.Drawing.Point(510, 4);
-            this.pnlChartUF.Name = "pnlChartUF";
-            this.pnlChartUF.Size = new System.Drawing.Size(9, 9);
-            this.pnlChartUF.TabIndex = 10;
             // 
             // Form_User
             // 
