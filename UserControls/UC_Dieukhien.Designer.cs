@@ -96,7 +96,6 @@
             this.button8 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.backgroundWorker1 = new System.ComponentModel.BackgroundWorker();
             this.label19 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
@@ -1083,7 +1082,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label9.ForeColor = System.Drawing.Color.Red;
-            this.label9.Location = new System.Drawing.Point(210, 278);
+            this.label9.Location = new System.Drawing.Point(210, 297);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(61, 17);
             this.label9.TabIndex = 100;
@@ -1094,7 +1093,7 @@
             this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.button9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(149, 218);
+            this.button9.Location = new System.Drawing.Point(149, 237);
             this.button9.Name = "button9";
             this.button9.Size = new System.Drawing.Size(107, 46);
             this.button9.TabIndex = 96;
@@ -1106,7 +1105,7 @@
             this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.button10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(38, 218);
+            this.button10.Location = new System.Drawing.Point(38, 237);
             this.button10.Name = "button10";
             this.button10.Size = new System.Drawing.Size(107, 46);
             this.button10.TabIndex = 95;
@@ -1128,7 +1127,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(35, 278);
+            this.label11.Location = new System.Drawing.Point(35, 297);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(179, 17);
             this.label11.TabIndex = 99;
@@ -1138,11 +1137,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(75, 193);
+            this.label8.Location = new System.Drawing.Point(67, 194);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(147, 22);
+            this.label8.Size = new System.Drawing.Size(159, 22);
             this.label8.TabIndex = 94;
-            this.label8.Text = "Băng tải cấp liệu";
+            this.label8.Text = "Băng tải phân loại";
             // 
             // button7
             // 
@@ -1182,7 +1181,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(75, 36);
+            this.label7.Location = new System.Drawing.Point(71, 33);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(147, 22);
             this.label7.TabIndex = 91;
@@ -1421,7 +1420,6 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Label label7;
-        private System.ComponentModel.BackgroundWorker backgroundWorker1;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Label label11;

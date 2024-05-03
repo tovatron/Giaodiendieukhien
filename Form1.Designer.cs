@@ -52,6 +52,7 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
+            this.label13 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -249,7 +250,7 @@
             this.label4.ForeColor = System.Drawing.SystemColors.Control;
             this.label4.Location = new System.Drawing.Point(197, 55);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(382, 32);
+            this.label4.Size = new System.Drawing.Size(383, 32);
             this.label4.TabIndex = 5;
             this.label4.Text = "Trường Đại học Mỏ - Địa chất";
             // 
@@ -261,7 +262,7 @@
             this.label5.ForeColor = System.Drawing.SystemColors.Control;
             this.label5.Location = new System.Drawing.Point(286, 87);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(208, 32);
+            this.label5.Size = new System.Drawing.Size(209, 32);
             this.label5.TabIndex = 6;
             this.label5.Text = "Khoa Cơ - Điện";
             // 
@@ -337,6 +338,17 @@
             this.label12.TabIndex = 12;
             this.label12.Text = "Lớp: Tự động hóa K64";
             // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.BackColor = System.Drawing.Color.Transparent;
+            this.label13.Font = new System.Drawing.Font("Times New Roman", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.Location = new System.Drawing.Point(468, 434);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(255, 14);
+            this.label13.TabIndex = 13;
+            this.label13.Text = "Copyright © Nguyen Cong Minh - 0375345201 2024";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -344,6 +356,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(725, 450);
+            this.Controls.Add(this.label13);
             this.Controls.Add(this.label12);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
@@ -395,6 +408,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox4;
+        private System.Windows.Forms.Label label13;
     }
 }
 
