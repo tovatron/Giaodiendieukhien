@@ -43,15 +43,15 @@
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="Microsoft.VisualBasic.PowerPacks, Version=9.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
-    <Reference Include="NetToolKit, Version=2.1.0.447, Culture=neutral, PublicKeyToken=5107b9c608443dcc" />
     <Reference Include="PLUSManaged, Version=5.20.2.0, Culture=neutral, PublicKeyToken=5d94a04f4eca59fc" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="SKCLNET, Version=4.4.1.0, Culture=neutral, PublicKeyToken=d5770e63406d04a0" />
     <Reference Include="SkiaSharp, Version=1.59.0.0, Culture=neutral, PublicKeyToken=0738eb9f132ed756, processorArchitecture=MSIL">
       <HintPath>packages\SkiaSharp.1.59.3\lib\net45\SkiaSharp.dll</HintPath>
     </Reference>
-    <Reference Include="SymbolFactoryDotNet, Version=2.1.0.0, Culture=neutral, PublicKeyToken=5107b9c608443dcc" />
-    <Reference Include="SymbolFactoryNetEngine, Version=2.1.0.0, Culture=neutral, PublicKeyToken=5107b9c608443dcc" />
+    <Reference Include="SymbolFactoryDotNet, Version=2.0.0.221, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SymbolFactoryNetEngine, Version=2.0.0.221, Culture=neutral, PublicKeyToken=5107b9c608443dcc" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Design" />
