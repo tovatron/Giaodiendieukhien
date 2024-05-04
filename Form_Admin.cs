@@ -107,10 +107,6 @@ namespace Giaodiendieukhien
                     add_usercontrol(new UC_Baocao());
                     pnlReportAF.BackColor = Color.Lime;
                     break;
-                case "btnChartAF":
-                    add_usercontrol(new UC_Bieudo());
-                    pnlChartAF.BackColor = Color.Lime;
-                    break;
                 case "btnSettingAF":
                     add_usercontrol(new UC_Caidat());
                     pnlSettingAF.BackColor = Color.Lime;
@@ -153,7 +149,7 @@ namespace Giaodiendieukhien
             if(LogoutConfirm == DialogResult.Yes)
             {
                 this.Hide();
-                Form1 loginform = new Form1();
+                Form_Login loginform = new Form_Login();
                 loginform.ShowDialog();
                 this.Close();
             }

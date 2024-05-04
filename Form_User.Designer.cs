@@ -36,12 +36,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnCloseappUF = new System.Windows.Forms.Button();
             this.pnlTabsUF = new System.Windows.Forms.Panel();
-            this.pnlChartUF = new System.Windows.Forms.Panel();
             this.pnlReportUF = new System.Windows.Forms.Panel();
             this.pnlControlUF = new System.Windows.Forms.Panel();
             this.pnlMonitorUF = new System.Windows.Forms.Panel();
             this.pnlCameraUF = new System.Windows.Forms.Panel();
-            this.btnChartUF = new System.Windows.Forms.Button();
             this.btnReportUF = new System.Windows.Forms.Button();
             this.btnControlUF = new System.Windows.Forms.Button();
             this.btnMonitorUF = new System.Windows.Forms.Button();
@@ -125,12 +123,10 @@
             // 
             this.pnlTabsUF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
             this.pnlTabsUF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlTabsUF.Controls.Add(this.pnlChartUF);
             this.pnlTabsUF.Controls.Add(this.pnlReportUF);
             this.pnlTabsUF.Controls.Add(this.pnlControlUF);
             this.pnlTabsUF.Controls.Add(this.pnlMonitorUF);
             this.pnlTabsUF.Controls.Add(this.pnlCameraUF);
-            this.pnlTabsUF.Controls.Add(this.btnChartUF);
             this.pnlTabsUF.Controls.Add(this.btnReportUF);
             this.pnlTabsUF.Controls.Add(this.btnControlUF);
             this.pnlTabsUF.Controls.Add(this.btnMonitorUF);
@@ -141,14 +137,6 @@
             this.pnlTabsUF.Name = "pnlTabsUF";
             this.pnlTabsUF.Size = new System.Drawing.Size(1366, 50);
             this.pnlTabsUF.TabIndex = 2;
-            // 
-            // pnlChartUF
-            // 
-            this.pnlChartUF.BackColor = System.Drawing.Color.White;
-            this.pnlChartUF.Location = new System.Drawing.Point(510, 4);
-            this.pnlChartUF.Name = "pnlChartUF";
-            this.pnlChartUF.Size = new System.Drawing.Size(9, 9);
-            this.pnlChartUF.TabIndex = 10;
             // 
             // pnlReportUF
             // 
@@ -181,23 +169,6 @@
             this.pnlCameraUF.Name = "pnlCameraUF";
             this.pnlCameraUF.Size = new System.Drawing.Size(9, 9);
             this.pnlCameraUF.TabIndex = 9;
-            // 
-            // btnChartUF
-            // 
-            this.btnChartUF.BackColor = System.Drawing.Color.White;
-            this.btnChartUF.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnChartUF.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChartUF.ForeColor = System.Drawing.Color.Black;
-            this.btnChartUF.Image = ((System.Drawing.Image)(resources.GetObject("btnChartUF.Image")));
-            this.btnChartUF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChartUF.Location = new System.Drawing.Point(423, -1);
-            this.btnChartUF.Name = "btnChartUF";
-            this.btnChartUF.Size = new System.Drawing.Size(103, 48);
-            this.btnChartUF.TabIndex = 7;
-            this.btnChartUF.Text = "Biểu đồ";
-            this.btnChartUF.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnChartUF.UseVisualStyleBackColor = false;
-            this.btnChartUF.Click += new System.EventHandler(this.click_Button);
             // 
             // btnReportUF
             // 
@@ -379,7 +350,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Button btnCloseappUF;
         private System.Windows.Forms.Panel pnlTabsUF;
-        private System.Windows.Forms.Button btnChartUF;
         private System.Windows.Forms.Button btnReportUF;
         private System.Windows.Forms.Button btnControlUF;
         private System.Windows.Forms.Button btnMonitorUF;
@@ -391,7 +361,6 @@
         public System.Windows.Forms.Label lbUserUF;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel pnlMainUF;
-        private System.Windows.Forms.Panel pnlChartUF;
         private System.Windows.Forms.Panel pnlReportUF;
         private System.Windows.Forms.Panel pnlControlUF;
         private System.Windows.Forms.Panel pnlMonitorUF;

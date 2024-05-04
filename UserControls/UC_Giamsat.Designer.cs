@@ -70,37 +70,37 @@
             this.label20 = new System.Windows.Forms.Label();
             this.textBox18 = new System.Windows.Forms.TextBox();
             this.label21 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.dtGVBunkeweight1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.dataGridView3 = new System.Windows.Forms.DataGridView();
+            this.dtGVBunkeweight2 = new System.Windows.Forms.DataGridView();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.dataGridView4 = new System.Windows.Forms.DataGridView();
+            this.dtGVBunkeweight3 = new System.Windows.Forms.DataGridView();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dtGVBunkeDevice1 = new System.Windows.Forms.DataGridView();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.dataGridView5 = new System.Windows.Forms.DataGridView();
+            this.dtGVBunkeDevice2 = new System.Windows.Forms.DataGridView();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.dataGridView6 = new System.Windows.Forms.DataGridView();
+            this.dtGVBunkeDevice3 = new System.Windows.Forms.DataGridView();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.dataGridView7 = new System.Windows.Forms.DataGridView();
+            this.dtGVConveryorStatus = new System.Windows.Forms.DataGridView();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeweight1)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeweight2)).BeginInit();
             this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeweight3)).BeginInit();
             this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeDevice1)).BeginInit();
             this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeDevice2)).BeginInit();
             this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeDevice3)).BeginInit();
             this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVConveryorStatus)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -541,21 +541,21 @@
             this.label21.TabIndex = 0;
             this.label21.Text = "Trạng thái Loadcell";
             // 
-            // dataGridView1
+            // dtGVBunkeweight1
             // 
-            this.dataGridView1.AllowUserToAddRows = false;
-            this.dataGridView1.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(0, 19);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.ReadOnly = true;
-            this.dataGridView1.RowHeadersVisible = false;
-            this.dataGridView1.Size = new System.Drawing.Size(323, 207);
-            this.dataGridView1.TabIndex = 55;
+            this.dtGVBunkeweight1.AllowUserToAddRows = false;
+            this.dtGVBunkeweight1.BackgroundColor = System.Drawing.Color.White;
+            this.dtGVBunkeweight1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtGVBunkeweight1.Location = new System.Drawing.Point(0, 19);
+            this.dtGVBunkeweight1.Name = "dtGVBunkeweight1";
+            this.dtGVBunkeweight1.ReadOnly = true;
+            this.dtGVBunkeweight1.RowHeadersVisible = false;
+            this.dtGVBunkeweight1.Size = new System.Drawing.Size(323, 207);
+            this.dtGVBunkeweight1.TabIndex = 55;
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.dataGridView1);
+            this.groupBox4.Controls.Add(this.dtGVBunkeweight1);
             this.groupBox4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(16, 441);
             this.groupBox4.Name = "groupBox4";
@@ -566,7 +566,7 @@
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.dataGridView3);
+            this.groupBox5.Controls.Add(this.dtGVBunkeweight2);
             this.groupBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(359, 441);
             this.groupBox5.Name = "groupBox5";
@@ -575,21 +575,21 @@
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Khối lượng Bunke 2 mỗi lần xả liệu";
             // 
-            // dataGridView3
+            // dtGVBunkeweight2
             // 
-            this.dataGridView3.AllowUserToAddRows = false;
-            this.dataGridView3.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView3.Location = new System.Drawing.Point(0, 19);
-            this.dataGridView3.Name = "dataGridView3";
-            this.dataGridView3.ReadOnly = true;
-            this.dataGridView3.RowHeadersVisible = false;
-            this.dataGridView3.Size = new System.Drawing.Size(323, 207);
-            this.dataGridView3.TabIndex = 55;
+            this.dtGVBunkeweight2.AllowUserToAddRows = false;
+            this.dtGVBunkeweight2.BackgroundColor = System.Drawing.Color.White;
+            this.dtGVBunkeweight2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtGVBunkeweight2.Location = new System.Drawing.Point(0, 19);
+            this.dtGVBunkeweight2.Name = "dtGVBunkeweight2";
+            this.dtGVBunkeweight2.ReadOnly = true;
+            this.dtGVBunkeweight2.RowHeadersVisible = false;
+            this.dtGVBunkeweight2.Size = new System.Drawing.Size(323, 207);
+            this.dtGVBunkeweight2.TabIndex = 55;
             // 
             // groupBox6
             // 
-            this.groupBox6.Controls.Add(this.dataGridView4);
+            this.groupBox6.Controls.Add(this.dtGVBunkeweight3);
             this.groupBox6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(701, 441);
             this.groupBox6.Name = "groupBox6";
@@ -598,21 +598,21 @@
             this.groupBox6.TabStop = false;
             this.groupBox6.Text = "Khối lượng Bunke 3 mỗi lần xả liệu";
             // 
-            // dataGridView4
+            // dtGVBunkeweight3
             // 
-            this.dataGridView4.AllowUserToAddRows = false;
-            this.dataGridView4.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView4.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView4.Location = new System.Drawing.Point(0, 19);
-            this.dataGridView4.Name = "dataGridView4";
-            this.dataGridView4.ReadOnly = true;
-            this.dataGridView4.RowHeadersVisible = false;
-            this.dataGridView4.Size = new System.Drawing.Size(323, 207);
-            this.dataGridView4.TabIndex = 55;
+            this.dtGVBunkeweight3.AllowUserToAddRows = false;
+            this.dtGVBunkeweight3.BackgroundColor = System.Drawing.Color.White;
+            this.dtGVBunkeweight3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtGVBunkeweight3.Location = new System.Drawing.Point(0, 19);
+            this.dtGVBunkeweight3.Name = "dtGVBunkeweight3";
+            this.dtGVBunkeweight3.ReadOnly = true;
+            this.dtGVBunkeweight3.RowHeadersVisible = false;
+            this.dtGVBunkeweight3.Size = new System.Drawing.Size(323, 207);
+            this.dtGVBunkeweight3.TabIndex = 55;
             // 
             // groupBox7
             // 
-            this.groupBox7.Controls.Add(this.dataGridView2);
+            this.groupBox7.Controls.Add(this.dtGVBunkeDevice1);
             this.groupBox7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox7.Location = new System.Drawing.Point(16, 689);
             this.groupBox7.Name = "groupBox7";
@@ -621,21 +621,21 @@
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Trạng thái Thiết bị thuộc Bunke 1";
             // 
-            // dataGridView2
+            // dtGVBunkeDevice1
             // 
-            this.dataGridView2.AllowUserToAddRows = false;
-            this.dataGridView2.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(0, 19);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.ReadOnly = true;
-            this.dataGridView2.RowHeadersVisible = false;
-            this.dataGridView2.Size = new System.Drawing.Size(323, 207);
-            this.dataGridView2.TabIndex = 55;
+            this.dtGVBunkeDevice1.AllowUserToAddRows = false;
+            this.dtGVBunkeDevice1.BackgroundColor = System.Drawing.Color.White;
+            this.dtGVBunkeDevice1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtGVBunkeDevice1.Location = new System.Drawing.Point(0, 19);
+            this.dtGVBunkeDevice1.Name = "dtGVBunkeDevice1";
+            this.dtGVBunkeDevice1.ReadOnly = true;
+            this.dtGVBunkeDevice1.RowHeadersVisible = false;
+            this.dtGVBunkeDevice1.Size = new System.Drawing.Size(323, 207);
+            this.dtGVBunkeDevice1.TabIndex = 55;
             // 
             // groupBox8
             // 
-            this.groupBox8.Controls.Add(this.dataGridView5);
+            this.groupBox8.Controls.Add(this.dtGVBunkeDevice2);
             this.groupBox8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox8.Location = new System.Drawing.Point(359, 689);
             this.groupBox8.Name = "groupBox8";
@@ -644,21 +644,21 @@
             this.groupBox8.TabStop = false;
             this.groupBox8.Text = "Trạng thái Thiết bị thuộc Bunke 2";
             // 
-            // dataGridView5
+            // dtGVBunkeDevice2
             // 
-            this.dataGridView5.AllowUserToAddRows = false;
-            this.dataGridView5.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView5.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView5.Location = new System.Drawing.Point(0, 19);
-            this.dataGridView5.Name = "dataGridView5";
-            this.dataGridView5.ReadOnly = true;
-            this.dataGridView5.RowHeadersVisible = false;
-            this.dataGridView5.Size = new System.Drawing.Size(323, 207);
-            this.dataGridView5.TabIndex = 55;
+            this.dtGVBunkeDevice2.AllowUserToAddRows = false;
+            this.dtGVBunkeDevice2.BackgroundColor = System.Drawing.Color.White;
+            this.dtGVBunkeDevice2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtGVBunkeDevice2.Location = new System.Drawing.Point(0, 19);
+            this.dtGVBunkeDevice2.Name = "dtGVBunkeDevice2";
+            this.dtGVBunkeDevice2.ReadOnly = true;
+            this.dtGVBunkeDevice2.RowHeadersVisible = false;
+            this.dtGVBunkeDevice2.Size = new System.Drawing.Size(323, 207);
+            this.dtGVBunkeDevice2.TabIndex = 55;
             // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.dataGridView6);
+            this.groupBox9.Controls.Add(this.dtGVBunkeDevice3);
             this.groupBox9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.Location = new System.Drawing.Point(701, 689);
             this.groupBox9.Name = "groupBox9";
@@ -667,21 +667,21 @@
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Trạng thái Thiết bị thuộc Bunke 3";
             // 
-            // dataGridView6
+            // dtGVBunkeDevice3
             // 
-            this.dataGridView6.AllowUserToAddRows = false;
-            this.dataGridView6.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView6.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView6.Location = new System.Drawing.Point(0, 19);
-            this.dataGridView6.Name = "dataGridView6";
-            this.dataGridView6.ReadOnly = true;
-            this.dataGridView6.RowHeadersVisible = false;
-            this.dataGridView6.Size = new System.Drawing.Size(323, 207);
-            this.dataGridView6.TabIndex = 55;
+            this.dtGVBunkeDevice3.AllowUserToAddRows = false;
+            this.dtGVBunkeDevice3.BackgroundColor = System.Drawing.Color.White;
+            this.dtGVBunkeDevice3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtGVBunkeDevice3.Location = new System.Drawing.Point(0, 19);
+            this.dtGVBunkeDevice3.Name = "dtGVBunkeDevice3";
+            this.dtGVBunkeDevice3.ReadOnly = true;
+            this.dtGVBunkeDevice3.RowHeadersVisible = false;
+            this.dtGVBunkeDevice3.Size = new System.Drawing.Size(323, 207);
+            this.dtGVBunkeDevice3.TabIndex = 55;
             // 
             // groupBox10
             // 
-            this.groupBox10.Controls.Add(this.dataGridView7);
+            this.groupBox10.Controls.Add(this.dtGVConveryorStatus);
             this.groupBox10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox10.Location = new System.Drawing.Point(1056, 15);
             this.groupBox10.Name = "groupBox10";
@@ -690,17 +690,17 @@
             this.groupBox10.TabStop = false;
             this.groupBox10.Text = "Trạng thái của Băng tải";
             // 
-            // dataGridView7
+            // dtGVConveryorStatus
             // 
-            this.dataGridView7.AllowUserToAddRows = false;
-            this.dataGridView7.BackgroundColor = System.Drawing.Color.White;
-            this.dataGridView7.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView7.Location = new System.Drawing.Point(0, 19);
-            this.dataGridView7.Name = "dataGridView7";
-            this.dataGridView7.ReadOnly = true;
-            this.dataGridView7.RowHeadersVisible = false;
-            this.dataGridView7.Size = new System.Drawing.Size(836, 396);
-            this.dataGridView7.TabIndex = 55;
+            this.dtGVConveryorStatus.AllowUserToAddRows = false;
+            this.dtGVConveryorStatus.BackgroundColor = System.Drawing.Color.White;
+            this.dtGVConveryorStatus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtGVConveryorStatus.Location = new System.Drawing.Point(0, 19);
+            this.dtGVConveryorStatus.Name = "dtGVConveryorStatus";
+            this.dtGVConveryorStatus.ReadOnly = true;
+            this.dtGVConveryorStatus.RowHeadersVisible = false;
+            this.dtGVConveryorStatus.Size = new System.Drawing.Size(836, 396);
+            this.dtGVConveryorStatus.TabIndex = 55;
             // 
             // UC_Giamsat
             // 
@@ -722,26 +722,27 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "UC_Giamsat";
             this.Size = new System.Drawing.Size(1920, 970);
+            this.Load += new System.EventHandler(this.UC_Giamsat_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeweight1)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeweight2)).EndInit();
             this.groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeweight3)).EndInit();
             this.groupBox7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeDevice1)).EndInit();
             this.groupBox8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeDevice2)).EndInit();
             this.groupBox9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeDevice3)).EndInit();
             this.groupBox10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVConveryorStatus)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -790,19 +791,19 @@
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox textBox18;
         private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView dtGVBunkeweight1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.DataGridView dataGridView3;
+        private System.Windows.Forms.DataGridView dtGVBunkeweight2;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.DataGridView dataGridView4;
+        private System.Windows.Forms.DataGridView dtGVBunkeweight3;
         private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dtGVBunkeDevice1;
         private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.DataGridView dataGridView5;
+        private System.Windows.Forms.DataGridView dtGVBunkeDevice2;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.DataGridView dataGridView6;
+        private System.Windows.Forms.DataGridView dtGVBunkeDevice3;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.DataGridView dataGridView7;
+        private System.Windows.Forms.DataGridView dtGVConveryorStatus;
     }
 }

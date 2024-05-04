@@ -15,10 +15,10 @@ using System.Windows.Forms;
 
 namespace Giaodiendieukhien
 {
-    public partial class Form1 : Form
+    public partial class Form_Login : Form
     {
         public Point mouseLocation;
-        public Form1()
+        public Form_Login()
         {
             InitializeComponent();
         }

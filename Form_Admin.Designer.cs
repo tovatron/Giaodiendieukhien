@@ -36,7 +36,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnCloseappAF = new System.Windows.Forms.Button();
             this.pnlTabsAF = new System.Windows.Forms.Panel();
-            this.pnlChartAF = new System.Windows.Forms.Panel();
             this.pnlIOAF = new System.Windows.Forms.Panel();
             this.pnlSystemAF = new System.Windows.Forms.Panel();
             this.pnlSettingAF = new System.Windows.Forms.Panel();
@@ -44,7 +43,6 @@
             this.pnlControlAF = new System.Windows.Forms.Panel();
             this.pnlMonitorAF = new System.Windows.Forms.Panel();
             this.pnlCameraAF = new System.Windows.Forms.Panel();
-            this.btnChartAF = new System.Windows.Forms.Button();
             this.btnIOAF = new System.Windows.Forms.Button();
             this.btnSystemAF = new System.Windows.Forms.Button();
             this.btnSettingAF = new System.Windows.Forms.Button();
@@ -131,7 +129,6 @@
             // 
             this.pnlTabsAF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
             this.pnlTabsAF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlTabsAF.Controls.Add(this.pnlChartAF);
             this.pnlTabsAF.Controls.Add(this.pnlIOAF);
             this.pnlTabsAF.Controls.Add(this.pnlSystemAF);
             this.pnlTabsAF.Controls.Add(this.pnlSettingAF);
@@ -139,7 +136,6 @@
             this.pnlTabsAF.Controls.Add(this.pnlControlAF);
             this.pnlTabsAF.Controls.Add(this.pnlMonitorAF);
             this.pnlTabsAF.Controls.Add(this.pnlCameraAF);
-            this.pnlTabsAF.Controls.Add(this.btnChartAF);
             this.pnlTabsAF.Controls.Add(this.btnIOAF);
             this.pnlTabsAF.Controls.Add(this.btnSystemAF);
             this.pnlTabsAF.Controls.Add(this.btnSettingAF);
@@ -153,14 +149,6 @@
             this.pnlTabsAF.Name = "pnlTabsAF";
             this.pnlTabsAF.Size = new System.Drawing.Size(1366, 50);
             this.pnlTabsAF.TabIndex = 1;
-            // 
-            // pnlChartAF
-            // 
-            this.pnlChartAF.BackColor = System.Drawing.Color.White;
-            this.pnlChartAF.Location = new System.Drawing.Point(774, 4);
-            this.pnlChartAF.Name = "pnlChartAF";
-            this.pnlChartAF.Size = new System.Drawing.Size(9, 9);
-            this.pnlChartAF.TabIndex = 9;
             // 
             // pnlIOAF
             // 
@@ -217,23 +205,6 @@
             this.pnlCameraAF.Name = "pnlCameraAF";
             this.pnlCameraAF.Size = new System.Drawing.Size(9, 9);
             this.pnlCameraAF.TabIndex = 8;
-            // 
-            // btnChartAF
-            // 
-            this.btnChartAF.BackColor = System.Drawing.Color.White;
-            this.btnChartAF.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnChartAF.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnChartAF.ForeColor = System.Drawing.Color.Black;
-            this.btnChartAF.Image = ((System.Drawing.Image)(resources.GetObject("btnChartAF.Image")));
-            this.btnChartAF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnChartAF.Location = new System.Drawing.Point(687, -1);
-            this.btnChartAF.Name = "btnChartAF";
-            this.btnChartAF.Size = new System.Drawing.Size(103, 48);
-            this.btnChartAF.TabIndex = 7;
-            this.btnChartAF.Text = "Biểu đồ";
-            this.btnChartAF.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnChartAF.UseVisualStyleBackColor = false;
-            this.btnChartAF.Click += new System.EventHandler(this.click_Button);
             // 
             // btnIOAF
             // 
@@ -470,7 +441,6 @@
         private System.Windows.Forms.Button btnReportAF;
         private System.Windows.Forms.Button btnSystemAF;
         private System.Windows.Forms.Button btnSettingAF;
-        private System.Windows.Forms.Button btnChartAF;
         private System.Windows.Forms.Button btnIOAF;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnLogout;
@@ -479,7 +449,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         public System.Windows.Forms.Label lbUserAF;
         private System.Windows.Forms.Panel pnlMainAF;
-        private System.Windows.Forms.Panel pnlChartAF;
         private System.Windows.Forms.Panel pnlIOAF;
         private System.Windows.Forms.Panel pnlSystemAF;
         private System.Windows.Forms.Panel pnlSettingAF;

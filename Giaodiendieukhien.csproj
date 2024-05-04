@@ -83,11 +83,11 @@
     <Compile Include="Sources\class_KEPServerEX.cs" />
     <Compile Include="Sources\Class_Watchdog.cs" />
     <Compile Include="Sources\ConnectionLogin.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Form_Login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Form_Login.Designer.cs">
+      <DependentUpon>Form_Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Form_Admin.cs">
       <SubType>Form</SubType>
@@ -109,12 +109,6 @@
     </Compile>
     <Compile Include="UserControls\UC_Baocao.Designer.cs">
       <DependentUpon>UC_Baocao.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\UC_Bieudo.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UC_Bieudo.Designer.cs">
-      <DependentUpon>UC_Bieudo.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UC_Caidat.cs">
       <SubType>UserControl</SubType>
@@ -152,8 +146,8 @@
     <Compile Include="UserControls\UC_IO.Designer.cs">
       <DependentUpon>UC_IO.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Form_Login.resx">
+      <DependentUpon>Form_Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form_Admin.resx">
       <DependentUpon>Form_Admin.cs</DependentUpon>
@@ -173,8 +167,8 @@
     <EmbeddedResource Include="UserControls\UC_Baocao.resx">
       <DependentUpon>UC_Baocao.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_Bieudo.resx">
-      <DependentUpon>UC_Bieudo.cs</DependentUpon>
+    <EmbeddedResource Include="UserControls\UC_Caidat.resx">
+      <DependentUpon>UC_Caidat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_Camera.resx">
       <DependentUpon>UC_Camera.cs</DependentUpon>
@@ -187,6 +181,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_Hethong.resx">
       <DependentUpon>UC_Hethong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_IO.resx">
+      <DependentUpon>UC_IO.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
