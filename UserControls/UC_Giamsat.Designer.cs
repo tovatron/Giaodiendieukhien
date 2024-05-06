@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -58,14 +59,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.label18 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.label19 = new System.Windows.Forms.Label();
             this.textBox17 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
             this.textBox18 = new System.Windows.Forms.TextBox();
@@ -74,8 +67,6 @@
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
             this.dtGVBunkeweight2 = new System.Windows.Forms.DataGridView();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.dtGVBunkeweight3 = new System.Windows.Forms.DataGridView();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.dtGVBunkeDevice1 = new System.Windows.Forms.DataGridView();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
@@ -84,6 +75,8 @@
             this.dtGVBunkeDevice3 = new System.Windows.Forms.DataGridView();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.dtGVConveryorStatus = new System.Windows.Forms.DataGridView();
+            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
@@ -91,8 +84,6 @@
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeweight2)).BeginInit();
-            this.groupBox6.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeweight3)).BeginInit();
             this.groupBox7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeDevice1)).BeginInit();
             this.groupBox8.SuspendLayout();
@@ -101,6 +92,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeDevice3)).BeginInit();
             this.groupBox10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtGVConveryorStatus)).BeginInit();
+            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -408,14 +400,6 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.textBox13);
-            this.groupBox3.Controls.Add(this.label16);
-            this.groupBox3.Controls.Add(this.textBox14);
-            this.groupBox3.Controls.Add(this.label17);
-            this.groupBox3.Controls.Add(this.textBox15);
-            this.groupBox3.Controls.Add(this.label18);
-            this.groupBox3.Controls.Add(this.textBox16);
-            this.groupBox3.Controls.Add(this.label19);
             this.groupBox3.Controls.Add(this.textBox17);
             this.groupBox3.Controls.Add(this.label20);
             this.groupBox3.Controls.Add(this.textBox18);
@@ -426,82 +410,6 @@
             this.groupBox3.Size = new System.Drawing.Size(323, 415);
             this.groupBox3.TabIndex = 53;
             this.groupBox3.TabStop = false;
-            // 
-            // textBox13
-            // 
-            this.textBox13.Location = new System.Drawing.Point(174, 347);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(121, 25);
-            this.textBox13.TabIndex = 11;
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(16, 348);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(156, 19);
-            this.label16.TabIndex = 10;
-            this.label16.Text = "Khối lượng cài đặt(max)";
-            // 
-            // textBox14
-            // 
-            this.textBox14.Location = new System.Drawing.Point(174, 288);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(121, 25);
-            this.textBox14.TabIndex = 9;
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(16, 289);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(136, 19);
-            this.label17.TabIndex = 8;
-            this.label17.Text = "Trung bình KL/lần xả";
-            // 
-            // textBox15
-            // 
-            this.textBox15.Location = new System.Drawing.Point(174, 229);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(121, 25);
-            this.textBox15.TabIndex = 7;
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(16, 230);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(156, 19);
-            this.label18.TabIndex = 6;
-            this.label18.Text = "Số lần xả liệu trong ngày";
-            // 
-            // textBox16
-            // 
-            this.textBox16.Location = new System.Drawing.Point(174, 170);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(121, 25);
-            this.textBox16.TabIndex = 5;
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(16, 171);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(123, 19);
-            this.label19.TabIndex = 4;
-            this.label19.Text = "Khối lượng thực tế";
             // 
             // textBox17
             // 
@@ -537,9 +445,9 @@
             this.label21.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label21.Location = new System.Drawing.Point(16, 53);
             this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(124, 19);
+            this.label21.Size = new System.Drawing.Size(126, 19);
             this.label21.TabIndex = 0;
-            this.label21.Text = "Trạng thái Loadcell";
+            this.label21.Text = "Trạng thái cảm biến";
             // 
             // dtGVBunkeweight1
             // 
@@ -586,29 +494,6 @@
             this.dtGVBunkeweight2.RowHeadersVisible = false;
             this.dtGVBunkeweight2.Size = new System.Drawing.Size(323, 207);
             this.dtGVBunkeweight2.TabIndex = 55;
-            // 
-            // groupBox6
-            // 
-            this.groupBox6.Controls.Add(this.dtGVBunkeweight3);
-            this.groupBox6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(701, 441);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(323, 227);
-            this.groupBox6.TabIndex = 59;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Khối lượng Bunke 3 mỗi lần xả liệu";
-            // 
-            // dtGVBunkeweight3
-            // 
-            this.dtGVBunkeweight3.AllowUserToAddRows = false;
-            this.dtGVBunkeweight3.BackgroundColor = System.Drawing.Color.White;
-            this.dtGVBunkeweight3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtGVBunkeweight3.Location = new System.Drawing.Point(0, 19);
-            this.dtGVBunkeweight3.Name = "dtGVBunkeweight3";
-            this.dtGVBunkeweight3.ReadOnly = true;
-            this.dtGVBunkeweight3.RowHeadersVisible = false;
-            this.dtGVBunkeweight3.Size = new System.Drawing.Size(323, 207);
-            this.dtGVBunkeweight3.TabIndex = 55;
             // 
             // groupBox7
             // 
@@ -660,12 +545,12 @@
             // 
             this.groupBox9.Controls.Add(this.dtGVBunkeDevice3);
             this.groupBox9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox9.Location = new System.Drawing.Point(701, 689);
+            this.groupBox9.Location = new System.Drawing.Point(701, 441);
             this.groupBox9.Name = "groupBox9";
             this.groupBox9.Size = new System.Drawing.Size(323, 227);
             this.groupBox9.TabIndex = 59;
             this.groupBox9.TabStop = false;
-            this.groupBox9.Text = "Trạng thái Thiết bị thuộc Bunke 3";
+            this.groupBox9.Text = "Trạng thái Bunke 3";
             // 
             // dtGVBunkeDevice3
             // 
@@ -702,16 +587,43 @@
             this.dtGVConveryorStatus.Size = new System.Drawing.Size(836, 396);
             this.dtGVConveryorStatus.TabIndex = 55;
             // 
+            // groupBox6
+            // 
+            this.groupBox6.Controls.Add(this.zedGraphControl1);
+            this.groupBox6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.Location = new System.Drawing.Point(1056, 441);
+            this.groupBox6.Name = "groupBox6";
+            this.groupBox6.Size = new System.Drawing.Size(836, 497);
+            this.groupBox6.TabIndex = 60;
+            this.groupBox6.TabStop = false;
+            this.groupBox6.Text = "Đồ thị cân nặng Bunke";
+            // 
+            // zedGraphControl1
+            // 
+            this.zedGraphControl1.Location = new System.Drawing.Point(0, 19);
+            this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.zedGraphControl1.Name = "zedGraphControl1";
+            this.zedGraphControl1.ScrollGrace = 0D;
+            this.zedGraphControl1.ScrollMaxX = 0D;
+            this.zedGraphControl1.ScrollMaxY = 0D;
+            this.zedGraphControl1.ScrollMaxY2 = 0D;
+            this.zedGraphControl1.ScrollMinX = 0D;
+            this.zedGraphControl1.ScrollMinY = 0D;
+            this.zedGraphControl1.ScrollMinY2 = 0D;
+            this.zedGraphControl1.Size = new System.Drawing.Size(836, 478);
+            this.zedGraphControl1.TabIndex = 0;
+            this.zedGraphControl1.UseExtendedPrintDialog = true;
+            // 
             // UC_Giamsat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(212)))), ((int)(((byte)(255)))));
+            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox7);
-            this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label15);
@@ -733,8 +645,6 @@
             this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeweight2)).EndInit();
-            this.groupBox6.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeweight3)).EndInit();
             this.groupBox7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeDevice1)).EndInit();
             this.groupBox8.ResumeLayout(false);
@@ -743,6 +653,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeDevice3)).EndInit();
             this.groupBox10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtGVConveryorStatus)).EndInit();
+            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -779,14 +690,6 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.Label label18;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.Label label19;
         private System.Windows.Forms.TextBox textBox17;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox textBox18;
@@ -795,8 +698,6 @@
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.DataGridView dtGVBunkeweight2;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.DataGridView dtGVBunkeweight3;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.DataGridView dtGVBunkeDevice1;
         private System.Windows.Forms.GroupBox groupBox8;
@@ -805,5 +706,7 @@
         private System.Windows.Forms.DataGridView dtGVBunkeDevice3;
         private System.Windows.Forms.GroupBox groupBox10;
         private System.Windows.Forms.DataGridView dtGVConveryorStatus;
+        private System.Windows.Forms.GroupBox groupBox6;
+        private ZedGraph.ZedGraphControl zedGraphControl1;
     }
 }
