@@ -31,22 +31,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UC_IO));
             this.label6 = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.standardControl4 = new SymbolFactoryDotNet.StandardControl();
+            this.label5 = new System.Windows.Forms.Label();
+            this.button17 = new System.Windows.Forms.Button();
+            this.button18 = new System.Windows.Forms.Button();
+            this.standardControl3 = new SymbolFactoryDotNet.StandardControl();
+            this.label3 = new System.Windows.Forms.Label();
+            this.button21 = new System.Windows.Forms.Button();
+            this.button22 = new System.Windows.Forms.Button();
             this.standardControl5 = new SymbolFactoryDotNet.StandardControl();
+            this.label4 = new System.Windows.Forms.Label();
             this.standardControl2 = new SymbolFactoryDotNet.StandardControl();
             this.standardControl1 = new SymbolFactoryDotNet.StandardControl();
-            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.button21 = new System.Windows.Forms.Button();
-            this.button22 = new System.Windows.Forms.Button();
-            this.standardControl3 = new SymbolFactoryDotNet.StandardControl();
-            this.label3 = new System.Windows.Forms.Label();
-            this.button17 = new System.Windows.Forms.Button();
-            this.button18 = new System.Windows.Forms.Button();
-            this.label5 = new System.Windows.Forms.Label();
-            this.standardControl4 = new SymbolFactoryDotNet.StandardControl();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.standardControl6 = new SymbolFactoryDotNet.StandardControl();
             this.label8 = new System.Windows.Forms.Label();
@@ -64,6 +64,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.standardControl11 = new SymbolFactoryDotNet.StandardControl();
+            this.label17 = new System.Windows.Forms.Label();
             this.standardControl10 = new SymbolFactoryDotNet.StandardControl();
             this.label13 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
@@ -71,8 +73,6 @@
             this.label15 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.standardControl12 = new SymbolFactoryDotNet.StandardControl();
-            this.label17 = new System.Windows.Forms.Label();
-            this.standardControl11 = new SymbolFactoryDotNet.StandardControl();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.standardControl13 = new SymbolFactoryDotNet.StandardControl();
             this.label18 = new System.Windows.Forms.Label();
@@ -89,35 +89,40 @@
             this.standardControl17 = new SymbolFactoryDotNet.StandardControl();
             this.label24 = new System.Windows.Forms.Label();
             this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.label27 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label25 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label29 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label30 = new System.Windows.Forms.Label();
             this.label26 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label30 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label29 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.label25 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label27 = new System.Windows.Forms.Label();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
+            this.button10 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.label32 = new System.Windows.Forms.Label();
             this.standardControl16 = new SymbolFactoryDotNet.StandardControl();
             this.label31 = new System.Windows.Forms.Label();
-            this.button9 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
+            this.label37 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
             this.label34 = new System.Windows.Forms.Label();
             this.label35 = new System.Windows.Forms.Label();
             this.label36 = new System.Windows.Forms.Label();
+            this.standardControl18 = new SymbolFactoryDotNet.StandardControl();
+            this.label38 = new System.Windows.Forms.Label();
+            this.standardControl19 = new SymbolFactoryDotNet.StandardControl();
+            this.label39 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl1)).BeginInit();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl4)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl7)).BeginInit();
@@ -125,9 +130,9 @@
             this.groupBox4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl9)).BeginInit();
             this.groupBox5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl12)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl11)).BeginInit();
             this.groupBox6.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl13)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl14)).BeginInit();
@@ -137,6 +142,8 @@
             this.groupBox8.SuspendLayout();
             this.groupBox9.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl16)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl18)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl19)).BeginInit();
             this.SuspendLayout();
             // 
             // label6
@@ -170,6 +177,124 @@
             this.groupBox3.TabIndex = 52;
             this.groupBox3.TabStop = false;
             // 
+            // standardControl4
+            // 
+            this.standardControl4.AnalogIntValue1 = ((short)(0));
+            this.standardControl4.AnalogValue1 = 0D;
+            this.standardControl4.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl4.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl4.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl4.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl4.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Green, "Band3"));
+            this.standardControl4.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl4.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl4.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl4.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl4.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl4.Category = "1Btn.cat2";
+            this.standardControl4.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl4.DebugData"));
+            this.standardControl4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl4.Flip = SymbolFactoryNetEngine.FlipOptions.Vertical;
+            this.standardControl4.Location = new System.Drawing.Point(241, 208);
+            this.standardControl4.Name = "standardControl4";
+            this.standardControl4.Size = new System.Drawing.Size(40, 40);
+            this.standardControl4.SymbolHandle = ((long)(703557272));
+            this.standardControl4.TabIndex = 105;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(20, 218);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(192, 19);
+            this.label5.TabIndex = 104;
+            this.label5.Text = "Cảm biến (Loadcell) Detect";
+            // 
+            // button17
+            // 
+            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button17.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button17.Location = new System.Drawing.Point(288, 123);
+            this.button17.Name = "button17";
+            this.button17.Size = new System.Drawing.Size(107, 46);
+            this.button17.TabIndex = 103;
+            this.button17.Text = "Đóng";
+            this.button17.UseVisualStyleBackColor = false;
+            // 
+            // button18
+            // 
+            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button18.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button18.Location = new System.Drawing.Point(174, 121);
+            this.button18.Name = "button18";
+            this.button18.Size = new System.Drawing.Size(107, 46);
+            this.button18.TabIndex = 102;
+            this.button18.Text = "Mở";
+            this.button18.UseVisualStyleBackColor = false;
+            // 
+            // standardControl3
+            // 
+            this.standardControl3.AnalogIntValue1 = ((short)(0));
+            this.standardControl3.AnalogValue1 = 0D;
+            this.standardControl3.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl3.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl3.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl3.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl3.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Green, "Band3"));
+            this.standardControl3.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl3.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl3.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl3.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl3.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl3.Category = "1Btn.cat2";
+            this.standardControl3.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl3.DebugData"));
+            this.standardControl3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl3.Flip = SymbolFactoryNetEngine.FlipOptions.Vertical;
+            this.standardControl3.Location = new System.Drawing.Point(421, 123);
+            this.standardControl3.Name = "standardControl3";
+            this.standardControl3.Size = new System.Drawing.Size(40, 40);
+            this.standardControl3.SymbolHandle = ((long)(703557272));
+            this.standardControl3.TabIndex = 101;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(20, 135);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(47, 19);
+            this.label3.TabIndex = 100;
+            this.label3.Text = "Van 1";
+            // 
+            // button21
+            // 
+            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button21.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button21.Image = ((System.Drawing.Image)(resources.GetObject("button21.Image")));
+            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button21.Location = new System.Drawing.Point(288, 60);
+            this.button21.Name = "button21";
+            this.button21.Size = new System.Drawing.Size(107, 46);
+            this.button21.TabIndex = 99;
+            this.button21.Text = "   Hạ xuống";
+            this.button21.UseVisualStyleBackColor = false;
+            // 
+            // button22
+            // 
+            this.button22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button22.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button22.Image = ((System.Drawing.Image)(resources.GetObject("button22.Image")));
+            this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button22.Location = new System.Drawing.Point(174, 60);
+            this.button22.Name = "button22";
+            this.button22.Size = new System.Drawing.Size(107, 46);
+            this.button22.TabIndex = 98;
+            this.button22.Text = "    Nâng lên";
+            this.button22.UseVisualStyleBackColor = false;
+            // 
             // standardControl5
             // 
             this.standardControl5.AnalogIntValue1 = ((short)(0));
@@ -193,6 +318,16 @@
             this.standardControl5.Size = new System.Drawing.Size(40, 40);
             this.standardControl5.SymbolHandle = ((long)(703557272));
             this.standardControl5.TabIndex = 97;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(20, 74);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(113, 19);
+            this.label4.TabIndex = 4;
+            this.label4.Text = "Gạt than 1 (UP)";
             // 
             // standardControl2
             // 
@@ -242,16 +377,6 @@
             this.standardControl1.SymbolHandle = ((long)(703557272));
             this.standardControl1.TabIndex = 93;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(20, 74);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(113, 19);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Gạt than 1 (UP)";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -294,124 +419,6 @@
             this.label7.TabIndex = 103;
             this.label7.Text = "TRẠNG THÁI AUTO/MANUAL";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // button21
-            // 
-            this.button21.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button21.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button21.Image = ((System.Drawing.Image)(resources.GetObject("button21.Image")));
-            this.button21.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button21.Location = new System.Drawing.Point(288, 60);
-            this.button21.Name = "button21";
-            this.button21.Size = new System.Drawing.Size(107, 46);
-            this.button21.TabIndex = 99;
-            this.button21.Text = "   Hạ xuống";
-            this.button21.UseVisualStyleBackColor = false;
-            // 
-            // button22
-            // 
-            this.button22.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button22.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button22.Image = ((System.Drawing.Image)(resources.GetObject("button22.Image")));
-            this.button22.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button22.Location = new System.Drawing.Point(174, 60);
-            this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(107, 46);
-            this.button22.TabIndex = 98;
-            this.button22.Text = "    Nâng lên";
-            this.button22.UseVisualStyleBackColor = false;
-            // 
-            // standardControl3
-            // 
-            this.standardControl3.AnalogIntValue1 = ((short)(0));
-            this.standardControl3.AnalogValue1 = 0D;
-            this.standardControl3.BackColor = System.Drawing.Color.Transparent;
-            this.standardControl3.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl3.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl3.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl3.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Green, "Band3"));
-            this.standardControl3.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl3.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl3.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl3.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl3.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl3.Category = "1Btn.cat2";
-            this.standardControl3.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl3.DebugData"));
-            this.standardControl3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl3.Flip = SymbolFactoryNetEngine.FlipOptions.Vertical;
-            this.standardControl3.Location = new System.Drawing.Point(421, 123);
-            this.standardControl3.Name = "standardControl3";
-            this.standardControl3.Size = new System.Drawing.Size(40, 40);
-            this.standardControl3.SymbolHandle = ((long)(703557272));
-            this.standardControl3.TabIndex = 101;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(20, 135);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(47, 19);
-            this.label3.TabIndex = 100;
-            this.label3.Text = "Van 1";
-            // 
-            // button17
-            // 
-            this.button17.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button17.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button17.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button17.Location = new System.Drawing.Point(288, 123);
-            this.button17.Name = "button17";
-            this.button17.Size = new System.Drawing.Size(107, 46);
-            this.button17.TabIndex = 103;
-            this.button17.Text = "Đóng";
-            this.button17.UseVisualStyleBackColor = false;
-            // 
-            // button18
-            // 
-            this.button18.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button18.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button18.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button18.Location = new System.Drawing.Point(174, 121);
-            this.button18.Name = "button18";
-            this.button18.Size = new System.Drawing.Size(107, 46);
-            this.button18.TabIndex = 102;
-            this.button18.Text = "Mở";
-            this.button18.UseVisualStyleBackColor = false;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(20, 218);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(192, 19);
-            this.label5.TabIndex = 104;
-            this.label5.Text = "Cảm biến (Loadcell) Detect";
-            // 
-            // standardControl4
-            // 
-            this.standardControl4.AnalogIntValue1 = ((short)(0));
-            this.standardControl4.AnalogValue1 = 0D;
-            this.standardControl4.BackColor = System.Drawing.Color.Transparent;
-            this.standardControl4.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl4.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl4.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl4.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Green, "Band3"));
-            this.standardControl4.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl4.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl4.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl4.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl4.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl4.Category = "1Btn.cat2";
-            this.standardControl4.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl4.DebugData"));
-            this.standardControl4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl4.Flip = SymbolFactoryNetEngine.FlipOptions.Vertical;
-            this.standardControl4.Location = new System.Drawing.Point(241, 208);
-            this.standardControl4.Name = "standardControl4";
-            this.standardControl4.Size = new System.Drawing.Size(40, 40);
-            this.standardControl4.SymbolHandle = ((long)(703557272));
-            this.standardControl4.TabIndex = 105;
             // 
             // groupBox2
             // 
@@ -655,6 +662,8 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.standardControl18);
+            this.groupBox5.Controls.Add(this.label38);
             this.groupBox5.Controls.Add(this.standardControl11);
             this.groupBox5.Controls.Add(this.label17);
             this.groupBox5.Controls.Add(this.standardControl10);
@@ -667,9 +676,43 @@
             this.groupBox5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(356, 293);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(499, 252);
+            this.groupBox5.Size = new System.Drawing.Size(499, 332);
             this.groupBox5.TabIndex = 106;
             this.groupBox5.TabStop = false;
+            // 
+            // standardControl11
+            // 
+            this.standardControl11.AnalogIntValue1 = ((short)(0));
+            this.standardControl11.AnalogValue1 = 0D;
+            this.standardControl11.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl11.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl11.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl11.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl11.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Green, "Band3"));
+            this.standardControl11.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl11.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl11.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl11.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl11.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl11.Category = "1Btn.cat2";
+            this.standardControl11.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl11.DebugData"));
+            this.standardControl11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl11.Flip = SymbolFactoryNetEngine.FlipOptions.Vertical;
+            this.standardControl11.Location = new System.Drawing.Point(241, 192);
+            this.standardControl11.Name = "standardControl11";
+            this.standardControl11.Size = new System.Drawing.Size(40, 40);
+            this.standardControl11.SymbolHandle = ((long)(703557272));
+            this.standardControl11.TabIndex = 106;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(20, 202);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(204, 19);
+            this.label17.TabIndex = 106;
+            this.label17.Text = "Cảm biến (Lệch băng) Detect";
             // 
             // standardControl10
             // 
@@ -774,43 +817,11 @@
             this.standardControl12.SymbolHandle = ((long)(703557272));
             this.standardControl12.TabIndex = 97;
             // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(20, 202);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(204, 19);
-            this.label17.TabIndex = 106;
-            this.label17.Text = "Cảm biến (Lệch băng) Detect";
-            // 
-            // standardControl11
-            // 
-            this.standardControl11.AnalogIntValue1 = ((short)(0));
-            this.standardControl11.AnalogValue1 = 0D;
-            this.standardControl11.BackColor = System.Drawing.Color.Transparent;
-            this.standardControl11.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
-            this.standardControl11.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
-            this.standardControl11.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
-            this.standardControl11.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Green, "Band3"));
-            this.standardControl11.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
-            this.standardControl11.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
-            this.standardControl11.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
-            this.standardControl11.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
-            this.standardControl11.BlinkColor = System.Drawing.Color.Red;
-            this.standardControl11.Category = "1Btn.cat2";
-            this.standardControl11.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl11.DebugData"));
-            this.standardControl11.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
-            this.standardControl11.Flip = SymbolFactoryNetEngine.FlipOptions.Vertical;
-            this.standardControl11.Location = new System.Drawing.Point(241, 192);
-            this.standardControl11.Name = "standardControl11";
-            this.standardControl11.Size = new System.Drawing.Size(40, 40);
-            this.standardControl11.SymbolHandle = ((long)(703557272));
-            this.standardControl11.TabIndex = 106;
-            // 
             // groupBox6
             // 
+            this.groupBox6.Controls.Add(this.standardControl19);
             this.groupBox6.Controls.Add(this.standardControl13);
+            this.groupBox6.Controls.Add(this.label39);
             this.groupBox6.Controls.Add(this.label18);
             this.groupBox6.Controls.Add(this.standardControl14);
             this.groupBox6.Controls.Add(this.label19);
@@ -822,7 +833,7 @@
             this.groupBox6.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(861, 296);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(499, 249);
+            this.groupBox6.Size = new System.Drawing.Size(499, 329);
             this.groupBox6.TabIndex = 107;
             this.groupBox6.TabStop = false;
             // 
@@ -1022,7 +1033,7 @@
             // 
             this.label24.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label24.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label24.Location = new System.Drawing.Point(348, -3);
+            this.label24.Location = new System.Drawing.Point(359, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(300, 28);
             this.label24.TabIndex = 53;
@@ -1031,6 +1042,7 @@
             // 
             // groupBox8
             // 
+            this.groupBox8.Controls.Add(this.label37);
             this.groupBox8.Controls.Add(this.textBox6);
             this.groupBox8.Controls.Add(this.textBox5);
             this.groupBox8.Controls.Add(this.label29);
@@ -1039,79 +1051,58 @@
             this.groupBox8.Controls.Add(this.label30);
             this.groupBox8.Controls.Add(this.label26);
             this.groupBox8.Controls.Add(this.textBox2);
+            this.groupBox8.Controls.Add(this.label24);
             this.groupBox8.Controls.Add(this.label28);
             this.groupBox8.Controls.Add(this.label25);
             this.groupBox8.Controls.Add(this.textBox1);
             this.groupBox8.Controls.Add(this.label27);
-            this.groupBox8.Controls.Add(this.label24);
             this.groupBox8.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox8.Location = new System.Drawing.Point(356, 551);
+            this.groupBox8.Location = new System.Drawing.Point(356, 642);
             this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(1004, 384);
+            this.groupBox8.Size = new System.Drawing.Size(1004, 293);
             this.groupBox8.TabIndex = 107;
             this.groupBox8.TabStop = false;
             // 
-            // label27
+            // textBox6
             // 
-            this.label27.AutoSize = true;
-            this.label27.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label27.Location = new System.Drawing.Point(20, 91);
-            this.label27.Name = "label27";
-            this.label27.Size = new System.Drawing.Size(78, 19);
-            this.label27.TabIndex = 100;
-            this.label27.Text = "Loadcell 1";
+            this.textBox6.Location = new System.Drawing.Point(644, 217);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.ReadOnly = true;
+            this.textBox6.Size = new System.Drawing.Size(119, 29);
+            this.textBox6.TabIndex = 112;
+            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox1
+            // textBox5
             // 
-            this.textBox1.Location = new System.Drawing.Point(124, 86);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(100, 29);
-            this.textBox1.TabIndex = 101;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textBox5.Location = new System.Drawing.Point(644, 154);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.ReadOnly = true;
+            this.textBox5.Size = new System.Drawing.Size(119, 29);
+            this.textBox5.TabIndex = 111;
+            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // label25
+            // label29
             // 
-            this.label25.AutoSize = true;
-            this.label25.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label25.Location = new System.Drawing.Point(228, 91);
-            this.label25.Name = "label25";
-            this.label25.Size = new System.Drawing.Size(53, 19);
-            this.label25.TabIndex = 102;
-            this.label25.Text = "(gram)";
+            this.label29.AutoSize = true;
+            this.label29.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label29.Location = new System.Drawing.Point(627, 114);
+            this.label29.Name = "label29";
+            this.label29.Size = new System.Drawing.Size(168, 19);
+            this.label29.TabIndex = 110;
+            this.label29.Text = "Loadcell Max (Current)";
             // 
-            // label26
+            // textBox4
             // 
-            this.label26.AutoSize = true;
-            this.label26.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label26.Location = new System.Drawing.Point(228, 154);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(53, 19);
-            this.label26.TabIndex = 105;
-            this.label26.Text = "(gram)";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(124, 149);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(100, 29);
-            this.textBox2.TabIndex = 104;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // label28
-            // 
-            this.label28.AutoSize = true;
-            this.label28.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label28.Location = new System.Drawing.Point(20, 154);
-            this.label28.Name = "label28";
-            this.label28.Size = new System.Drawing.Size(78, 19);
-            this.label28.TabIndex = 103;
-            this.label28.Text = "Loadcell 2";
+            this.textBox4.Location = new System.Drawing.Point(438, 217);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.ReadOnly = true;
+            this.textBox4.Size = new System.Drawing.Size(119, 29);
+            this.textBox4.TabIndex = 109;
+            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(421, 86);
+            this.textBox3.Location = new System.Drawing.Point(438, 154);
             this.textBox3.Name = "textBox3";
             this.textBox3.ReadOnly = true;
             this.textBox3.Size = new System.Drawing.Size(119, 29);
@@ -1122,70 +1113,116 @@
             // 
             this.label30.AutoSize = true;
             this.label30.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label30.Location = new System.Drawing.Point(396, 46);
+            this.label30.Location = new System.Drawing.Point(413, 114);
             this.label30.Name = "label30";
             this.label30.Size = new System.Drawing.Size(166, 19);
             this.label30.TabIndex = 106;
             this.label30.Text = "Analog Input (Loadcell)";
             // 
-            // textBox4
+            // label26
             // 
-            this.textBox4.Location = new System.Drawing.Point(421, 149);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(119, 29);
-            this.textBox4.TabIndex = 109;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label26.AutoSize = true;
+            this.label26.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label26.Location = new System.Drawing.Point(245, 222);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(53, 19);
+            this.label26.TabIndex = 105;
+            this.label26.Text = "(gram)";
             // 
-            // label29
+            // textBox2
             // 
-            this.label29.AutoSize = true;
-            this.label29.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label29.Location = new System.Drawing.Point(610, 46);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(163, 19);
-            this.label29.TabIndex = 110;
-            this.label29.Text = "Loadcell Max (Setting)";
+            this.textBox2.Location = new System.Drawing.Point(141, 217);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(100, 29);
+            this.textBox2.TabIndex = 104;
+            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox5
+            // label28
             // 
-            this.textBox5.Location = new System.Drawing.Point(627, 86);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.ReadOnly = true;
-            this.textBox5.Size = new System.Drawing.Size(119, 29);
-            this.textBox5.TabIndex = 111;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label28.AutoSize = true;
+            this.label28.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label28.Location = new System.Drawing.Point(37, 222);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(78, 19);
+            this.label28.TabIndex = 103;
+            this.label28.Text = "Loadcell 2";
             // 
-            // textBox6
+            // label25
             // 
-            this.textBox6.Location = new System.Drawing.Point(627, 149);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.ReadOnly = true;
-            this.textBox6.Size = new System.Drawing.Size(119, 29);
-            this.textBox6.TabIndex = 112;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label25.AutoSize = true;
+            this.label25.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label25.Location = new System.Drawing.Point(245, 159);
+            this.label25.Name = "label25";
+            this.label25.Size = new System.Drawing.Size(53, 19);
+            this.label25.TabIndex = 102;
+            this.label25.Text = "(gram)";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(141, 154);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(100, 29);
+            this.textBox1.TabIndex = 101;
+            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label27
+            // 
+            this.label27.AutoSize = true;
+            this.label27.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label27.Location = new System.Drawing.Point(37, 159);
+            this.label27.Name = "label27";
+            this.label27.Size = new System.Drawing.Size(78, 19);
+            this.label27.TabIndex = 100;
+            this.label27.Text = "Loadcell 1";
             // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.label36);
-            this.groupBox9.Controls.Add(this.label35);
-            this.groupBox9.Controls.Add(this.label34);
+            this.groupBox9.Controls.Add(this.label31);
             this.groupBox9.Controls.Add(this.label33);
             this.groupBox9.Controls.Add(this.button10);
+            this.groupBox9.Controls.Add(this.label34);
             this.groupBox9.Controls.Add(this.button9);
+            this.groupBox9.Controls.Add(this.label35);
+            this.groupBox9.Controls.Add(this.label36);
             this.groupBox9.Controls.Add(this.label32);
             this.groupBox9.Controls.Add(this.standardControl16);
-            this.groupBox9.Location = new System.Drawing.Point(30, 556);
+            this.groupBox9.Location = new System.Drawing.Point(30, 642);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(320, 379);
+            this.groupBox9.Size = new System.Drawing.Size(320, 293);
             this.groupBox9.TabIndex = 106;
             this.groupBox9.TabStop = false;
+            // 
+            // button10
+            // 
+            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button10.Location = new System.Drawing.Point(118, 95);
+            this.button10.Name = "button10";
+            this.button10.Size = new System.Drawing.Size(98, 39);
+            this.button10.TabIndex = 108;
+            this.button10.Text = "Tắt";
+            this.button10.UseVisualStyleBackColor = false;
+            // 
+            // button9
+            // 
+            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button9.Location = new System.Drawing.Point(14, 95);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(98, 39);
+            this.button9.TabIndex = 107;
+            this.button9.Text = "Bật";
+            this.button9.UseVisualStyleBackColor = false;
             // 
             // label32
             // 
             this.label32.AutoSize = true;
             this.label32.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label32.Location = new System.Drawing.Point(6, 126);
+            this.label32.Location = new System.Drawing.Point(14, 60);
             this.label32.Name = "label32";
             this.label32.Size = new System.Drawing.Size(99, 19);
             this.label32.TabIndex = 1;
@@ -1209,7 +1246,7 @@
             this.standardControl16.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl16.DebugData"));
             this.standardControl16.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
             this.standardControl16.Flip = SymbolFactoryNetEngine.FlipOptions.Vertical;
-            this.standardControl16.Location = new System.Drawing.Point(237, 160);
+            this.standardControl16.Location = new System.Drawing.Point(245, 94);
             this.standardControl16.Name = "standardControl16";
             this.standardControl16.Size = new System.Drawing.Size(40, 40);
             this.standardControl16.SymbolHandle = ((long)(703557272));
@@ -1219,83 +1256,136 @@
             // 
             this.label31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label31.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label31.Location = new System.Drawing.Point(97, 548);
+            this.label31.Location = new System.Drawing.Point(58, 0);
             this.label31.Name = "label31";
             this.label31.Size = new System.Drawing.Size(180, 28);
             this.label31.TabIndex = 113;
             this.label31.Text = "TRẠNG THÁI IO";
             this.label31.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // button9
+            // label37
             // 
-            this.button9.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button9.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button9.Location = new System.Drawing.Point(6, 161);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(98, 39);
-            this.button9.TabIndex = 107;
-            this.button9.Text = "Bật";
-            this.button9.UseVisualStyleBackColor = false;
-            // 
-            // button10
-            // 
-            this.button10.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button10.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button10.Location = new System.Drawing.Point(110, 161);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(98, 39);
-            this.button10.TabIndex = 108;
-            this.button10.Text = "Tắt";
-            this.button10.UseVisualStyleBackColor = false;
+            this.label37.AutoSize = true;
+            this.label37.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label37.Location = new System.Drawing.Point(123, 114);
+            this.label37.Name = "label37";
+            this.label37.Size = new System.Drawing.Size(146, 19);
+            this.label37.TabIndex = 113;
+            this.label37.Text = "Khối lượng (current)";
             // 
             // label33
             // 
             this.label33.AutoSize = true;
-            this.label33.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label33.Location = new System.Drawing.Point(51, 311);
+            this.label33.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label33.Location = new System.Drawing.Point(15, 161);
             this.label33.Name = "label33";
-            this.label33.Size = new System.Drawing.Size(190, 19);
-            this.label33.TabIndex = 109;
-            this.label33.Text = "Chỉ nên bật khi muốn kiểm tra";
+            this.label33.Size = new System.Drawing.Size(54, 19);
+            this.label33.TabIndex = 120;
+            this.label33.Text = "Lưu ý:";
             // 
             // label34
             // 
             this.label34.AutoSize = true;
             this.label34.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label34.Location = new System.Drawing.Point(4, 330);
+            this.label34.Location = new System.Drawing.Point(17, 199);
             this.label34.Name = "label34";
-            this.label34.Size = new System.Drawing.Size(232, 19);
-            this.label34.TabIndex = 110;
-            this.label34.Text = "trạng thái của thiết bị.(tốn dung lượng";
+            this.label34.Size = new System.Drawing.Size(169, 19);
+            this.label34.TabIndex = 119;
+            this.label34.Text = "do phải quét Tag từ PLC).";
             // 
             // label35
             // 
             this.label35.AutoSize = true;
             this.label35.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label35.Location = new System.Drawing.Point(4, 349);
+            this.label35.Location = new System.Drawing.Point(17, 180);
             this.label35.Name = "label35";
-            this.label35.Size = new System.Drawing.Size(169, 19);
-            this.label35.TabIndex = 111;
-            this.label35.Text = "do phải quét Tag từ PLC).";
+            this.label35.Size = new System.Drawing.Size(232, 19);
+            this.label35.TabIndex = 118;
+            this.label35.Text = "trạng thái của thiết bị.(tốn dung lượng";
             // 
             // label36
             // 
             this.label36.AutoSize = true;
-            this.label36.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label36.Location = new System.Drawing.Point(2, 311);
+            this.label36.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label36.Location = new System.Drawing.Point(64, 161);
             this.label36.Name = "label36";
-            this.label36.Size = new System.Drawing.Size(54, 19);
-            this.label36.TabIndex = 112;
-            this.label36.Text = "Lưu ý:";
+            this.label36.Size = new System.Drawing.Size(190, 19);
+            this.label36.TabIndex = 117;
+            this.label36.Text = "Chỉ nên bật khi muốn kiểm tra";
+            // 
+            // standardControl18
+            // 
+            this.standardControl18.AnalogIntValue1 = ((short)(0));
+            this.standardControl18.AnalogValue1 = 0D;
+            this.standardControl18.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl18.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl18.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl18.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl18.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Green, "Band3"));
+            this.standardControl18.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl18.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl18.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl18.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl18.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl18.Category = "1Btn.cat2";
+            this.standardControl18.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl18.DebugData"));
+            this.standardControl18.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl18.Flip = SymbolFactoryNetEngine.FlipOptions.Vertical;
+            this.standardControl18.Location = new System.Drawing.Point(241, 255);
+            this.standardControl18.Name = "standardControl18";
+            this.standardControl18.Size = new System.Drawing.Size(40, 40);
+            this.standardControl18.SymbolHandle = ((long)(703557272));
+            this.standardControl18.TabIndex = 107;
+            // 
+            // label38
+            // 
+            this.label38.AutoSize = true;
+            this.label38.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label38.Location = new System.Drawing.Point(20, 265);
+            this.label38.Name = "label38";
+            this.label38.Size = new System.Drawing.Size(107, 19);
+            this.label38.TabIndex = 108;
+            this.label38.Text = "Quá tải Detect";
+            // 
+            // standardControl19
+            // 
+            this.standardControl19.AnalogIntValue1 = ((short)(0));
+            this.standardControl19.AnalogValue1 = 0D;
+            this.standardControl19.BackColor = System.Drawing.Color.Transparent;
+            this.standardControl19.BackStyle = SymbolFactoryNetEngine.BackStyleOptions.Transparent;
+            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(90D, 90, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band1"));
+            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(80D, 80, false, SymbolFactoryNetEngine.BandStyleOptions.BlinkShaded, System.Drawing.Color.Yellow, "Band2"));
+            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(70D, 70, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Green, "Band3"));
+            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(50D, 50, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Yellow, "Band4"));
+            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(30D, 30, false, SymbolFactoryNetEngine.BandStyleOptions.Shaded, System.Drawing.Color.Red, "Band5"));
+            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(20D, 20, false, SymbolFactoryNetEngine.BandStyleOptions.Solid, System.Drawing.Color.Yellow, "Band6"));
+            this.standardControl19.BandsCollection.Add(new SymbolFactoryNetEngine.Band(0D, 0, false, SymbolFactoryNetEngine.BandStyleOptions.Original, System.Drawing.Color.Red, "Band7"));
+            this.standardControl19.BlinkColor = System.Drawing.Color.Red;
+            this.standardControl19.Category = "1Btn.cat2";
+            this.standardControl19.DebugData = new SymbolFactoryDotNet.DebugClass(resources.GetString("standardControl19.DebugData"));
+            this.standardControl19.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(128)))), ((int)(((byte)(0)))));
+            this.standardControl19.Flip = SymbolFactoryNetEngine.FlipOptions.Vertical;
+            this.standardControl19.Location = new System.Drawing.Point(241, 252);
+            this.standardControl19.Name = "standardControl19";
+            this.standardControl19.Size = new System.Drawing.Size(40, 40);
+            this.standardControl19.SymbolHandle = ((long)(703557272));
+            this.standardControl19.TabIndex = 109;
+            // 
+            // label39
+            // 
+            this.label39.AutoSize = true;
+            this.label39.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label39.Location = new System.Drawing.Point(20, 262);
+            this.label39.Name = "label39";
+            this.label39.Size = new System.Drawing.Size(107, 19);
+            this.label39.TabIndex = 110;
+            this.label39.Text = "Quá tải Detect";
             // 
             // UC_IO
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(212)))), ((int)(((byte)(255)))));
-            this.Controls.Add(this.label31);
             this.Controls.Add(this.groupBox8);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.label22);
@@ -1311,13 +1401,13 @@
             this.Size = new System.Drawing.Size(1920, 970);
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl4)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl6)).EndInit();
@@ -1328,9 +1418,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.standardControl9)).EndInit();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl12)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.standardControl11)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl13)).EndInit();
@@ -1344,6 +1434,8 @@
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl16)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl18)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.standardControl19)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -1423,14 +1515,19 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.Label label36;
-        private System.Windows.Forms.Label label35;
-        private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.Label label33;
         private System.Windows.Forms.Button button10;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Label label32;
         private SymbolFactoryDotNet.StandardControl standardControl16;
         private System.Windows.Forms.Label label31;
+        private System.Windows.Forms.Label label37;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.Label label34;
+        private System.Windows.Forms.Label label35;
+        private System.Windows.Forms.Label label36;
+        private SymbolFactoryDotNet.StandardControl standardControl18;
+        private System.Windows.Forms.Label label38;
+        private SymbolFactoryDotNet.StandardControl standardControl19;
+        private System.Windows.Forms.Label label39;
     }
 }

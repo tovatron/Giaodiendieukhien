@@ -470,7 +470,7 @@
             this.groupBox4.Size = new System.Drawing.Size(323, 227);
             this.groupBox4.TabIndex = 57;
             this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Khối lượng Bunke 1 mỗi lần xả liệu";
+            this.groupBox4.Text = "Khối lượng Bunke 1";
             // 
             // groupBox5
             // 
@@ -481,7 +481,7 @@
             this.groupBox5.Size = new System.Drawing.Size(323, 227);
             this.groupBox5.TabIndex = 58;
             this.groupBox5.TabStop = false;
-            this.groupBox5.Text = "Khối lượng Bunke 2 mỗi lần xả liệu";
+            this.groupBox5.Text = "Khối lượng Bunke 2";
             // 
             // dtGVBunkeweight2
             // 
@@ -601,7 +601,7 @@
             // zedGraphControl1
             // 
             this.zedGraphControl1.Location = new System.Drawing.Point(0, 19);
-            this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(4);
             this.zedGraphControl1.Name = "zedGraphControl1";
             this.zedGraphControl1.ScrollGrace = 0D;
             this.zedGraphControl1.ScrollMaxX = 0D;
