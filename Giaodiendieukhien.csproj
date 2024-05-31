@@ -146,6 +146,12 @@
     <Compile Include="UserControls\UC_IO.Designer.cs">
       <DependentUpon>UC_IO.cs</DependentUpon>
     </Compile>
+    <Compile Include="UserControls\UC_Simulation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControls\UC_Simulation.Designer.cs">
+      <DependentUpon>UC_Simulation.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form_Login.resx">
       <DependentUpon>Form_Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -184,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_IO.resx">
       <DependentUpon>UC_IO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControls\UC_Simulation.resx">
+      <DependentUpon>UC_Simulation.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

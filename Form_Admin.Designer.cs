@@ -36,6 +36,8 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnCloseappAF = new System.Windows.Forms.Button();
             this.pnlTabsAF = new System.Windows.Forms.Panel();
+            this.pnlSimAF = new System.Windows.Forms.Panel();
+            this.btnSimAF = new System.Windows.Forms.Button();
             this.pnlIOAF = new System.Windows.Forms.Panel();
             this.pnlSystemAF = new System.Windows.Forms.Panel();
             this.pnlSettingAF = new System.Windows.Forms.Panel();
@@ -66,6 +68,7 @@
             // 
             // panel1
             // 
+            this.panel1.AutoScroll = true;
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
             this.panel1.Controls.Add(this.pictureBox4);
             this.panel1.Controls.Add(this.btnMinimizeAF);
@@ -129,6 +132,8 @@
             // 
             this.pnlTabsAF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(241)))), ((int)(((byte)(245)))));
             this.pnlTabsAF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlTabsAF.Controls.Add(this.pnlSimAF);
+            this.pnlTabsAF.Controls.Add(this.btnSimAF);
             this.pnlTabsAF.Controls.Add(this.pnlIOAF);
             this.pnlTabsAF.Controls.Add(this.pnlSystemAF);
             this.pnlTabsAF.Controls.Add(this.pnlSettingAF);
@@ -149,6 +154,31 @@
             this.pnlTabsAF.Name = "pnlTabsAF";
             this.pnlTabsAF.Size = new System.Drawing.Size(1366, 50);
             this.pnlTabsAF.TabIndex = 1;
+            // 
+            // pnlSimAF
+            // 
+            this.pnlSimAF.BackColor = System.Drawing.Color.White;
+            this.pnlSimAF.Location = new System.Drawing.Point(786, 5);
+            this.pnlSimAF.Name = "pnlSimAF";
+            this.pnlSimAF.Size = new System.Drawing.Size(9, 9);
+            this.pnlSimAF.TabIndex = 10;
+            // 
+            // btnSimAF
+            // 
+            this.btnSimAF.BackColor = System.Drawing.Color.White;
+            this.btnSimAF.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btnSimAF.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSimAF.ForeColor = System.Drawing.Color.Black;
+            this.btnSimAF.Image = ((System.Drawing.Image)(resources.GetObject("btnSimAF.Image")));
+            this.btnSimAF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSimAF.Location = new System.Drawing.Point(687, -1);
+            this.btnSimAF.Name = "btnSimAF";
+            this.btnSimAF.Size = new System.Drawing.Size(115, 48);
+            this.btnSimAF.TabIndex = 10;
+            this.btnSimAF.Text = "Simulation";
+            this.btnSimAF.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnSimAF.UseVisualStyleBackColor = false;
+            this.btnSimAF.Click += new System.EventHandler(this.click_Button);
             // 
             // pnlIOAF
             // 
@@ -456,5 +486,7 @@
         private System.Windows.Forms.Panel pnlControlAF;
         private System.Windows.Forms.Panel pnlMonitorAF;
         private System.Windows.Forms.Panel pnlCameraAF;
+        private System.Windows.Forms.Panel pnlSimAF;
+        private System.Windows.Forms.Button btnSimAF;
     }
 }

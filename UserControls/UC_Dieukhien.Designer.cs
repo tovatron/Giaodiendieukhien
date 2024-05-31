@@ -46,6 +46,8 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.button4 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             this.label14 = new System.Windows.Forms.Label();
             this.standardControl6 = new SymbolFactoryDotNet.StandardControl();
             this.label35 = new System.Windows.Forms.Label();
@@ -103,8 +105,6 @@
             this.button8 = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.standardControl4)).BeginInit();
@@ -431,6 +431,30 @@
             this.groupBox2.Size = new System.Drawing.Size(1387, 737);
             this.groupBox2.TabIndex = 48;
             this.groupBox2.TabStop = false;
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(860, 588);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(107, 46);
+            this.button4.TabIndex = 105;
+            this.button4.Text = "Zeroing";
+            this.button4.UseVisualStyleBackColor = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button2.Location = new System.Drawing.Point(442, 584);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(107, 46);
+            this.button2.TabIndex = 104;
+            this.button2.Text = "Zeroing";
+            this.button2.UseVisualStyleBackColor = false;
             // 
             // label14
             // 
@@ -1233,30 +1257,6 @@
             this.label7.Size = new System.Drawing.Size(147, 22);
             this.label7.TabIndex = 91;
             this.label7.Text = "Băng tải cấp liệu";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(442, 584);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(107, 46);
-            this.button2.TabIndex = 104;
-            this.button2.Text = "Zeroing";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(860, 588);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(107, 46);
-            this.button4.TabIndex = 105;
-            this.button4.Text = "Zeroing";
-            this.button4.UseVisualStyleBackColor = false;
             // 
             // UC_Dieukhien
             // 

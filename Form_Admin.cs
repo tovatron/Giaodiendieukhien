@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using OPCAutomation;
+using Giaodiendieukhien.UserControls;
 
 namespace Giaodiendieukhien
 {
@@ -118,6 +119,10 @@ namespace Giaodiendieukhien
                 case "btnIOAF":
                     add_usercontrol(new UC_IO());
                     pnlIOAF.BackColor = Color.Lime;
+                    break;
+                case "btnSimAF":
+                    add_usercontrol(new UC_Simulation());
+                    pnlSimAF.BackColor = Color.Lime;
                     break;
                 default:
                     break;

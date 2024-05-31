@@ -147,6 +147,16 @@
         RU5ErkJggg==
 </value>
   </data>
+  <data name="btnSimAF.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAQtJREFUSEvt
+        lWsRwjAQhCsBCUhAAlKQgAMsIAEH4AAp4KA4gPug27k50kcamPKDndlJc73sJumlqX4Na+PReG9a+h8D
+        Ymfj1bgh0LT0iRebnYxePEJmWuEgmNHFSLIG0N6MO+OCgAN94rVRY0R0kitkRqvXYwsGLI0Ho8zoS5w4
+        fYkL6KD3Bp8k+JjMiO2bvkCM7+OR0hs0EUpi85rEDx7zeF9ksjXG6lKery7yIkabgFhd5MXqSiHLRPDV
+        1ScuZJt0vcseM3ZA13NElgkHj+0RfB7xeAiFLJO49zGv6y+c1KN64r9rKtBBrwU1juu3+DxDLBfX4ssn
+        AD3OUrs7unxSM5nKvsvuj1lRVQ+nSY8Z3XH2EQAAAABJRU5ErkJggg==
+</value>
+  </data>
   <data name="btnIOAF.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABGdBTUEAALGPC/xhBQAAAKlJREFUSEvt
