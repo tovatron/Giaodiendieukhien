@@ -16,10 +16,6 @@ namespace Giaodiendieukhien
     {
         SqlCommand sqlCommand;
         SqlDataReader dataReader;
-        public TruyvanLogin()
-        {
-
-        }
         public List<Accounts> Loginaccounts(string query, string username, string password)
         {
             List<Accounts> accounts = new List<Accounts>();

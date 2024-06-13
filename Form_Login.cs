@@ -18,6 +18,7 @@ namespace Giaodiendieukhien
     public partial class Form_Login : Form
     {
         public Point mouseLocation;
+        public bool IsFormAdminActived;
         public Form_Login()
         {
             InitializeComponent();
@@ -78,15 +79,19 @@ namespace Giaodiendieukhien
                     {
                         this.Hide();
                         Form_Admin formadmin = new Form_Admin();
+                        IsFormAdminActived = true;
                         formadmin.lbUserAF.Text = txtUsername.Text;
                         formadmin.ShowDialog();
+                        this.Close();
                     }
                     else if (role == "user")
                     {
                         this.Hide();
                         Form_User formuser = new Form_User();
+                        IsFormAdminActived = false;
                         formuser.lbUserUF.Text = txtUsername.Text;
                         formuser.ShowDialog();
+                        this.Close();
                     }
                 }
                 else

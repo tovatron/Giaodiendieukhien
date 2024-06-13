@@ -12,9 +12,11 @@ namespace Giaodiendieukhien
 {
     public partial class UC_Giamsat : UserControl
     {
+        public static UC_Giamsat UCWatch;
         public UC_Giamsat()
         {
             InitializeComponent();
+            UCWatch = this;
         }
 
         private void UC_Giamsat_Load(object sender, EventArgs e)

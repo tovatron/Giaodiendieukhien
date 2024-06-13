@@ -39,12 +39,12 @@
             this.pnlReportUF = new System.Windows.Forms.Panel();
             this.pnlControlUF = new System.Windows.Forms.Panel();
             this.pnlMonitorUF = new System.Windows.Forms.Panel();
-            this.pnlCameraUF = new System.Windows.Forms.Panel();
             this.btnReportUF = new System.Windows.Forms.Button();
             this.btnControlUF = new System.Windows.Forms.Button();
             this.btnMonitorUF = new System.Windows.Forms.Button();
-            this.btnCameraUF = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lbPLCStatusUF = new System.Windows.Forms.Label();
             this.lbUserUF = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbTime = new System.Windows.Forms.Label();
@@ -126,11 +126,9 @@
             this.pnlTabsUF.Controls.Add(this.pnlReportUF);
             this.pnlTabsUF.Controls.Add(this.pnlControlUF);
             this.pnlTabsUF.Controls.Add(this.pnlMonitorUF);
-            this.pnlTabsUF.Controls.Add(this.pnlCameraUF);
             this.pnlTabsUF.Controls.Add(this.btnReportUF);
             this.pnlTabsUF.Controls.Add(this.btnControlUF);
             this.pnlTabsUF.Controls.Add(this.btnMonitorUF);
-            this.pnlTabsUF.Controls.Add(this.btnCameraUF);
             this.pnlTabsUF.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTabsUF.ForeColor = System.Drawing.Color.White;
             this.pnlTabsUF.Location = new System.Drawing.Point(0, 32);
@@ -141,15 +139,15 @@
             // pnlReportUF
             // 
             this.pnlReportUF.BackColor = System.Drawing.Color.White;
-            this.pnlReportUF.Location = new System.Drawing.Point(408, 4);
+            this.pnlReportUF.Location = new System.Drawing.Point(307, 4);
             this.pnlReportUF.Name = "pnlReportUF";
             this.pnlReportUF.Size = new System.Drawing.Size(9, 9);
             this.pnlReportUF.TabIndex = 10;
             // 
             // pnlControlUF
             // 
-            this.pnlControlUF.BackColor = System.Drawing.Color.White;
-            this.pnlControlUF.Location = new System.Drawing.Point(310, 4);
+            this.pnlControlUF.BackColor = System.Drawing.Color.Lime;
+            this.pnlControlUF.Location = new System.Drawing.Point(102, 4);
             this.pnlControlUF.Name = "pnlControlUF";
             this.pnlControlUF.Size = new System.Drawing.Size(9, 9);
             this.pnlControlUF.TabIndex = 10;
@@ -157,18 +155,10 @@
             // pnlMonitorUF
             // 
             this.pnlMonitorUF.BackColor = System.Drawing.Color.White;
-            this.pnlMonitorUF.Location = new System.Drawing.Point(192, 4);
+            this.pnlMonitorUF.Location = new System.Drawing.Point(209, 4);
             this.pnlMonitorUF.Name = "pnlMonitorUF";
             this.pnlMonitorUF.Size = new System.Drawing.Size(9, 9);
             this.pnlMonitorUF.TabIndex = 10;
-            // 
-            // pnlCameraUF
-            // 
-            this.pnlCameraUF.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.pnlCameraUF.Location = new System.Drawing.Point(85, 4);
-            this.pnlCameraUF.Name = "pnlCameraUF";
-            this.pnlCameraUF.Size = new System.Drawing.Size(9, 9);
-            this.pnlCameraUF.TabIndex = 9;
             // 
             // btnReportUF
             // 
@@ -178,7 +168,7 @@
             this.btnReportUF.ForeColor = System.Drawing.Color.Black;
             this.btnReportUF.Image = ((System.Drawing.Image)(resources.GetObject("btnReportUF.Image")));
             this.btnReportUF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportUF.Location = new System.Drawing.Point(325, -1);
+            this.btnReportUF.Location = new System.Drawing.Point(224, -1);
             this.btnReportUF.Name = "btnReportUF";
             this.btnReportUF.Size = new System.Drawing.Size(99, 48);
             this.btnReportUF.TabIndex = 3;
@@ -195,7 +185,7 @@
             this.btnControlUF.ForeColor = System.Drawing.Color.Black;
             this.btnControlUF.Image = ((System.Drawing.Image)(resources.GetObject("btnControlUF.Image")));
             this.btnControlUF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnControlUF.Location = new System.Drawing.Point(207, -1);
+            this.btnControlUF.Location = new System.Drawing.Point(-1, -1);
             this.btnControlUF.Name = "btnControlUF";
             this.btnControlUF.Size = new System.Drawing.Size(119, 48);
             this.btnControlUF.TabIndex = 2;
@@ -212,7 +202,7 @@
             this.btnMonitorUF.ForeColor = System.Drawing.Color.Black;
             this.btnMonitorUF.Image = ((System.Drawing.Image)(resources.GetObject("btnMonitorUF.Image")));
             this.btnMonitorUF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMonitorUF.Location = new System.Drawing.Point(100, -1);
+            this.btnMonitorUF.Location = new System.Drawing.Point(117, -1);
             this.btnMonitorUF.Name = "btnMonitorUF";
             this.btnMonitorUF.Size = new System.Drawing.Size(108, 48);
             this.btnMonitorUF.TabIndex = 1;
@@ -221,27 +211,11 @@
             this.btnMonitorUF.UseVisualStyleBackColor = false;
             this.btnMonitorUF.Click += new System.EventHandler(this.click_Button);
             // 
-            // btnCameraUF
-            // 
-            this.btnCameraUF.BackColor = System.Drawing.Color.White;
-            this.btnCameraUF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnCameraUF.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCameraUF.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCameraUF.ForeColor = System.Drawing.Color.Black;
-            this.btnCameraUF.Image = ((System.Drawing.Image)(resources.GetObject("btnCameraUF.Image")));
-            this.btnCameraUF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCameraUF.Location = new System.Drawing.Point(-1, -1);
-            this.btnCameraUF.Name = "btnCameraUF";
-            this.btnCameraUF.Size = new System.Drawing.Size(102, 48);
-            this.btnCameraUF.TabIndex = 0;
-            this.btnCameraUF.Text = "Camera";
-            this.btnCameraUF.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCameraUF.UseVisualStyleBackColor = false;
-            this.btnCameraUF.Click += new System.EventHandler(this.click_Button);
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.panel3.Controls.Add(this.panel2);
+            this.panel3.Controls.Add(this.lbPLCStatusUF);
             this.panel3.Controls.Add(this.lbUserUF);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.lbTime);
@@ -251,6 +225,25 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1366, 32);
             this.panel3.TabIndex = 3;
+            // 
+            // panel2
+            // 
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.Location = new System.Drawing.Point(564, 4);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(25, 25);
+            this.panel2.TabIndex = 6;
+            // 
+            // lbPLCStatusUF
+            // 
+            this.lbPLCStatusUF.AutoSize = true;
+            this.lbPLCStatusUF.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPLCStatusUF.ForeColor = System.Drawing.Color.Red;
+            this.lbPLCStatusUF.Location = new System.Drawing.Point(591, 7);
+            this.lbPLCStatusUF.Name = "lbPLCStatusUF";
+            this.lbPLCStatusUF.Size = new System.Drawing.Size(92, 19);
+            this.lbPLCStatusUF.TabIndex = 5;
+            this.lbPLCStatusUF.Text = "Ngắt kết nối";
             // 
             // lbUserUF
             // 
@@ -337,6 +330,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.pnlTabsUF.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -353,7 +347,6 @@
         private System.Windows.Forms.Button btnReportUF;
         private System.Windows.Forms.Button btnControlUF;
         private System.Windows.Forms.Button btnMonitorUF;
-        private System.Windows.Forms.Button btnCameraUF;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnLogout;
         private System.Windows.Forms.Timer timer1;
@@ -364,6 +357,7 @@
         private System.Windows.Forms.Panel pnlReportUF;
         private System.Windows.Forms.Panel pnlControlUF;
         private System.Windows.Forms.Panel pnlMonitorUF;
-        private System.Windows.Forms.Panel pnlCameraUF;
+        private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.Label lbPLCStatusUF;
     }
 }

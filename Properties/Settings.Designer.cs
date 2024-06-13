@@ -8,22 +8,366 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Giaodiendieukhien.Properties
-{
-
-
+namespace Giaodiendieukhien.Properties {
+    
+    
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "11.0.0.0")]
-    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase
-    {
-
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.VisualStudio.Editors.SettingsDesigner.SettingsSingleFileGenerator", "17.9.0.0")]
+    internal sealed partial class Settings : global::System.Configuration.ApplicationSettingsBase {
+        
         private static Settings defaultInstance = ((Settings)(global::System.Configuration.ApplicationSettingsBase.Synchronized(new Settings())));
-
-        public static Settings Default
-        {
-            get
-            {
+        
+        public static Settings Default {
+            get {
                 return defaultInstance;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string IP_PLC {
+            get {
+                return ((string)(this["IP_PLC"]));
+            }
+            set {
+                this["IP_PLC"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string PLC_Type {
+            get {
+                return ((string)(this["PLC_Type"]));
+            }
+            set {
+                this["PLC_Type"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int PLC_Scantime {
+            get {
+                return ((int)(this["PLC_Scantime"]));
+            }
+            set {
+                this["PLC_Scantime"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int PLC_Timeout {
+            get {
+                return ((int)(this["PLC_Timeout"]));
+            }
+            set {
+                this["PLC_Timeout"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int PLC_Reconnect_Time {
+            get {
+                return ((int)(this["PLC_Reconnect_Time"]));
+            }
+            set {
+                this["PLC_Reconnect_Time"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute(".\\SQLEXPRESS")]
+        public string Data_ServerName {
+            get {
+                return ((string)(this["Data_ServerName"]));
+            }
+            set {
+                this["Data_ServerName"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Data_Name {
+            get {
+                return ((string)(this["Data_Name"]));
+            }
+            set {
+                this["Data_Name"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("sa")]
+        public string Data_LoginUser {
+            get {
+                return ((string)(this["Data_LoginUser"]));
+            }
+            set {
+                this["Data_LoginUser"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("123456")]
+        public string Data_Password {
+            get {
+                return ((string)(this["Data_Password"]));
+            }
+            set {
+                this["Data_Password"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5000")]
+        public float StartAutoTime_C1 {
+            get {
+                return ((float)(this["StartAutoTime_C1"]));
+            }
+            set {
+                this["StartAutoTime_C1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public float StartAutoTime_C2 {
+            get {
+                return ((float)(this["StartAutoTime_C2"]));
+            }
+            set {
+                this["StartAutoTime_C2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public float StopAutoTime_C1 {
+            get {
+                return ((float)(this["StopAutoTime_C1"]));
+            }
+            set {
+                this["StopAutoTime_C1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("5000")]
+        public float StopAutoTime_C2 {
+            get {
+                return ((float)(this["StopAutoTime_C2"]));
+            }
+            set {
+                this["StopAutoTime_C2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public float StartManTime_C1 {
+            get {
+                return ((float)(this["StartManTime_C1"]));
+            }
+            set {
+                this["StartManTime_C1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public float StartManTime_C2 {
+            get {
+                return ((float)(this["StartManTime_C2"]));
+            }
+            set {
+                this["StartManTime_C2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public float StopManTime_C1 {
+            get {
+                return ((float)(this["StopManTime_C1"]));
+            }
+            set {
+                this["StopManTime_C1"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public float StopManTime_C2 {
+            get {
+                return ((float)(this["StopManTime_C2"]));
+            }
+            set {
+                this["StopManTime_C2"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public float Stepmotor01_Thuan_Position {
+            get {
+                return ((float)(this["Stepmotor01_Thuan_Position"]));
+            }
+            set {
+                this["Stepmotor01_Thuan_Position"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public float Stepmotor01_Nghich_Position {
+            get {
+                return ((float)(this["Stepmotor01_Nghich_Position"]));
+            }
+            set {
+                this["Stepmotor01_Nghich_Position"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public float Stepmotor02_Thuan_Position {
+            get {
+                return ((float)(this["Stepmotor02_Thuan_Position"]));
+            }
+            set {
+                this["Stepmotor02_Thuan_Position"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public float Stepmotor02_Nghich_Position {
+            get {
+                return ((float)(this["Stepmotor02_Nghich_Position"]));
+            }
+            set {
+                this["Stepmotor02_Nghich_Position"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1000")]
+        public int Stepmotor01_Speed {
+            get {
+                return ((int)(this["Stepmotor01_Speed"]));
+            }
+            set {
+                this["Stepmotor01_Speed"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("1000")]
+        public int Stepmotor02_Speed {
+            get {
+                return ((int)(this["Stepmotor02_Speed"]));
+            }
+            set {
+                this["Stepmotor02_Speed"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("999")]
+        public float Loadcell1_Max {
+            get {
+                return ((float)(this["Loadcell1_Max"]));
+            }
+            set {
+                this["Loadcell1_Max"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("999")]
+        public float Loadcell2_Max {
+            get {
+                return ((float)(this["Loadcell2_Max"]));
+            }
+            set {
+                this["Loadcell2_Max"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public float Loadcell1_AutoZeroingTime {
+            get {
+                return ((float)(this["Loadcell1_AutoZeroingTime"]));
+            }
+            set {
+                this["Loadcell1_AutoZeroingTime"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public float Loadcell2_AutoZeroingTime {
+            get {
+                return ((float)(this["Loadcell2_AutoZeroingTime"]));
+            }
+            set {
+                this["Loadcell2_AutoZeroingTime"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public float Loadcell1_AutoZeroingWeight {
+            get {
+                return ((float)(this["Loadcell1_AutoZeroingWeight"]));
+            }
+            set {
+                this["Loadcell1_AutoZeroingWeight"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public float Loadcell2_AutoZeroingWeight {
+            get {
+                return ((float)(this["Loadcell2_AutoZeroingWeight"]));
+            }
+            set {
+                this["Loadcell2_AutoZeroingWeight"] = value;
             }
         }
     }

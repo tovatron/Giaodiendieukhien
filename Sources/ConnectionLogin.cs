@@ -8,7 +8,7 @@ namespace Giaodiendieukhien
 {
     class ConnectionLogin
     {
-        private static string StringConnection = @"Data Source=.\SQLEXPRESS;Initial Catalog=Login_account;User ID=sa;Integrated Security = True";
+        private static string StringConnection = @"Data Source=.\SQLEXPRESS;Initial Catalog=Login_account;User ID=sa;Password=123456";
         public static SqlConnection GetSqlConnection()
         {
             return new SqlConnection(StringConnection);

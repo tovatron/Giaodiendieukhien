@@ -273,6 +273,7 @@
             this.Controls.Add(this.groupBox4);
             this.Name = "UC_Baocao";
             this.Size = new System.Drawing.Size(1920, 970);
+            this.Load += new System.EventHandler(this.UC_Baocao_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);

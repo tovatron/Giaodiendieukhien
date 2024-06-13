@@ -103,6 +103,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sources\Status_Display.cs" />
+    <Compile Include="Sources\Timer_Stop.cs" />
     <Compile Include="Sources\TruyvanLogin.cs" />
     <Compile Include="UserControls\UC_Baocao.cs">
       <SubType>UserControl</SubType>
@@ -115,12 +117,6 @@
     </Compile>
     <Compile Include="UserControls\UC_Caidat.Designer.cs">
       <DependentUpon>UC_Caidat.cs</DependentUpon>
-    </Compile>
-    <Compile Include="UserControls\UC_Camera.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="UserControls\UC_Camera.Designer.cs">
-      <DependentUpon>UC_Camera.cs</DependentUpon>
     </Compile>
     <Compile Include="UserControls\UC_Dieukhien.cs">
       <SubType>UserControl</SubType>
@@ -175,9 +171,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_Caidat.resx">
       <DependentUpon>UC_Caidat.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="UserControls\UC_Camera.resx">
-      <DependentUpon>UC_Camera.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UserControls\UC_Dieukhien.resx">
       <DependentUpon>UC_Dieukhien.cs</DependentUpon>

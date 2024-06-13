@@ -12,9 +12,14 @@ namespace Giaodiendieukhien
 {
     public partial class UC_Baocao : UserControl
     {
+        public static UC_Baocao UCReport;
         public UC_Baocao()
         {
             InitializeComponent();
+        }
+
+        private void UC_Baocao_Load(object sender, EventArgs e)
+        {
         }
     }
 }

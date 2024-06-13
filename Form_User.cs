@@ -22,11 +22,11 @@ namespace Giaodiendieukhien
         private void Form_User_Load(object sender, EventArgs e)
         {
             timer1.Start();
-            add_usercontrol(new UC_Camera());
+            add_usercontrol(new UC_Dieukhien());
             KEPServerEX_Connect();
         }
         //========================================KEPServerEX CONNECT======================================
-         static int tagNumber = 31;       // Cài đặt số lượng tag của project
+         static int tagNumber = 12;       // Cài đặt số lượng tag của project
          static int PLCscantime = 1000;  // Cài đặt thời gian quét PLC
 
         // Gọi các kết nối OPC
@@ -89,10 +89,6 @@ namespace Giaodiendieukhien
             Button btn = (Button)sender;
             switch (btn.Name)
             {
-                case "btnCameraUF":
-                    add_usercontrol(new UC_Camera());
-                    pnlCameraUF.BackColor = Color.Lime;
-                    break;
                 case "btnMonitorUF":
                     add_usercontrol(new UC_Giamsat());
                     pnlMonitorUF.BackColor = Color.Lime;

@@ -30,60 +30,63 @@
         {
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
+            this.btnSaveLoadcell2 = new System.Windows.Forms.Button();
+            this.btnEditLoadcell2 = new System.Windows.Forms.Button();
+            this.btnSaveLoadcell1 = new System.Windows.Forms.Button();
+            this.btnEditLoadcell1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox8 = new System.Windows.Forms.TextBox();
-            this.textBox7 = new System.Windows.Forms.TextBox();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txtBoxBalanceWeightLoadcell2 = new System.Windows.Forms.TextBox();
+            this.txtBoxBalanceWeightLoadcell1 = new System.Windows.Forms.TextBox();
+            this.txtBoxBalanceTimeLoadcell2 = new System.Windows.Forms.TextBox();
+            this.txtBoxBalanceTimeLoadcell1 = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtBoxMaxLoadcell2 = new System.Windows.Forms.TextBox();
+            this.txtBoxMaxLoadcell1 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txtBoxPulseDownStepmotor02 = new System.Windows.Forms.TextBox();
+            this.txtBoxPulseDownStepmotor01 = new System.Windows.Forms.TextBox();
+            this.txtBoxVelocityStepmotor02 = new System.Windows.Forms.TextBox();
+            this.txtBoxVelocityStepmotor01 = new System.Windows.Forms.TextBox();
+            this.label22 = new System.Windows.Forms.Label();
+            this.txtBoxPulseUpStepmotor02 = new System.Windows.Forms.TextBox();
+            this.txtBoxPulseUpStepmotor01 = new System.Windows.Forms.TextBox();
+            this.btnSaveStepmotor02 = new System.Windows.Forms.Button();
+            this.btnEditStepmotor02 = new System.Windows.Forms.Button();
+            this.btnSaveStepmotor01 = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnEditStepmotor01 = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.label20 = new System.Windows.Forms.Label();
-            this.label21 = new System.Windows.Forms.Label();
-            this.textBox19 = new System.Windows.Forms.TextBox();
-            this.textBox20 = new System.Windows.Forms.TextBox();
-            this.textBox21 = new System.Windows.Forms.TextBox();
-            this.textBox22 = new System.Windows.Forms.TextBox();
-            this.textBox23 = new System.Windows.Forms.TextBox();
-            this.textBox24 = new System.Windows.Forms.TextBox();
-            this.textBox25 = new System.Windows.Forms.TextBox();
-            this.textBox26 = new System.Windows.Forms.TextBox();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.textBox15 = new System.Windows.Forms.TextBox();
-            this.textBox16 = new System.Windows.Forms.TextBox();
-            this.textBox17 = new System.Windows.Forms.TextBox();
-            this.textBox18 = new System.Windows.Forms.TextBox();
-            this.textBox14 = new System.Windows.Forms.TextBox();
-            this.textBox13 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.btnSaveManStopTime = new System.Windows.Forms.Button();
+            this.btnEditManStopTime = new System.Windows.Forms.Button();
+            this.btnSaveAutoStopTime = new System.Windows.Forms.Button();
+            this.btnEditAutoStopTime = new System.Windows.Forms.Button();
+            this.txtBoxManStopTimeC2 = new System.Windows.Forms.TextBox();
+            this.txtBoxManStartTimeC2 = new System.Windows.Forms.TextBox();
+            this.txtBoxManStopTimeC1 = new System.Windows.Forms.TextBox();
+            this.txtBoxManStartTimeC1 = new System.Windows.Forms.TextBox();
+            this.txtBoxAutoStopTimeC2 = new System.Windows.Forms.TextBox();
+            this.txtBoxAutoStartTimeC2 = new System.Windows.Forms.TextBox();
+            this.btnSaveManStartTime = new System.Windows.Forms.Button();
+            this.btnEditManStartTime = new System.Windows.Forms.Button();
+            this.btnSaveAutoStartTime = new System.Windows.Forms.Button();
+            this.btnEditAutoStartTime = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.txtBoxAutoStopTimeC1 = new System.Windows.Forms.TextBox();
+            this.txtBoxAutoStartTimeC1 = new System.Windows.Forms.TextBox();
             this.label17 = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label18 = new System.Windows.Forms.Label();
-            this.label19 = new System.Windows.Forms.Label();
             this.groupBox5.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -93,7 +96,7 @@
             // 
             this.label16.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label16.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(280, 0);
+            this.label16.Location = new System.Drawing.Point(357, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(181, 28);
             this.label16.TabIndex = 53;
@@ -102,102 +105,142 @@
             // 
             // groupBox5
             // 
+            this.groupBox5.Controls.Add(this.btnSaveLoadcell2);
+            this.groupBox5.Controls.Add(this.btnEditLoadcell2);
+            this.groupBox5.Controls.Add(this.btnSaveLoadcell1);
+            this.groupBox5.Controls.Add(this.btnEditLoadcell1);
             this.groupBox5.Controls.Add(this.label4);
-            this.groupBox5.Controls.Add(this.textBox8);
+            this.groupBox5.Controls.Add(this.txtBoxBalanceWeightLoadcell2);
             this.groupBox5.Controls.Add(this.label16);
-            this.groupBox5.Controls.Add(this.textBox7);
-            this.groupBox5.Controls.Add(this.textBox6);
-            this.groupBox5.Controls.Add(this.textBox5);
+            this.groupBox5.Controls.Add(this.txtBoxBalanceWeightLoadcell1);
+            this.groupBox5.Controls.Add(this.txtBoxBalanceTimeLoadcell2);
+            this.groupBox5.Controls.Add(this.txtBoxBalanceTimeLoadcell1);
             this.groupBox5.Controls.Add(this.label3);
-            this.groupBox5.Controls.Add(this.button2);
-            this.groupBox5.Controls.Add(this.button1);
             this.groupBox5.Controls.Add(this.label2);
-            this.groupBox5.Controls.Add(this.textBox2);
-            this.groupBox5.Controls.Add(this.textBox1);
+            this.groupBox5.Controls.Add(this.txtBoxMaxLoadcell2);
+            this.groupBox5.Controls.Add(this.txtBoxMaxLoadcell1);
             this.groupBox5.Controls.Add(this.label1);
             this.groupBox5.Controls.Add(this.label15);
             this.groupBox5.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox5.Location = new System.Drawing.Point(3, 233);
+            this.groupBox5.Location = new System.Drawing.Point(3, 687);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(744, 221);
+            this.groupBox5.Size = new System.Drawing.Size(887, 221);
             this.groupBox5.TabIndex = 107;
             this.groupBox5.TabStop = false;
+            // 
+            // btnSaveLoadcell2
+            // 
+            this.btnSaveLoadcell2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnSaveLoadcell2.Enabled = false;
+            this.btnSaveLoadcell2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveLoadcell2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveLoadcell2.Location = new System.Drawing.Point(767, 129);
+            this.btnSaveLoadcell2.Name = "btnSaveLoadcell2";
+            this.btnSaveLoadcell2.Size = new System.Drawing.Size(78, 38);
+            this.btnSaveLoadcell2.TabIndex = 123;
+            this.btnSaveLoadcell2.Text = "Save";
+            this.btnSaveLoadcell2.UseVisualStyleBackColor = false;
+            this.btnSaveLoadcell2.Click += new System.EventHandler(this.btnSaveLoadcell2_Click);
+            // 
+            // btnEditLoadcell2
+            // 
+            this.btnEditLoadcell2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnEditLoadcell2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditLoadcell2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditLoadcell2.Location = new System.Drawing.Point(672, 129);
+            this.btnEditLoadcell2.Name = "btnEditLoadcell2";
+            this.btnEditLoadcell2.Size = new System.Drawing.Size(78, 38);
+            this.btnEditLoadcell2.TabIndex = 124;
+            this.btnEditLoadcell2.Text = "Edit";
+            this.btnEditLoadcell2.UseVisualStyleBackColor = false;
+            this.btnEditLoadcell2.Click += new System.EventHandler(this.btnEditLoadcell2_Click);
+            // 
+            // btnSaveLoadcell1
+            // 
+            this.btnSaveLoadcell1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnSaveLoadcell1.Enabled = false;
+            this.btnSaveLoadcell1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveLoadcell1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveLoadcell1.Location = new System.Drawing.Point(767, 79);
+            this.btnSaveLoadcell1.Name = "btnSaveLoadcell1";
+            this.btnSaveLoadcell1.Size = new System.Drawing.Size(78, 38);
+            this.btnSaveLoadcell1.TabIndex = 122;
+            this.btnSaveLoadcell1.Text = "Save";
+            this.btnSaveLoadcell1.UseVisualStyleBackColor = false;
+            this.btnSaveLoadcell1.Click += new System.EventHandler(this.btnSaveLoadcell1_Click);
+            // 
+            // btnEditLoadcell1
+            // 
+            this.btnEditLoadcell1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnEditLoadcell1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditLoadcell1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditLoadcell1.Location = new System.Drawing.Point(672, 79);
+            this.btnEditLoadcell1.Name = "btnEditLoadcell1";
+            this.btnEditLoadcell1.Size = new System.Drawing.Size(78, 38);
+            this.btnEditLoadcell1.TabIndex = 122;
+            this.btnEditLoadcell1.Text = "Edit";
+            this.btnEditLoadcell1.UseVisualStyleBackColor = false;
+            this.btnEditLoadcell1.Click += new System.EventHandler(this.btnEditLoadcell1_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(446, 51);
+            this.label4.Location = new System.Drawing.Point(479, 51);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(147, 19);
             this.label4.TabIndex = 115;
             this.label4.Text = "Khối lượng trừ bì (g)";
             // 
-            // textBox8
+            // txtBoxBalanceWeightLoadcell2
             // 
-            this.textBox8.Location = new System.Drawing.Point(456, 134);
-            this.textBox8.Name = "textBox8";
-            this.textBox8.Size = new System.Drawing.Size(113, 29);
-            this.textBox8.TabIndex = 114;
-            this.textBox8.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBoxBalanceWeightLoadcell2.Enabled = false;
+            this.txtBoxBalanceWeightLoadcell2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxBalanceWeightLoadcell2.Location = new System.Drawing.Point(496, 134);
+            this.txtBoxBalanceWeightLoadcell2.Name = "txtBoxBalanceWeightLoadcell2";
+            this.txtBoxBalanceWeightLoadcell2.Size = new System.Drawing.Size(113, 29);
+            this.txtBoxBalanceWeightLoadcell2.TabIndex = 114;
+            this.txtBoxBalanceWeightLoadcell2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox7
+            // txtBoxBalanceWeightLoadcell1
             // 
-            this.textBox7.Location = new System.Drawing.Point(456, 84);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(113, 29);
-            this.textBox7.TabIndex = 113;
-            this.textBox7.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBoxBalanceWeightLoadcell1.Enabled = false;
+            this.txtBoxBalanceWeightLoadcell1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxBalanceWeightLoadcell1.Location = new System.Drawing.Point(496, 84);
+            this.txtBoxBalanceWeightLoadcell1.Name = "txtBoxBalanceWeightLoadcell1";
+            this.txtBoxBalanceWeightLoadcell1.Size = new System.Drawing.Size(113, 29);
+            this.txtBoxBalanceWeightLoadcell1.TabIndex = 113;
+            this.txtBoxBalanceWeightLoadcell1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox6
+            // txtBoxBalanceTimeLoadcell2
             // 
-            this.textBox6.Location = new System.Drawing.Point(292, 134);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(113, 29);
-            this.textBox6.TabIndex = 112;
-            this.textBox6.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBoxBalanceTimeLoadcell2.Enabled = false;
+            this.txtBoxBalanceTimeLoadcell2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxBalanceTimeLoadcell2.Location = new System.Drawing.Point(305, 134);
+            this.txtBoxBalanceTimeLoadcell2.Name = "txtBoxBalanceTimeLoadcell2";
+            this.txtBoxBalanceTimeLoadcell2.Size = new System.Drawing.Size(113, 29);
+            this.txtBoxBalanceTimeLoadcell2.TabIndex = 112;
+            this.txtBoxBalanceTimeLoadcell2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox5
+            // txtBoxBalanceTimeLoadcell1
             // 
-            this.textBox5.Location = new System.Drawing.Point(292, 84);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(113, 29);
-            this.textBox5.TabIndex = 111;
-            this.textBox5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBoxBalanceTimeLoadcell1.Enabled = false;
+            this.txtBoxBalanceTimeLoadcell1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxBalanceTimeLoadcell1.Location = new System.Drawing.Point(305, 84);
+            this.txtBoxBalanceTimeLoadcell1.Name = "txtBoxBalanceTimeLoadcell1";
+            this.txtBoxBalanceTimeLoadcell1.Size = new System.Drawing.Size(113, 29);
+            this.txtBoxBalanceTimeLoadcell1.TabIndex = 111;
+            this.txtBoxBalanceTimeLoadcell1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(270, 51);
+            this.label3.Location = new System.Drawing.Point(276, 51);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(168, 19);
             this.label3.TabIndex = 110;
             this.label3.Text = "Thời gian cân bằng (ms)";
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button2.Location = new System.Drawing.Point(616, 134);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(96, 38);
-            this.button2.TabIndex = 109;
-            this.button2.Text = "Edit";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(616, 79);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(96, 38);
-            this.button1.TabIndex = 108;
-            this.button1.Text = "Edit";
-            this.button1.UseVisualStyleBackColor = false;
             // 
             // label2
             // 
@@ -209,21 +252,25 @@
             this.label2.TabIndex = 104;
             this.label2.Text = "Loadcell Maximum (g)";
             // 
-            // textBox2
+            // txtBoxMaxLoadcell2
             // 
-            this.textBox2.Location = new System.Drawing.Point(124, 134);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(113, 29);
-            this.textBox2.TabIndex = 103;
-            this.textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBoxMaxLoadcell2.Enabled = false;
+            this.txtBoxMaxLoadcell2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxMaxLoadcell2.Location = new System.Drawing.Point(124, 134);
+            this.txtBoxMaxLoadcell2.Name = "txtBoxMaxLoadcell2";
+            this.txtBoxMaxLoadcell2.Size = new System.Drawing.Size(113, 29);
+            this.txtBoxMaxLoadcell2.TabIndex = 103;
+            this.txtBoxMaxLoadcell2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox1
+            // txtBoxMaxLoadcell1
             // 
-            this.textBox1.Location = new System.Drawing.Point(124, 84);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(113, 29);
-            this.textBox1.TabIndex = 102;
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBoxMaxLoadcell1.Enabled = false;
+            this.txtBoxMaxLoadcell1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxMaxLoadcell1.Location = new System.Drawing.Point(124, 84);
+            this.txtBoxMaxLoadcell1.Name = "txtBoxMaxLoadcell1";
+            this.txtBoxMaxLoadcell1.Size = new System.Drawing.Size(113, 29);
+            this.txtBoxMaxLoadcell1.TabIndex = 102;
+            this.txtBoxMaxLoadcell1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
@@ -248,21 +295,26 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label11);
-            this.groupBox1.Controls.Add(this.textBox9);
-            this.groupBox1.Controls.Add(this.textBox10);
+            this.groupBox1.Controls.Add(this.txtBoxPulseDownStepmotor02);
+            this.groupBox1.Controls.Add(this.txtBoxPulseDownStepmotor01);
+            this.groupBox1.Controls.Add(this.txtBoxVelocityStepmotor02);
+            this.groupBox1.Controls.Add(this.txtBoxVelocityStepmotor01);
+            this.groupBox1.Controls.Add(this.label22);
+            this.groupBox1.Controls.Add(this.txtBoxPulseUpStepmotor02);
+            this.groupBox1.Controls.Add(this.txtBoxPulseUpStepmotor01);
+            this.groupBox1.Controls.Add(this.btnSaveStepmotor02);
+            this.groupBox1.Controls.Add(this.btnEditStepmotor02);
+            this.groupBox1.Controls.Add(this.btnSaveStepmotor01);
             this.groupBox1.Controls.Add(this.label10);
-            this.groupBox1.Controls.Add(this.button3);
-            this.groupBox1.Controls.Add(this.button4);
+            this.groupBox1.Controls.Add(this.btnEditStepmotor01);
             this.groupBox1.Controls.Add(this.label5);
-            this.groupBox1.Controls.Add(this.textBox3);
-            this.groupBox1.Controls.Add(this.textBox4);
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Controls.Add(this.label7);
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(3, 3);
+            this.groupBox1.Location = new System.Drawing.Point(3, 457);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(744, 224);
+            this.groupBox1.Size = new System.Drawing.Size(887, 224);
             this.groupBox1.TabIndex = 110;
             this.groupBox1.TabStop = false;
             // 
@@ -270,29 +322,122 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(253, 52);
+            this.label11.Location = new System.Drawing.Point(524, 52);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(107, 19);
-            this.label11.TabIndex = 118;
-            this.label11.Text = "Pulse (current)";
+            this.label11.Size = new System.Drawing.Size(122, 19);
+            this.label11.TabIndex = 131;
+            this.label11.Text = "Tốc độ (Velocity)";
             // 
-            // textBox9
+            // txtBoxPulseDownStepmotor02
             // 
-            this.textBox9.Location = new System.Drawing.Point(253, 134);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.ReadOnly = true;
-            this.textBox9.Size = new System.Drawing.Size(113, 29);
-            this.textBox9.TabIndex = 117;
-            this.textBox9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBoxPulseDownStepmotor02.Enabled = false;
+            this.txtBoxPulseDownStepmotor02.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxPulseDownStepmotor02.Location = new System.Drawing.Point(369, 129);
+            this.txtBoxPulseDownStepmotor02.Name = "txtBoxPulseDownStepmotor02";
+            this.txtBoxPulseDownStepmotor02.Size = new System.Drawing.Size(125, 29);
+            this.txtBoxPulseDownStepmotor02.TabIndex = 130;
+            this.txtBoxPulseDownStepmotor02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox10
+            // txtBoxPulseDownStepmotor01
             // 
-            this.textBox10.Location = new System.Drawing.Point(253, 84);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.ReadOnly = true;
-            this.textBox10.Size = new System.Drawing.Size(113, 29);
-            this.textBox10.TabIndex = 116;
-            this.textBox10.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBoxPulseDownStepmotor01.Enabled = false;
+            this.txtBoxPulseDownStepmotor01.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxPulseDownStepmotor01.Location = new System.Drawing.Point(369, 84);
+            this.txtBoxPulseDownStepmotor01.Name = "txtBoxPulseDownStepmotor01";
+            this.txtBoxPulseDownStepmotor01.Size = new System.Drawing.Size(125, 29);
+            this.txtBoxPulseDownStepmotor01.TabIndex = 129;
+            this.txtBoxPulseDownStepmotor01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtBoxVelocityStepmotor02
+            // 
+            this.txtBoxVelocityStepmotor02.Enabled = false;
+            this.txtBoxVelocityStepmotor02.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxVelocityStepmotor02.Location = new System.Drawing.Point(523, 129);
+            this.txtBoxVelocityStepmotor02.Name = "txtBoxVelocityStepmotor02";
+            this.txtBoxVelocityStepmotor02.Size = new System.Drawing.Size(125, 29);
+            this.txtBoxVelocityStepmotor02.TabIndex = 128;
+            this.txtBoxVelocityStepmotor02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtBoxVelocityStepmotor01
+            // 
+            this.txtBoxVelocityStepmotor01.Enabled = false;
+            this.txtBoxVelocityStepmotor01.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxVelocityStepmotor01.Location = new System.Drawing.Point(523, 84);
+            this.txtBoxVelocityStepmotor01.Name = "txtBoxVelocityStepmotor01";
+            this.txtBoxVelocityStepmotor01.Size = new System.Drawing.Size(125, 29);
+            this.txtBoxVelocityStepmotor01.TabIndex = 127;
+            this.txtBoxVelocityStepmotor01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label22
+            // 
+            this.label22.AutoSize = true;
+            this.label22.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label22.Location = new System.Drawing.Point(384, 52);
+            this.label22.Name = "label22";
+            this.label22.Size = new System.Drawing.Size(97, 19);
+            this.label22.TabIndex = 126;
+            this.label22.Text = "Pulse (Down)";
+            // 
+            // txtBoxPulseUpStepmotor02
+            // 
+            this.txtBoxPulseUpStepmotor02.Enabled = false;
+            this.txtBoxPulseUpStepmotor02.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxPulseUpStepmotor02.Location = new System.Drawing.Point(216, 129);
+            this.txtBoxPulseUpStepmotor02.Name = "txtBoxPulseUpStepmotor02";
+            this.txtBoxPulseUpStepmotor02.Size = new System.Drawing.Size(125, 29);
+            this.txtBoxPulseUpStepmotor02.TabIndex = 123;
+            this.txtBoxPulseUpStepmotor02.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // txtBoxPulseUpStepmotor01
+            // 
+            this.txtBoxPulseUpStepmotor01.Enabled = false;
+            this.txtBoxPulseUpStepmotor01.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxPulseUpStepmotor01.Location = new System.Drawing.Point(216, 84);
+            this.txtBoxPulseUpStepmotor01.Name = "txtBoxPulseUpStepmotor01";
+            this.txtBoxPulseUpStepmotor01.Size = new System.Drawing.Size(125, 29);
+            this.txtBoxPulseUpStepmotor01.TabIndex = 122;
+            this.txtBoxPulseUpStepmotor01.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // btnSaveStepmotor02
+            // 
+            this.btnSaveStepmotor02.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnSaveStepmotor02.Enabled = false;
+            this.btnSaveStepmotor02.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveStepmotor02.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveStepmotor02.Location = new System.Drawing.Point(767, 129);
+            this.btnSaveStepmotor02.Name = "btnSaveStepmotor02";
+            this.btnSaveStepmotor02.Size = new System.Drawing.Size(78, 38);
+            this.btnSaveStepmotor02.TabIndex = 121;
+            this.btnSaveStepmotor02.Text = "Save";
+            this.btnSaveStepmotor02.UseVisualStyleBackColor = false;
+            this.btnSaveStepmotor02.Click += new System.EventHandler(this.btnSaveStepmotor02_Click);
+            // 
+            // btnEditStepmotor02
+            // 
+            this.btnEditStepmotor02.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnEditStepmotor02.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditStepmotor02.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditStepmotor02.Location = new System.Drawing.Point(672, 129);
+            this.btnEditStepmotor02.Name = "btnEditStepmotor02";
+            this.btnEditStepmotor02.Size = new System.Drawing.Size(78, 38);
+            this.btnEditStepmotor02.TabIndex = 120;
+            this.btnEditStepmotor02.Text = "Edit";
+            this.btnEditStepmotor02.UseVisualStyleBackColor = false;
+            this.btnEditStepmotor02.Click += new System.EventHandler(this.btnEditStepmotor02_Click);
+            // 
+            // btnSaveStepmotor01
+            // 
+            this.btnSaveStepmotor01.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnSaveStepmotor01.Enabled = false;
+            this.btnSaveStepmotor01.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveStepmotor01.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveStepmotor01.Location = new System.Drawing.Point(767, 79);
+            this.btnSaveStepmotor01.Name = "btnSaveStepmotor01";
+            this.btnSaveStepmotor01.Size = new System.Drawing.Size(78, 38);
+            this.btnSaveStepmotor01.TabIndex = 119;
+            this.btnSaveStepmotor01.Text = "Save";
+            this.btnSaveStepmotor01.UseVisualStyleBackColor = false;
+            this.btnSaveStepmotor01.Click += new System.EventHandler(this.btnSaveStepmotor01_Click);
             // 
             // label10
             // 
@@ -305,57 +450,28 @@
             this.label10.Text = "Lưu ý: Cần cẩn thận khi thay đổi giá trị xung (pulse) vì có thể ảnh hưởng đến mô " +
     "hình.";
             // 
-            // button3
+            // btnEditStepmotor01
             // 
-            this.button3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button3.Location = new System.Drawing.Point(584, 129);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(96, 38);
-            this.button3.TabIndex = 109;
-            this.button3.Text = "Edit";
-            this.button3.UseVisualStyleBackColor = false;
-            // 
-            // button4
-            // 
-            this.button4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(584, 79);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(96, 38);
-            this.button4.TabIndex = 108;
-            this.button4.Text = "Edit";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnEditStepmotor01.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnEditStepmotor01.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditStepmotor01.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditStepmotor01.Location = new System.Drawing.Point(672, 79);
+            this.btnEditStepmotor01.Name = "btnEditStepmotor01";
+            this.btnEditStepmotor01.Size = new System.Drawing.Size(78, 38);
+            this.btnEditStepmotor01.TabIndex = 108;
+            this.btnEditStepmotor01.Text = "Edit";
+            this.btnEditStepmotor01.UseVisualStyleBackColor = false;
+            this.btnEditStepmotor01.Click += new System.EventHandler(this.btnEditStepmotor01_Click);
             // 
             // label5
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(426, 52);
+            this.label5.Location = new System.Drawing.Point(239, 52);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(104, 19);
+            this.label5.Size = new System.Drawing.Size(78, 19);
             this.label5.TabIndex = 104;
-            this.label5.Text = "Pulse (setting)";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(425, 134);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(113, 29);
-            this.textBox3.TabIndex = 103;
-            this.textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox4
-            // 
-            this.textBox4.Location = new System.Drawing.Point(425, 84);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(113, 29);
-            this.textBox4.TabIndex = 102;
-            this.textBox4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label5.Text = "Pulse (Up)";
             // 
             // label6
             // 
@@ -381,7 +497,7 @@
             // 
             this.label8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label8.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(280, 0);
+            this.label8.Location = new System.Drawing.Point(357, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(181, 28);
             this.label8.TabIndex = 53;
@@ -390,236 +506,243 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnSaveManStopTime);
+            this.groupBox2.Controls.Add(this.btnEditManStopTime);
+            this.groupBox2.Controls.Add(this.btnSaveAutoStopTime);
+            this.groupBox2.Controls.Add(this.btnEditAutoStopTime);
+            this.groupBox2.Controls.Add(this.txtBoxManStopTimeC2);
+            this.groupBox2.Controls.Add(this.txtBoxManStartTimeC2);
+            this.groupBox2.Controls.Add(this.txtBoxManStopTimeC1);
+            this.groupBox2.Controls.Add(this.txtBoxManStartTimeC1);
+            this.groupBox2.Controls.Add(this.txtBoxAutoStopTimeC2);
+            this.groupBox2.Controls.Add(this.txtBoxAutoStartTimeC2);
+            this.groupBox2.Controls.Add(this.btnSaveManStartTime);
+            this.groupBox2.Controls.Add(this.btnEditManStartTime);
+            this.groupBox2.Controls.Add(this.btnSaveAutoStartTime);
+            this.groupBox2.Controls.Add(this.btnEditAutoStartTime);
             this.groupBox2.Controls.Add(this.label19);
             this.groupBox2.Controls.Add(this.label18);
-            this.groupBox2.Controls.Add(this.label20);
-            this.groupBox2.Controls.Add(this.label21);
-            this.groupBox2.Controls.Add(this.textBox19);
-            this.groupBox2.Controls.Add(this.textBox20);
-            this.groupBox2.Controls.Add(this.textBox21);
-            this.groupBox2.Controls.Add(this.textBox22);
-            this.groupBox2.Controls.Add(this.textBox23);
-            this.groupBox2.Controls.Add(this.textBox24);
-            this.groupBox2.Controls.Add(this.textBox25);
-            this.groupBox2.Controls.Add(this.textBox26);
-            this.groupBox2.Controls.Add(this.button6);
-            this.groupBox2.Controls.Add(this.button5);
-            this.groupBox2.Controls.Add(this.textBox15);
-            this.groupBox2.Controls.Add(this.textBox16);
-            this.groupBox2.Controls.Add(this.textBox17);
-            this.groupBox2.Controls.Add(this.textBox18);
-            this.groupBox2.Controls.Add(this.textBox14);
-            this.groupBox2.Controls.Add(this.textBox13);
-            this.groupBox2.Controls.Add(this.textBox12);
-            this.groupBox2.Controls.Add(this.textBox11);
+            this.groupBox2.Controls.Add(this.txtBoxAutoStopTimeC1);
+            this.groupBox2.Controls.Add(this.txtBoxAutoStartTimeC1);
             this.groupBox2.Controls.Add(this.label17);
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.label13);
             this.groupBox2.Controls.Add(this.label9);
             this.groupBox2.Controls.Add(this.label12);
             this.groupBox2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(753, 6);
+            this.groupBox2.Location = new System.Drawing.Point(3, 3);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1136, 448);
+            this.groupBox2.Size = new System.Drawing.Size(887, 448);
             this.groupBox2.TabIndex = 116;
             this.groupBox2.TabStop = false;
             // 
-            // label20
+            // btnSaveManStopTime
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.Location = new System.Drawing.Point(967, 49);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(156, 19);
-            this.label20.TabIndex = 139;
-            this.label20.Text = "Conveyor 02 (current)";
-            this.label20.Click += new System.EventHandler(this.label20_Click);
+            this.btnSaveManStopTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnSaveManStopTime.Enabled = false;
+            this.btnSaveManStopTime.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveManStopTime.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveManStopTime.Location = new System.Drawing.Point(767, 301);
+            this.btnSaveManStopTime.Name = "btnSaveManStopTime";
+            this.btnSaveManStopTime.Size = new System.Drawing.Size(78, 38);
+            this.btnSaveManStopTime.TabIndex = 154;
+            this.btnSaveManStopTime.Text = "Save";
+            this.btnSaveManStopTime.UseVisualStyleBackColor = false;
+            this.btnSaveManStopTime.Click += new System.EventHandler(this.btnSaveManStopTime_Click);
             // 
-            // label21
+            // btnEditManStopTime
             // 
-            this.label21.AutoSize = true;
-            this.label21.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label21.Location = new System.Drawing.Point(763, 49);
-            this.label21.Name = "label21";
-            this.label21.Size = new System.Drawing.Size(156, 19);
-            this.label21.TabIndex = 138;
-            this.label21.Text = "Conveyor 01 (current)";
+            this.btnEditManStopTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnEditManStopTime.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditManStopTime.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditManStopTime.Location = new System.Drawing.Point(672, 301);
+            this.btnEditManStopTime.Name = "btnEditManStopTime";
+            this.btnEditManStopTime.Size = new System.Drawing.Size(78, 38);
+            this.btnEditManStopTime.TabIndex = 155;
+            this.btnEditManStopTime.Text = "Edit";
+            this.btnEditManStopTime.UseVisualStyleBackColor = false;
+            this.btnEditManStopTime.Click += new System.EventHandler(this.btnEditManStopTime_Click);
             // 
-            // textBox19
+            // btnSaveAutoStopTime
             // 
-            this.textBox19.Location = new System.Drawing.Point(966, 311);
-            this.textBox19.Name = "textBox19";
-            this.textBox19.ReadOnly = true;
-            this.textBox19.Size = new System.Drawing.Size(157, 29);
-            this.textBox19.TabIndex = 137;
-            this.textBox19.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox19.TextChanged += new System.EventHandler(this.textBox19_TextChanged);
+            this.btnSaveAutoStopTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnSaveAutoStopTime.Enabled = false;
+            this.btnSaveAutoStopTime.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveAutoStopTime.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveAutoStopTime.Location = new System.Drawing.Point(767, 126);
+            this.btnSaveAutoStopTime.Name = "btnSaveAutoStopTime";
+            this.btnSaveAutoStopTime.Size = new System.Drawing.Size(78, 38);
+            this.btnSaveAutoStopTime.TabIndex = 152;
+            this.btnSaveAutoStopTime.Text = "Save";
+            this.btnSaveAutoStopTime.UseVisualStyleBackColor = false;
+            this.btnSaveAutoStopTime.Click += new System.EventHandler(this.btnSaveAutoStopTime_Click);
             // 
-            // textBox20
+            // btnEditAutoStopTime
             // 
-            this.textBox20.Location = new System.Drawing.Point(762, 311);
-            this.textBox20.Name = "textBox20";
-            this.textBox20.ReadOnly = true;
-            this.textBox20.Size = new System.Drawing.Size(157, 29);
-            this.textBox20.TabIndex = 136;
-            this.textBox20.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox20.TextChanged += new System.EventHandler(this.textBox20_TextChanged);
+            this.btnEditAutoStopTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnEditAutoStopTime.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditAutoStopTime.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditAutoStopTime.Location = new System.Drawing.Point(672, 126);
+            this.btnEditAutoStopTime.Name = "btnEditAutoStopTime";
+            this.btnEditAutoStopTime.Size = new System.Drawing.Size(78, 38);
+            this.btnEditAutoStopTime.TabIndex = 153;
+            this.btnEditAutoStopTime.Text = "Edit";
+            this.btnEditAutoStopTime.UseVisualStyleBackColor = false;
+            this.btnEditAutoStopTime.Click += new System.EventHandler(this.btnEditAutoStopTime_Click);
             // 
-            // textBox21
+            // txtBoxManStopTimeC2
             // 
-            this.textBox21.Location = new System.Drawing.Point(966, 261);
-            this.textBox21.Name = "textBox21";
-            this.textBox21.ReadOnly = true;
-            this.textBox21.Size = new System.Drawing.Size(157, 29);
-            this.textBox21.TabIndex = 135;
-            this.textBox21.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox21.TextChanged += new System.EventHandler(this.textBox21_TextChanged);
+            this.txtBoxManStopTimeC2.Enabled = false;
+            this.txtBoxManStopTimeC2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxManStopTimeC2.Location = new System.Drawing.Point(509, 306);
+            this.txtBoxManStopTimeC2.Name = "txtBoxManStopTimeC2";
+            this.txtBoxManStopTimeC2.Size = new System.Drawing.Size(113, 29);
+            this.txtBoxManStopTimeC2.TabIndex = 151;
+            this.txtBoxManStopTimeC2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox22
+            // txtBoxManStartTimeC2
             // 
-            this.textBox22.Location = new System.Drawing.Point(762, 261);
-            this.textBox22.Name = "textBox22";
-            this.textBox22.ReadOnly = true;
-            this.textBox22.Size = new System.Drawing.Size(157, 29);
-            this.textBox22.TabIndex = 134;
-            this.textBox22.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox22.TextChanged += new System.EventHandler(this.textBox22_TextChanged);
+            this.txtBoxManStartTimeC2.Enabled = false;
+            this.txtBoxManStartTimeC2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxManStartTimeC2.Location = new System.Drawing.Point(509, 257);
+            this.txtBoxManStartTimeC2.Name = "txtBoxManStartTimeC2";
+            this.txtBoxManStartTimeC2.Size = new System.Drawing.Size(113, 29);
+            this.txtBoxManStartTimeC2.TabIndex = 150;
+            this.txtBoxManStartTimeC2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox23
+            // txtBoxManStopTimeC1
             // 
-            this.textBox23.Location = new System.Drawing.Point(966, 131);
-            this.textBox23.Name = "textBox23";
-            this.textBox23.ReadOnly = true;
-            this.textBox23.Size = new System.Drawing.Size(157, 29);
-            this.textBox23.TabIndex = 133;
-            this.textBox23.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox23.TextChanged += new System.EventHandler(this.textBox23_TextChanged);
+            this.txtBoxManStopTimeC1.Enabled = false;
+            this.txtBoxManStopTimeC1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxManStopTimeC1.Location = new System.Drawing.Point(348, 306);
+            this.txtBoxManStopTimeC1.Name = "txtBoxManStopTimeC1";
+            this.txtBoxManStopTimeC1.Size = new System.Drawing.Size(113, 29);
+            this.txtBoxManStopTimeC1.TabIndex = 149;
+            this.txtBoxManStopTimeC1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox24
+            // txtBoxManStartTimeC1
             // 
-            this.textBox24.Location = new System.Drawing.Point(762, 131);
-            this.textBox24.Name = "textBox24";
-            this.textBox24.ReadOnly = true;
-            this.textBox24.Size = new System.Drawing.Size(157, 29);
-            this.textBox24.TabIndex = 132;
-            this.textBox24.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox24.TextChanged += new System.EventHandler(this.textBox24_TextChanged);
+            this.txtBoxManStartTimeC1.Enabled = false;
+            this.txtBoxManStartTimeC1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxManStartTimeC1.Location = new System.Drawing.Point(348, 262);
+            this.txtBoxManStartTimeC1.Name = "txtBoxManStartTimeC1";
+            this.txtBoxManStartTimeC1.Size = new System.Drawing.Size(113, 29);
+            this.txtBoxManStartTimeC1.TabIndex = 148;
+            this.txtBoxManStartTimeC1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox25
+            // txtBoxAutoStopTimeC2
             // 
-            this.textBox25.Location = new System.Drawing.Point(966, 81);
-            this.textBox25.Name = "textBox25";
-            this.textBox25.ReadOnly = true;
-            this.textBox25.Size = new System.Drawing.Size(157, 29);
-            this.textBox25.TabIndex = 131;
-            this.textBox25.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox25.TextChanged += new System.EventHandler(this.textBox25_TextChanged);
+            this.txtBoxAutoStopTimeC2.Enabled = false;
+            this.txtBoxAutoStopTimeC2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxAutoStopTimeC2.Location = new System.Drawing.Point(509, 131);
+            this.txtBoxAutoStopTimeC2.Name = "txtBoxAutoStopTimeC2";
+            this.txtBoxAutoStopTimeC2.Size = new System.Drawing.Size(113, 29);
+            this.txtBoxAutoStopTimeC2.TabIndex = 147;
+            this.txtBoxAutoStopTimeC2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox26
+            // txtBoxAutoStartTimeC2
             // 
-            this.textBox26.Location = new System.Drawing.Point(762, 81);
-            this.textBox26.Name = "textBox26";
-            this.textBox26.ReadOnly = true;
-            this.textBox26.Size = new System.Drawing.Size(157, 29);
-            this.textBox26.TabIndex = 130;
-            this.textBox26.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.textBox26.TextChanged += new System.EventHandler(this.textBox26_TextChanged);
+            this.txtBoxAutoStartTimeC2.Enabled = false;
+            this.txtBoxAutoStartTimeC2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxAutoStartTimeC2.Location = new System.Drawing.Point(509, 81);
+            this.txtBoxAutoStartTimeC2.Name = "txtBoxAutoStartTimeC2";
+            this.txtBoxAutoStartTimeC2.Size = new System.Drawing.Size(113, 29);
+            this.txtBoxAutoStartTimeC2.TabIndex = 146;
+            this.txtBoxAutoStartTimeC2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // button6
+            // btnSaveManStartTime
             // 
-            this.button6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button6.Location = new System.Drawing.Point(376, 361);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(96, 38);
-            this.button6.TabIndex = 129;
-            this.button6.Text = "Edit";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnSaveManStartTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnSaveManStartTime.Enabled = false;
+            this.btnSaveManStartTime.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveManStartTime.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveManStartTime.Location = new System.Drawing.Point(767, 252);
+            this.btnSaveManStartTime.Name = "btnSaveManStartTime";
+            this.btnSaveManStartTime.Size = new System.Drawing.Size(78, 38);
+            this.btnSaveManStartTime.TabIndex = 144;
+            this.btnSaveManStartTime.Text = "Save";
+            this.btnSaveManStartTime.UseVisualStyleBackColor = false;
+            this.btnSaveManStartTime.Click += new System.EventHandler(this.btnSaveManStartTime_Click);
             // 
-            // button5
+            // btnEditManStartTime
             // 
-            this.button5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.button5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button5.Location = new System.Drawing.Point(586, 361);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(96, 38);
-            this.button5.TabIndex = 116;
-            this.button5.Text = "Edit";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnEditManStartTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnEditManStartTime.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditManStartTime.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditManStartTime.Location = new System.Drawing.Point(672, 253);
+            this.btnEditManStartTime.Name = "btnEditManStartTime";
+            this.btnEditManStartTime.Size = new System.Drawing.Size(78, 38);
+            this.btnEditManStartTime.TabIndex = 145;
+            this.btnEditManStartTime.Text = "Edit";
+            this.btnEditManStartTime.UseVisualStyleBackColor = false;
+            this.btnEditManStartTime.Click += new System.EventHandler(this.btnEditManStartTime_Click);
             // 
-            // textBox15
+            // btnSaveAutoStartTime
             // 
-            this.textBox15.Location = new System.Drawing.Point(552, 311);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.ReadOnly = true;
-            this.textBox15.Size = new System.Drawing.Size(157, 29);
-            this.textBox15.TabIndex = 126;
-            this.textBox15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnSaveAutoStartTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnSaveAutoStartTime.Enabled = false;
+            this.btnSaveAutoStartTime.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSaveAutoStartTime.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnSaveAutoStartTime.Location = new System.Drawing.Point(767, 76);
+            this.btnSaveAutoStartTime.Name = "btnSaveAutoStartTime";
+            this.btnSaveAutoStartTime.Size = new System.Drawing.Size(78, 38);
+            this.btnSaveAutoStartTime.TabIndex = 142;
+            this.btnSaveAutoStartTime.Text = "Save";
+            this.btnSaveAutoStartTime.UseVisualStyleBackColor = false;
+            this.btnSaveAutoStartTime.Click += new System.EventHandler(this.btnSaveAutoStartTime_Click);
             // 
-            // textBox16
+            // btnEditAutoStartTime
             // 
-            this.textBox16.Location = new System.Drawing.Point(348, 311);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.ReadOnly = true;
-            this.textBox16.Size = new System.Drawing.Size(157, 29);
-            this.textBox16.TabIndex = 125;
-            this.textBox16.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnEditAutoStartTime.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnEditAutoStartTime.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditAutoStartTime.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEditAutoStartTime.Location = new System.Drawing.Point(672, 76);
+            this.btnEditAutoStartTime.Name = "btnEditAutoStartTime";
+            this.btnEditAutoStartTime.Size = new System.Drawing.Size(78, 38);
+            this.btnEditAutoStartTime.TabIndex = 143;
+            this.btnEditAutoStartTime.Text = "Edit";
+            this.btnEditAutoStartTime.UseVisualStyleBackColor = false;
+            this.btnEditAutoStartTime.Click += new System.EventHandler(this.btnEditAutoStartTime_Click);
             // 
-            // textBox17
+            // label19
             // 
-            this.textBox17.Location = new System.Drawing.Point(552, 261);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.ReadOnly = true;
-            this.textBox17.Size = new System.Drawing.Size(157, 29);
-            this.textBox17.TabIndex = 124;
-            this.textBox17.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label19.AutoSize = true;
+            this.label19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label19.Location = new System.Drawing.Point(519, 49);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(90, 19);
+            this.label19.TabIndex = 141;
+            this.label19.Text = "Conveyor02";
             // 
-            // textBox18
+            // label18
             // 
-            this.textBox18.Location = new System.Drawing.Point(348, 261);
-            this.textBox18.Name = "textBox18";
-            this.textBox18.ReadOnly = true;
-            this.textBox18.Size = new System.Drawing.Size(157, 29);
-            this.textBox18.TabIndex = 123;
-            this.textBox18.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(356, 49);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(94, 19);
+            this.label18.TabIndex = 140;
+            this.label18.Text = "Conveyor 01";
             // 
-            // textBox14
+            // txtBoxAutoStopTimeC1
             // 
-            this.textBox14.Location = new System.Drawing.Point(552, 131);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.ReadOnly = true;
-            this.textBox14.Size = new System.Drawing.Size(157, 29);
-            this.textBox14.TabIndex = 122;
-            this.textBox14.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBoxAutoStopTimeC1.Enabled = false;
+            this.txtBoxAutoStopTimeC1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxAutoStopTimeC1.Location = new System.Drawing.Point(348, 131);
+            this.txtBoxAutoStopTimeC1.Name = "txtBoxAutoStopTimeC1";
+            this.txtBoxAutoStopTimeC1.Size = new System.Drawing.Size(113, 29);
+            this.txtBoxAutoStopTimeC1.TabIndex = 121;
+            this.txtBoxAutoStopTimeC1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // textBox13
+            // txtBoxAutoStartTimeC1
             // 
-            this.textBox13.Location = new System.Drawing.Point(348, 131);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.ReadOnly = true;
-            this.textBox13.Size = new System.Drawing.Size(157, 29);
-            this.textBox13.TabIndex = 121;
-            this.textBox13.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox12
-            // 
-            this.textBox12.Location = new System.Drawing.Point(552, 81);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.ReadOnly = true;
-            this.textBox12.Size = new System.Drawing.Size(157, 29);
-            this.textBox12.TabIndex = 120;
-            this.textBox12.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // textBox11
-            // 
-            this.textBox11.Location = new System.Drawing.Point(348, 81);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.ReadOnly = true;
-            this.textBox11.Size = new System.Drawing.Size(157, 29);
-            this.textBox11.TabIndex = 119;
-            this.textBox11.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtBoxAutoStartTimeC1.Enabled = false;
+            this.txtBoxAutoStartTimeC1.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtBoxAutoStartTimeC1.Location = new System.Drawing.Point(348, 81);
+            this.txtBoxAutoStartTimeC1.Name = "txtBoxAutoStartTimeC1";
+            this.txtBoxAutoStartTimeC1.Size = new System.Drawing.Size(113, 29);
+            this.txtBoxAutoStartTimeC1.TabIndex = 119;
+            this.txtBoxAutoStartTimeC1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label17
             // 
@@ -665,32 +788,12 @@
             // 
             this.label12.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
             this.label12.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(280, 0);
+            this.label12.Location = new System.Drawing.Point(355, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(181, 28);
             this.label12.TabIndex = 53;
             this.label12.Text = "Cài đặt thời gian băng tải";
             this.label12.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(345, 49);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(160, 19);
-            this.label18.TabIndex = 140;
-            this.label18.Text = "Conveyor 01 (settings)";
-            // 
-            // label19
-            // 
-            this.label19.AutoSize = true;
-            this.label19.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label19.Location = new System.Drawing.Point(549, 49);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(160, 19);
-            this.label19.TabIndex = 141;
-            this.label19.Text = "Conveyor 02 (settings)";
             // 
             // UC_Caidat
             // 
@@ -702,6 +805,7 @@
             this.Controls.Add(this.groupBox5);
             this.Name = "UC_Caidat";
             this.Size = new System.Drawing.Size(1920, 970);
+            this.Load += new System.EventHandler(this.UC_Caidat_Load);
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -717,58 +821,61 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txtBoxMaxLoadcell2;
+        private System.Windows.Forms.TextBox txtBoxMaxLoadcell1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnEditStepmotor01;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.TextBox textBox4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txtBoxBalanceTimeLoadcell2;
+        private System.Windows.Forms.TextBox txtBoxBalanceTimeLoadcell1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.TextBox textBox7;
+        private System.Windows.Forms.TextBox txtBoxBalanceWeightLoadcell2;
+        private System.Windows.Forms.TextBox txtBoxBalanceWeightLoadcell1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.Label label21;
-        private System.Windows.Forms.TextBox textBox19;
-        private System.Windows.Forms.TextBox textBox20;
-        private System.Windows.Forms.TextBox textBox21;
-        private System.Windows.Forms.TextBox textBox22;
-        private System.Windows.Forms.TextBox textBox23;
-        private System.Windows.Forms.TextBox textBox24;
-        private System.Windows.Forms.TextBox textBox25;
-        private System.Windows.Forms.TextBox textBox26;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.TextBox textBox15;
-        private System.Windows.Forms.TextBox textBox16;
-        private System.Windows.Forms.TextBox textBox17;
-        private System.Windows.Forms.TextBox textBox18;
-        private System.Windows.Forms.TextBox textBox14;
-        private System.Windows.Forms.TextBox textBox13;
-        private System.Windows.Forms.TextBox textBox12;
-        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox txtBoxAutoStopTimeC1;
+        private System.Windows.Forms.TextBox txtBoxAutoStartTimeC1;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button btnEditLoadcell1;
+        private System.Windows.Forms.Button btnSaveStepmotor02;
+        private System.Windows.Forms.Button btnEditStepmotor02;
+        private System.Windows.Forms.Button btnSaveStepmotor01;
+        private System.Windows.Forms.Button btnSaveLoadcell2;
+        private System.Windows.Forms.Button btnEditLoadcell2;
+        private System.Windows.Forms.Button btnSaveLoadcell1;
+        private System.Windows.Forms.Button btnSaveManStartTime;
+        private System.Windows.Forms.Button btnEditManStartTime;
+        private System.Windows.Forms.Button btnSaveAutoStartTime;
+        private System.Windows.Forms.Button btnEditAutoStartTime;
+        private System.Windows.Forms.Label label22;
+        private System.Windows.Forms.TextBox txtBoxPulseUpStepmotor02;
+        private System.Windows.Forms.TextBox txtBoxPulseUpStepmotor01;
+        private System.Windows.Forms.TextBox txtBoxVelocityStepmotor02;
+        private System.Windows.Forms.TextBox txtBoxVelocityStepmotor01;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.TextBox txtBoxPulseDownStepmotor02;
+        private System.Windows.Forms.TextBox txtBoxPulseDownStepmotor01;
+        private System.Windows.Forms.Button btnSaveManStopTime;
+        private System.Windows.Forms.Button btnEditManStopTime;
+        private System.Windows.Forms.Button btnSaveAutoStopTime;
+        private System.Windows.Forms.Button btnEditAutoStopTime;
+        private System.Windows.Forms.TextBox txtBoxManStopTimeC2;
+        private System.Windows.Forms.TextBox txtBoxManStartTimeC2;
+        private System.Windows.Forms.TextBox txtBoxManStopTimeC1;
+        private System.Windows.Forms.TextBox txtBoxManStartTimeC1;
+        private System.Windows.Forms.TextBox txtBoxAutoStopTimeC2;
+        private System.Windows.Forms.TextBox txtBoxAutoStartTimeC2;
     }
 }

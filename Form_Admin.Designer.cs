@@ -44,21 +44,23 @@
             this.pnlReportAF = new System.Windows.Forms.Panel();
             this.pnlControlAF = new System.Windows.Forms.Panel();
             this.pnlMonitorAF = new System.Windows.Forms.Panel();
-            this.pnlCameraAF = new System.Windows.Forms.Panel();
             this.btnIOAF = new System.Windows.Forms.Button();
             this.btnSystemAF = new System.Windows.Forms.Button();
             this.btnSettingAF = new System.Windows.Forms.Button();
             this.btnReportAF = new System.Windows.Forms.Button();
             this.btnControlAF = new System.Windows.Forms.Button();
             this.btnMonitorAF = new System.Windows.Forms.Button();
-            this.btnCameraAF = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lbPLCStatusAF = new System.Windows.Forms.Label();
             this.lbUserAF = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.lbTime = new System.Windows.Forms.Label();
             this.btnLogout = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnlMainAF = new System.Windows.Forms.Panel();
+            this.Timer_Watchdog = new System.Windows.Forms.Timer(this.components);
+            this.Reconnect_Timer = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.pnlTabsAF.SuspendLayout();
@@ -140,14 +142,12 @@
             this.pnlTabsAF.Controls.Add(this.pnlReportAF);
             this.pnlTabsAF.Controls.Add(this.pnlControlAF);
             this.pnlTabsAF.Controls.Add(this.pnlMonitorAF);
-            this.pnlTabsAF.Controls.Add(this.pnlCameraAF);
             this.pnlTabsAF.Controls.Add(this.btnIOAF);
             this.pnlTabsAF.Controls.Add(this.btnSystemAF);
             this.pnlTabsAF.Controls.Add(this.btnSettingAF);
             this.pnlTabsAF.Controls.Add(this.btnReportAF);
             this.pnlTabsAF.Controls.Add(this.btnControlAF);
             this.pnlTabsAF.Controls.Add(this.btnMonitorAF);
-            this.pnlTabsAF.Controls.Add(this.btnCameraAF);
             this.pnlTabsAF.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlTabsAF.ForeColor = System.Drawing.Color.White;
             this.pnlTabsAF.Location = new System.Drawing.Point(0, 32);
@@ -158,7 +158,7 @@
             // pnlSimAF
             // 
             this.pnlSimAF.BackColor = System.Drawing.Color.White;
-            this.pnlSimAF.Location = new System.Drawing.Point(786, 5);
+            this.pnlSimAF.Location = new System.Drawing.Point(685, 5);
             this.pnlSimAF.Name = "pnlSimAF";
             this.pnlSimAF.Size = new System.Drawing.Size(9, 9);
             this.pnlSimAF.TabIndex = 10;
@@ -171,7 +171,7 @@
             this.btnSimAF.ForeColor = System.Drawing.Color.Black;
             this.btnSimAF.Image = ((System.Drawing.Image)(resources.GetObject("btnSimAF.Image")));
             this.btnSimAF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSimAF.Location = new System.Drawing.Point(687, -1);
+            this.btnSimAF.Location = new System.Drawing.Point(586, -1);
             this.btnSimAF.Name = "btnSimAF";
             this.btnSimAF.Size = new System.Drawing.Size(115, 48);
             this.btnSimAF.TabIndex = 10;
@@ -183,7 +183,7 @@
             // pnlIOAF
             // 
             this.pnlIOAF.BackColor = System.Drawing.Color.White;
-            this.pnlIOAF.Location = new System.Drawing.Point(672, 4);
+            this.pnlIOAF.Location = new System.Drawing.Point(571, 4);
             this.pnlIOAF.Name = "pnlIOAF";
             this.pnlIOAF.Size = new System.Drawing.Size(9, 9);
             this.pnlIOAF.TabIndex = 9;
@@ -191,7 +191,7 @@
             // pnlSystemAF
             // 
             this.pnlSystemAF.BackColor = System.Drawing.Color.White;
-            this.pnlSystemAF.Location = new System.Drawing.Point(608, 4);
+            this.pnlSystemAF.Location = new System.Drawing.Point(507, 4);
             this.pnlSystemAF.Name = "pnlSystemAF";
             this.pnlSystemAF.Size = new System.Drawing.Size(9, 9);
             this.pnlSystemAF.TabIndex = 9;
@@ -199,7 +199,7 @@
             // pnlSettingAF
             // 
             this.pnlSettingAF.BackColor = System.Drawing.Color.White;
-            this.pnlSettingAF.Location = new System.Drawing.Point(499, 4);
+            this.pnlSettingAF.Location = new System.Drawing.Point(398, 4);
             this.pnlSettingAF.Name = "pnlSettingAF";
             this.pnlSettingAF.Size = new System.Drawing.Size(9, 9);
             this.pnlSettingAF.TabIndex = 9;
@@ -207,15 +207,15 @@
             // pnlReportAF
             // 
             this.pnlReportAF.BackColor = System.Drawing.Color.White;
-            this.pnlReportAF.Location = new System.Drawing.Point(408, 4);
+            this.pnlReportAF.Location = new System.Drawing.Point(307, 4);
             this.pnlReportAF.Name = "pnlReportAF";
             this.pnlReportAF.Size = new System.Drawing.Size(9, 9);
             this.pnlReportAF.TabIndex = 9;
             // 
             // pnlControlAF
             // 
-            this.pnlControlAF.BackColor = System.Drawing.Color.White;
-            this.pnlControlAF.Location = new System.Drawing.Point(310, 4);
+            this.pnlControlAF.BackColor = System.Drawing.Color.Lime;
+            this.pnlControlAF.Location = new System.Drawing.Point(102, 4);
             this.pnlControlAF.Name = "pnlControlAF";
             this.pnlControlAF.Size = new System.Drawing.Size(9, 9);
             this.pnlControlAF.TabIndex = 9;
@@ -223,18 +223,10 @@
             // pnlMonitorAF
             // 
             this.pnlMonitorAF.BackColor = System.Drawing.Color.White;
-            this.pnlMonitorAF.Location = new System.Drawing.Point(192, 4);
+            this.pnlMonitorAF.Location = new System.Drawing.Point(209, 4);
             this.pnlMonitorAF.Name = "pnlMonitorAF";
             this.pnlMonitorAF.Size = new System.Drawing.Size(9, 9);
             this.pnlMonitorAF.TabIndex = 9;
-            // 
-            // pnlCameraAF
-            // 
-            this.pnlCameraAF.BackColor = System.Drawing.Color.Lime;
-            this.pnlCameraAF.Location = new System.Drawing.Point(85, 4);
-            this.pnlCameraAF.Name = "pnlCameraAF";
-            this.pnlCameraAF.Size = new System.Drawing.Size(9, 9);
-            this.pnlCameraAF.TabIndex = 8;
             // 
             // btnIOAF
             // 
@@ -244,7 +236,7 @@
             this.btnIOAF.ForeColor = System.Drawing.Color.Black;
             this.btnIOAF.Image = ((System.Drawing.Image)(resources.GetObject("btnIOAF.Image")));
             this.btnIOAF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnIOAF.Location = new System.Drawing.Point(623, -1);
+            this.btnIOAF.Location = new System.Drawing.Point(522, -1);
             this.btnIOAF.Name = "btnIOAF";
             this.btnIOAF.Size = new System.Drawing.Size(65, 48);
             this.btnIOAF.TabIndex = 6;
@@ -261,7 +253,7 @@
             this.btnSystemAF.ForeColor = System.Drawing.Color.Black;
             this.btnSystemAF.Image = ((System.Drawing.Image)(resources.GetObject("btnSystemAF.Image")));
             this.btnSystemAF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSystemAF.Location = new System.Drawing.Point(514, -1);
+            this.btnSystemAF.Location = new System.Drawing.Point(413, -1);
             this.btnSystemAF.Name = "btnSystemAF";
             this.btnSystemAF.Size = new System.Drawing.Size(110, 48);
             this.btnSystemAF.TabIndex = 5;
@@ -278,7 +270,7 @@
             this.btnSettingAF.ForeColor = System.Drawing.Color.Black;
             this.btnSettingAF.Image = ((System.Drawing.Image)(resources.GetObject("btnSettingAF.Image")));
             this.btnSettingAF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSettingAF.Location = new System.Drawing.Point(423, -1);
+            this.btnSettingAF.Location = new System.Drawing.Point(322, -1);
             this.btnSettingAF.Name = "btnSettingAF";
             this.btnSettingAF.Size = new System.Drawing.Size(92, 48);
             this.btnSettingAF.TabIndex = 4;
@@ -295,7 +287,7 @@
             this.btnReportAF.ForeColor = System.Drawing.Color.Black;
             this.btnReportAF.Image = ((System.Drawing.Image)(resources.GetObject("btnReportAF.Image")));
             this.btnReportAF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnReportAF.Location = new System.Drawing.Point(325, -1);
+            this.btnReportAF.Location = new System.Drawing.Point(224, -1);
             this.btnReportAF.Name = "btnReportAF";
             this.btnReportAF.Size = new System.Drawing.Size(99, 48);
             this.btnReportAF.TabIndex = 3;
@@ -312,7 +304,7 @@
             this.btnControlAF.ForeColor = System.Drawing.Color.Black;
             this.btnControlAF.Image = ((System.Drawing.Image)(resources.GetObject("btnControlAF.Image")));
             this.btnControlAF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnControlAF.Location = new System.Drawing.Point(207, -1);
+            this.btnControlAF.Location = new System.Drawing.Point(-1, -1);
             this.btnControlAF.Name = "btnControlAF";
             this.btnControlAF.Size = new System.Drawing.Size(119, 48);
             this.btnControlAF.TabIndex = 2;
@@ -329,7 +321,7 @@
             this.btnMonitorAF.ForeColor = System.Drawing.Color.Black;
             this.btnMonitorAF.Image = ((System.Drawing.Image)(resources.GetObject("btnMonitorAF.Image")));
             this.btnMonitorAF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnMonitorAF.Location = new System.Drawing.Point(100, -1);
+            this.btnMonitorAF.Location = new System.Drawing.Point(117, -1);
             this.btnMonitorAF.Name = "btnMonitorAF";
             this.btnMonitorAF.Size = new System.Drawing.Size(108, 48);
             this.btnMonitorAF.TabIndex = 1;
@@ -338,27 +330,11 @@
             this.btnMonitorAF.UseVisualStyleBackColor = false;
             this.btnMonitorAF.Click += new System.EventHandler(this.click_Button);
             // 
-            // btnCameraAF
-            // 
-            this.btnCameraAF.BackColor = System.Drawing.Color.White;
-            this.btnCameraAF.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.btnCameraAF.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnCameraAF.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCameraAF.ForeColor = System.Drawing.Color.Black;
-            this.btnCameraAF.Image = ((System.Drawing.Image)(resources.GetObject("btnCameraAF.Image")));
-            this.btnCameraAF.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnCameraAF.Location = new System.Drawing.Point(-1, -1);
-            this.btnCameraAF.Name = "btnCameraAF";
-            this.btnCameraAF.Size = new System.Drawing.Size(102, 48);
-            this.btnCameraAF.TabIndex = 0;
-            this.btnCameraAF.Text = "Camera";
-            this.btnCameraAF.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnCameraAF.UseVisualStyleBackColor = false;
-            this.btnCameraAF.Click += new System.EventHandler(this.click_Button);
-            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(126)))), ((int)(((byte)(200)))), ((int)(((byte)(255)))));
+            this.panel3.Controls.Add(this.panel2);
+            this.panel3.Controls.Add(this.lbPLCStatusAF);
             this.panel3.Controls.Add(this.lbUserAF);
             this.panel3.Controls.Add(this.pictureBox1);
             this.panel3.Controls.Add(this.lbTime);
@@ -368,6 +344,27 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1366, 32);
             this.panel3.TabIndex = 4;
+            // 
+            // panel2
+            // 
+            this.panel2.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.panel2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel2.BackgroundImage")));
+            this.panel2.Location = new System.Drawing.Point(568, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(25, 25);
+            this.panel2.TabIndex = 7;
+            // 
+            // lbPLCStatusAF
+            // 
+            this.lbPLCStatusAF.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            this.lbPLCStatusAF.AutoSize = true;
+            this.lbPLCStatusAF.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbPLCStatusAF.ForeColor = System.Drawing.Color.Red;
+            this.lbPLCStatusAF.Location = new System.Drawing.Point(595, 6);
+            this.lbPLCStatusAF.Name = "lbPLCStatusAF";
+            this.lbPLCStatusAF.Size = new System.Drawing.Size(92, 19);
+            this.lbPLCStatusAF.TabIndex = 6;
+            this.lbPLCStatusAF.Text = "Ngắt kết nối";
             // 
             // lbUserAF
             // 
@@ -421,6 +418,7 @@
             // 
             // timer1
             // 
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // pnlMainAF
@@ -431,6 +429,16 @@
             this.pnlMainAF.Name = "pnlMainAF";
             this.pnlMainAF.Size = new System.Drawing.Size(1366, 654);
             this.pnlMainAF.TabIndex = 5;
+            // 
+            // Timer_Watchdog
+            // 
+            this.Timer_Watchdog.Enabled = true;
+            this.Timer_Watchdog.Interval = 3000;
+            this.Timer_Watchdog.Tick += new System.EventHandler(this.Timer_Watchdog_Tick);
+            // 
+            // Reconnect_Timer
+            // 
+            this.Reconnect_Timer.Tick += new System.EventHandler(this.Reconnect_Timer_Tick);
             // 
             // Form_Admin
             // 
@@ -452,6 +460,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.pnlTabsAF.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
@@ -465,7 +474,6 @@
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel pnlTabsAF;
-        private System.Windows.Forms.Button btnCameraAF;
         private System.Windows.Forms.Button btnMonitorAF;
         private System.Windows.Forms.Button btnControlAF;
         private System.Windows.Forms.Button btnReportAF;
@@ -485,8 +493,11 @@
         private System.Windows.Forms.Panel pnlReportAF;
         private System.Windows.Forms.Panel pnlControlAF;
         private System.Windows.Forms.Panel pnlMonitorAF;
-        private System.Windows.Forms.Panel pnlCameraAF;
         private System.Windows.Forms.Panel pnlSimAF;
         private System.Windows.Forms.Button btnSimAF;
+        private System.Windows.Forms.Panel panel2;
+        public System.Windows.Forms.Label lbPLCStatusAF;
+        private System.Windows.Forms.Timer Reconnect_Timer;
+        public System.Windows.Forms.Timer Timer_Watchdog;
     }
 }
