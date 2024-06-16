@@ -14,6 +14,10 @@ namespace Giaodiendieukhien.Sources
             {
                 UC_Hethong.UCSystem.StopTimer();
             }
+            if (Form_Admin.frmAdmin.IsTimerUCWatchRunning == true)
+            {
+                UC_Giamsat.UCWatch.StopTimer();
+            }
         }
     }
 }

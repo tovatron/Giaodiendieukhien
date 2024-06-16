@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtBoxLoadcell1Max = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -49,35 +50,29 @@
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.txtBoxStatusBunke3 = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.dtGVBunkeweight1 = new System.Windows.Forms.DataGridView();
+            this.dtGVWeightBunke1 = new System.Windows.Forms.DataGridView();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
-            this.dtGVBunkeweight2 = new System.Windows.Forms.DataGridView();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
-            this.dtGVBunkeDevice1 = new System.Windows.Forms.DataGridView();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
-            this.dtGVBunkeDevice2 = new System.Windows.Forms.DataGridView();
+            this.dtGVWeightBunke2 = new System.Windows.Forms.DataGridView();
             this.groupBox9 = new System.Windows.Forms.GroupBox();
-            this.dtGVBunkeDevice3 = new System.Windows.Forms.DataGridView();
+            this.dtGVDeviceBunke3 = new System.Windows.Forms.DataGridView();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
-            this.dtGVConveryorStatus = new System.Windows.Forms.DataGridView();
+            this.dtGVDevicesAndSignal = new System.Windows.Forms.DataGridView();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
             this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timer_showdata = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeweight1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVWeightBunke1)).BeginInit();
             this.groupBox4.SuspendLayout();
             this.groupBox5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeweight2)).BeginInit();
-            this.groupBox7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeDevice1)).BeginInit();
-            this.groupBox8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeDevice2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVWeightBunke2)).BeginInit();
             this.groupBox9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeDevice3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVDeviceBunke3)).BeginInit();
             this.groupBox10.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtGVConveryorStatus)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVDevicesAndSignal)).BeginInit();
             this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -98,6 +93,7 @@
             // 
             // txtBoxLoadcell1Max
             // 
+            this.txtBoxLoadcell1Max.Enabled = false;
             this.txtBoxLoadcell1Max.Location = new System.Drawing.Point(179, 171);
             this.txtBoxLoadcell1Max.Name = "txtBoxLoadcell1Max";
             this.txtBoxLoadcell1Max.ReadOnly = true;
@@ -117,6 +113,7 @@
             // 
             // txtBoxBunke1Weight
             // 
+            this.txtBoxBunke1Weight.Enabled = false;
             this.txtBoxBunke1Weight.Location = new System.Drawing.Point(179, 108);
             this.txtBoxBunke1Weight.Name = "txtBoxBunke1Weight";
             this.txtBoxBunke1Weight.ReadOnly = true;
@@ -136,6 +133,7 @@
             // 
             // txtBoxStatusBunke1
             // 
+            this.txtBoxStatusBunke1.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxStatusBunke1.Location = new System.Drawing.Point(179, 49);
             this.txtBoxStatusBunke1.Name = "txtBoxStatusBunke1";
             this.txtBoxStatusBunke1.ReadOnly = true;
@@ -192,6 +190,7 @@
             // 
             // txtBoxLoadcell2Max
             // 
+            this.txtBoxLoadcell2Max.Enabled = false;
             this.txtBoxLoadcell2Max.Location = new System.Drawing.Point(179, 172);
             this.txtBoxLoadcell2Max.Name = "txtBoxLoadcell2Max";
             this.txtBoxLoadcell2Max.ReadOnly = true;
@@ -211,6 +210,7 @@
             // 
             // txtBoxBunke2Weight
             // 
+            this.txtBoxBunke2Weight.Enabled = false;
             this.txtBoxBunke2Weight.Location = new System.Drawing.Point(179, 110);
             this.txtBoxBunke2Weight.Name = "txtBoxBunke2Weight";
             this.txtBoxBunke2Weight.ReadOnly = true;
@@ -230,6 +230,7 @@
             // 
             // txtBoxStatusBunke2
             // 
+            this.txtBoxStatusBunke2.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxStatusBunke2.Location = new System.Drawing.Point(179, 51);
             this.txtBoxStatusBunke2.Name = "txtBoxStatusBunke2";
             this.txtBoxStatusBunke2.ReadOnly = true;
@@ -271,6 +272,7 @@
             // 
             // txtBoxStatusBunke3
             // 
+            this.txtBoxStatusBunke3.Font = new System.Drawing.Font("Times New Roman", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtBoxStatusBunke3.Location = new System.Drawing.Point(176, 52);
             this.txtBoxStatusBunke3.Name = "txtBoxStatusBunke3";
             this.txtBoxStatusBunke3.ReadOnly = true;
@@ -288,148 +290,111 @@
             this.label20.TabIndex = 2;
             this.label20.Text = "Trạng thái Bunke";
             // 
-            // dtGVBunkeweight1
+            // dtGVWeightBunke1
             // 
-            this.dtGVBunkeweight1.AllowUserToAddRows = false;
-            this.dtGVBunkeweight1.BackgroundColor = System.Drawing.Color.White;
-            this.dtGVBunkeweight1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtGVBunkeweight1.Location = new System.Drawing.Point(0, 19);
-            this.dtGVBunkeweight1.Name = "dtGVBunkeweight1";
-            this.dtGVBunkeweight1.ReadOnly = true;
-            this.dtGVBunkeweight1.RowHeadersVisible = false;
-            this.dtGVBunkeweight1.Size = new System.Drawing.Size(323, 207);
-            this.dtGVBunkeweight1.TabIndex = 55;
+            this.dtGVWeightBunke1.AllowUserToAddRows = false;
+            this.dtGVWeightBunke1.BackgroundColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dtGVWeightBunke1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.dtGVWeightBunke1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtGVWeightBunke1.Location = new System.Drawing.Point(0, 19);
+            this.dtGVWeightBunke1.Name = "dtGVWeightBunke1";
+            this.dtGVWeightBunke1.ReadOnly = true;
+            this.dtGVWeightBunke1.RowHeadersVisible = false;
+            this.dtGVWeightBunke1.Size = new System.Drawing.Size(323, 478);
+            this.dtGVWeightBunke1.TabIndex = 55;
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.dtGVBunkeweight1);
-            this.groupBox4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Controls.Add(this.dtGVWeightBunke1);
+            this.groupBox4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(16, 441);
             this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(323, 227);
+            this.groupBox4.Size = new System.Drawing.Size(323, 497);
             this.groupBox4.TabIndex = 57;
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Khối lượng Bunke 1";
             // 
             // groupBox5
             // 
-            this.groupBox5.Controls.Add(this.dtGVBunkeweight2);
-            this.groupBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox5.Controls.Add(this.dtGVWeightBunke2);
+            this.groupBox5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox5.Location = new System.Drawing.Point(359, 441);
             this.groupBox5.Name = "groupBox5";
-            this.groupBox5.Size = new System.Drawing.Size(323, 227);
+            this.groupBox5.Size = new System.Drawing.Size(323, 497);
             this.groupBox5.TabIndex = 58;
             this.groupBox5.TabStop = false;
             this.groupBox5.Text = "Khối lượng Bunke 2";
             // 
-            // dtGVBunkeweight2
+            // dtGVWeightBunke2
             // 
-            this.dtGVBunkeweight2.AllowUserToAddRows = false;
-            this.dtGVBunkeweight2.BackgroundColor = System.Drawing.Color.White;
-            this.dtGVBunkeweight2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtGVBunkeweight2.Location = new System.Drawing.Point(0, 19);
-            this.dtGVBunkeweight2.Name = "dtGVBunkeweight2";
-            this.dtGVBunkeweight2.ReadOnly = true;
-            this.dtGVBunkeweight2.RowHeadersVisible = false;
-            this.dtGVBunkeweight2.Size = new System.Drawing.Size(323, 207);
-            this.dtGVBunkeweight2.TabIndex = 55;
-            // 
-            // groupBox7
-            // 
-            this.groupBox7.Controls.Add(this.dtGVBunkeDevice1);
-            this.groupBox7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox7.Location = new System.Drawing.Point(16, 689);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(323, 227);
-            this.groupBox7.TabIndex = 58;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "Trạng thái Thiết bị thuộc Bunke 1";
-            // 
-            // dtGVBunkeDevice1
-            // 
-            this.dtGVBunkeDevice1.AllowUserToAddRows = false;
-            this.dtGVBunkeDevice1.BackgroundColor = System.Drawing.Color.White;
-            this.dtGVBunkeDevice1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtGVBunkeDevice1.Location = new System.Drawing.Point(0, 19);
-            this.dtGVBunkeDevice1.Name = "dtGVBunkeDevice1";
-            this.dtGVBunkeDevice1.ReadOnly = true;
-            this.dtGVBunkeDevice1.RowHeadersVisible = false;
-            this.dtGVBunkeDevice1.Size = new System.Drawing.Size(323, 207);
-            this.dtGVBunkeDevice1.TabIndex = 55;
-            // 
-            // groupBox8
-            // 
-            this.groupBox8.Controls.Add(this.dtGVBunkeDevice2);
-            this.groupBox8.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox8.Location = new System.Drawing.Point(359, 689);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Size = new System.Drawing.Size(323, 227);
-            this.groupBox8.TabIndex = 59;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "Trạng thái Thiết bị thuộc Bunke 2";
-            // 
-            // dtGVBunkeDevice2
-            // 
-            this.dtGVBunkeDevice2.AllowUserToAddRows = false;
-            this.dtGVBunkeDevice2.BackgroundColor = System.Drawing.Color.White;
-            this.dtGVBunkeDevice2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtGVBunkeDevice2.Location = new System.Drawing.Point(0, 19);
-            this.dtGVBunkeDevice2.Name = "dtGVBunkeDevice2";
-            this.dtGVBunkeDevice2.ReadOnly = true;
-            this.dtGVBunkeDevice2.RowHeadersVisible = false;
-            this.dtGVBunkeDevice2.Size = new System.Drawing.Size(323, 207);
-            this.dtGVBunkeDevice2.TabIndex = 55;
+            this.dtGVWeightBunke2.AllowUserToAddRows = false;
+            this.dtGVWeightBunke2.BackgroundColor = System.Drawing.Color.White;
+            this.dtGVWeightBunke2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtGVWeightBunke2.Location = new System.Drawing.Point(0, 19);
+            this.dtGVWeightBunke2.Name = "dtGVWeightBunke2";
+            this.dtGVWeightBunke2.ReadOnly = true;
+            this.dtGVWeightBunke2.RowHeadersVisible = false;
+            this.dtGVWeightBunke2.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.AutoSizeToAllHeaders;
+            this.dtGVWeightBunke2.Size = new System.Drawing.Size(323, 478);
+            this.dtGVWeightBunke2.TabIndex = 55;
             // 
             // groupBox9
             // 
-            this.groupBox9.Controls.Add(this.dtGVBunkeDevice3);
-            this.groupBox9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox9.Controls.Add(this.dtGVDeviceBunke3);
+            this.groupBox9.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox9.Location = new System.Drawing.Point(701, 441);
             this.groupBox9.Name = "groupBox9";
-            this.groupBox9.Size = new System.Drawing.Size(323, 227);
+            this.groupBox9.Size = new System.Drawing.Size(323, 497);
             this.groupBox9.TabIndex = 59;
             this.groupBox9.TabStop = false;
             this.groupBox9.Text = "Trạng thái Bunke 3";
             // 
-            // dtGVBunkeDevice3
+            // dtGVDeviceBunke3
             // 
-            this.dtGVBunkeDevice3.AllowUserToAddRows = false;
-            this.dtGVBunkeDevice3.BackgroundColor = System.Drawing.Color.White;
-            this.dtGVBunkeDevice3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtGVBunkeDevice3.Location = new System.Drawing.Point(0, 19);
-            this.dtGVBunkeDevice3.Name = "dtGVBunkeDevice3";
-            this.dtGVBunkeDevice3.ReadOnly = true;
-            this.dtGVBunkeDevice3.RowHeadersVisible = false;
-            this.dtGVBunkeDevice3.Size = new System.Drawing.Size(323, 207);
-            this.dtGVBunkeDevice3.TabIndex = 55;
+            this.dtGVDeviceBunke3.AllowUserToAddRows = false;
+            this.dtGVDeviceBunke3.BackgroundColor = System.Drawing.Color.White;
+            this.dtGVDeviceBunke3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtGVDeviceBunke3.Location = new System.Drawing.Point(0, 19);
+            this.dtGVDeviceBunke3.Name = "dtGVDeviceBunke3";
+            this.dtGVDeviceBunke3.ReadOnly = true;
+            this.dtGVDeviceBunke3.RowHeadersVisible = false;
+            this.dtGVDeviceBunke3.Size = new System.Drawing.Size(323, 478);
+            this.dtGVDeviceBunke3.TabIndex = 55;
             // 
             // groupBox10
             // 
-            this.groupBox10.Controls.Add(this.dtGVConveryorStatus);
-            this.groupBox10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox10.Controls.Add(this.dtGVDevicesAndSignal);
+            this.groupBox10.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox10.Location = new System.Drawing.Point(1056, 15);
             this.groupBox10.Name = "groupBox10";
             this.groupBox10.Size = new System.Drawing.Size(836, 415);
             this.groupBox10.TabIndex = 60;
             this.groupBox10.TabStop = false;
-            this.groupBox10.Text = "Trạng thái của Băng tải";
+            this.groupBox10.Text = "Trạng thái thiết bị và tín hiệu";
             // 
-            // dtGVConveryorStatus
+            // dtGVDevicesAndSignal
             // 
-            this.dtGVConveryorStatus.AllowUserToAddRows = false;
-            this.dtGVConveryorStatus.BackgroundColor = System.Drawing.Color.White;
-            this.dtGVConveryorStatus.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dtGVConveryorStatus.Location = new System.Drawing.Point(0, 19);
-            this.dtGVConveryorStatus.Name = "dtGVConveryorStatus";
-            this.dtGVConveryorStatus.ReadOnly = true;
-            this.dtGVConveryorStatus.RowHeadersVisible = false;
-            this.dtGVConveryorStatus.Size = new System.Drawing.Size(836, 396);
-            this.dtGVConveryorStatus.TabIndex = 55;
+            this.dtGVDevicesAndSignal.AllowUserToAddRows = false;
+            this.dtGVDevicesAndSignal.BackgroundColor = System.Drawing.Color.White;
+            this.dtGVDevicesAndSignal.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dtGVDevicesAndSignal.Location = new System.Drawing.Point(0, 19);
+            this.dtGVDevicesAndSignal.Name = "dtGVDevicesAndSignal";
+            this.dtGVDevicesAndSignal.ReadOnly = true;
+            this.dtGVDevicesAndSignal.RowHeadersVisible = false;
+            this.dtGVDevicesAndSignal.Size = new System.Drawing.Size(836, 396);
+            this.dtGVDevicesAndSignal.TabIndex = 55;
             // 
             // groupBox6
             // 
             this.groupBox6.Controls.Add(this.zedGraphControl1);
-            this.groupBox6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox6.Location = new System.Drawing.Point(1056, 441);
             this.groupBox6.Name = "groupBox6";
             this.groupBox6.Size = new System.Drawing.Size(836, 497);
@@ -453,6 +418,16 @@
             this.zedGraphControl1.TabIndex = 0;
             this.zedGraphControl1.UseExtendedPrintDialog = true;
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1000;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // timer_showdata
+            // 
+            this.timer_showdata.Interval = 5000;
+            this.timer_showdata.Tick += new System.EventHandler(this.timer_showdata_Tick);
+            // 
             // UC_Giamsat
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -461,8 +436,6 @@
             this.Controls.Add(this.groupBox6);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox9);
-            this.Controls.Add(this.groupBox8);
-            this.Controls.Add(this.groupBox7);
             this.Controls.Add(this.groupBox5);
             this.Controls.Add(this.groupBox4);
             this.Controls.Add(this.label15);
@@ -480,18 +453,14 @@
             this.groupBox2.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeweight1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVWeightBunke1)).EndInit();
             this.groupBox4.ResumeLayout(false);
             this.groupBox5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeweight2)).EndInit();
-            this.groupBox7.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeDevice1)).EndInit();
-            this.groupBox8.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeDevice2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVWeightBunke2)).EndInit();
             this.groupBox9.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtGVBunkeDevice3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVDeviceBunke3)).EndInit();
             this.groupBox10.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.dtGVConveryorStatus)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dtGVDevicesAndSignal)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -512,18 +481,10 @@
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.DataGridView dtGVBunkeweight1;
         private System.Windows.Forms.GroupBox groupBox4;
         private System.Windows.Forms.GroupBox groupBox5;
-        private System.Windows.Forms.DataGridView dtGVBunkeweight2;
-        private System.Windows.Forms.GroupBox groupBox7;
-        private System.Windows.Forms.DataGridView dtGVBunkeDevice1;
-        private System.Windows.Forms.GroupBox groupBox8;
-        private System.Windows.Forms.DataGridView dtGVBunkeDevice2;
         private System.Windows.Forms.GroupBox groupBox9;
-        private System.Windows.Forms.DataGridView dtGVBunkeDevice3;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.DataGridView dtGVConveryorStatus;
         private System.Windows.Forms.GroupBox groupBox6;
         private ZedGraph.ZedGraphControl zedGraphControl1;
         public System.Windows.Forms.TextBox txtBoxBunke1Weight;
@@ -533,5 +494,11 @@
         public System.Windows.Forms.TextBox txtBoxBunke2Weight;
         public System.Windows.Forms.TextBox txtBoxStatusBunke2;
         public System.Windows.Forms.TextBox txtBoxStatusBunke3;
+        public System.Windows.Forms.Timer timer1;
+        public System.Windows.Forms.DataGridView dtGVWeightBunke1;
+        public System.Windows.Forms.DataGridView dtGVWeightBunke2;
+        public System.Windows.Forms.DataGridView dtGVDeviceBunke3;
+        public System.Windows.Forms.DataGridView dtGVDevicesAndSignal;
+        public System.Windows.Forms.Timer timer_showdata;
     }
 }

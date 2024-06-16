@@ -1,0 +1,33 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="GATTHAN_DATA" Class="Excel_ReportDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=DESKTOP-8Q4VA9P\SQLEXPRESS;Initial Catalog=GATTHAN_DATA;Persist Security Info=True;User ID=sa;Trust Server Certificate=True" SettingsObjectName="Giaodiendieukhien.Properties.Settings" SettingsPropertyName="GATTHAN_DATAConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Bunke1_data" Member="Bunke1_datas">
+    <Type Name="Bunke1_data">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="date_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="loadcell1_data" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Bunke2_data" Member="Bunke2_datas">
+    <Type Name="Bunke2_data">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="date_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="loadcell2_data" Type="System.Double" DbType="Float" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Bunke3_data" Member="Bunke3_datas">
+    <Type Name="Bunke3_data">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="date_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="sensor_status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Devices_data" Member="Devices_datas">
+    <Type Name="Devices_data">
+      <Column Name="ID" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="date_time" Type="System.DateTime" DbType="DateTime" CanBeNull="true" />
+      <Column Name="device_name" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="device_status" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="note" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

@@ -20,12 +20,16 @@ namespace Giaodiendieukhien
     {
         public static Form_Admin frmAdmin;
         public bool IsTimerUCSystemRunning = false;
+        public bool IsTimerUCWatchRunning = false;
         public bool ISUCIORunning = false;
-        private float loadcell1value;
-        private float loadcell2value;
-        public string tag13value;
-        public string tag15value;
-        public string tag76value;
+        public bool ISUCWatchRunning = false;
+        public bool LoadDatatoPLC = false;
+        public string tag13value;       //Stepmotor 1 chạy thuận
+        public string tag15value;       //Stepmotor 2 chạy thuận
+        public string tag17value;       //Trạng thái Bunke 1
+        public string tag18value;       //Trạng thái Bunke 2
+        public string tag19value;       //Trạng thái Bunke 3
+        public string tag76value;       //Trạng thái cảm biến tiệm cận điện dung
         public string tag25value;       //Thông số cân nặng Loadcell 1
         public string tag26value;       //Thông số cân nặng Loadcell 2
         public string tag27value;       //Giá trị tín hiệu Băng tải 1
@@ -36,6 +40,10 @@ namespace Giaodiendieukhien
         public string tag77value;       //Giá trị Analog Input của Loadcell 1
         public string tag78value;       //Giá trị Analog Input của Loadcell 2
         public string tag79value;       //Giá trị tín hiệu Error
+        public string tag80value;       //Dừng cân loadcell 1
+        public string tag81value;       //Chạy cân loadcell 1
+        public string tag82value;       //Dừng cân loadcell 2
+        public string tag83value;       //Chạy cân loadcell 2
         Status_Display statusdisplay = new Status_Display();
 
         public Form_Admin()
@@ -54,7 +62,7 @@ namespace Giaodiendieukhien
             Timer_Watchdog.Interval = Properties.Settings.Default.PLC_Timeout;
         }
         //========================================KEPServerEX CONNECT======================================
-        static int tagNumber = 79;       // Cài đặt số lượng tag của project
+        static int tagNumber = 85;       // Cài đặt số lượng tag của project
         static int PLCscantime = Properties.Settings.Default.PLC_Scantime;  // Cài đặt thời gian quét PLC
 
         // Gọi các kết nối OPC
@@ -108,6 +116,24 @@ namespace Giaodiendieukhien
                         UC_Dieukhien.UCControl.lbStatusStepmotor01.Text = "Down";
                         UC_Dieukhien.UCControl.lbStatusStepmotor01.ForeColor = Color.Green;
                     }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Gạt than 1";
+                        string data3 = "Chạy thuận";
+                        string data4 = "";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
                 }
                 if (getTagID == 14) // Stepmotor 01 chạy nghịch
                 {
@@ -115,6 +141,24 @@ namespace Giaodiendieukhien
                     {
                         UC_Dieukhien.UCControl.lbStatusStepmotor01.Text = "Up";
                         UC_Dieukhien.UCControl.lbStatusStepmotor01.ForeColor = Color.Red;
+                    }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Gạt than 1";
+                        string data3 = "Chạy nghịch";
+                        string data4 = "";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
                     }
                 }
                 if (getTagID == 15) // Stepmotor 02 chạy thuận
@@ -125,6 +169,24 @@ namespace Giaodiendieukhien
                         UC_Dieukhien.UCControl.lbStatusStepmotor02.Text = "Down";
                         UC_Dieukhien.UCControl.lbStatusStepmotor02.ForeColor = Color.Green;
                     }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Gạt than 2";
+                        string data3 = "Chạy thuận";
+                        string data4 = "";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
                 }
                 if (getTagID == 16) // Stepmotor 02 chạy nghịch
                 {
@@ -133,15 +195,52 @@ namespace Giaodiendieukhien
                         UC_Dieukhien.UCControl.lbStatusStepmotor02.Text = "Up";
                         UC_Dieukhien.UCControl.lbStatusStepmotor02.ForeColor = Color.Red;
                     }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Gạt than 2";
+                        string data3 = "Chạy nghịch";
+                        string data4 = "";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
                 }
                 if (getTagID == 17) // Trạng thái Bunke 1
                 {
+                    tag17value = tagValue;
                     if (tagValue == "True")
                     {
                         UC_Dieukhien.UCControl.lbStatusBunke1.Text = "Full";
                         UC_Dieukhien.UCControl.lbStatusBunke1.ForeColor = Color.Red;
                         //ucwatch.txtBoxStatusBunke1.Text = "Full";
                         //ucwatch.txtBoxStatusBunke1.ForeColor = Color.Red;
+                    }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Loadcell 1";
+                        string data3 = "Max";
+                        string data4 = "Giá trị đọc" + tag25value;
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
                     }
                     else
                     {
@@ -153,6 +252,7 @@ namespace Giaodiendieukhien
                 }
                 if (getTagID == 18) // Trạng thái bunke 2
                 {
+                    tag18value = tagValue;
                     if (tagValue == "True")
                     {
                         UC_Dieukhien.UCControl.lbStatusBunke2.Text = "Full";
@@ -167,9 +267,28 @@ namespace Giaodiendieukhien
                         //ucwatch.txtBoxStatusBunke2.Text = "Not Full";
                         //ucwatch.txtBoxStatusBunke2.ForeColor = Color.Green;
                     }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Loadcell 2";
+                        string data3 = "Max";
+                        string data4 = "Giá trị max" + tag26value;
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
                 }
                 if (getTagID == 19) // Trạng thái Bunke 3
                 {
+                    tag19value = tagValue;
                     if (tagValue == "True")
                     {
                         UC_Dieukhien.UCControl.lbStatusBunke3.Text = "Full";
@@ -184,6 +303,24 @@ namespace Giaodiendieukhien
                         //ucwatch.txtBoxStatusBunke3.Text = "Not Full";
                         //ucwatch.txtBoxStatusBunke3.ForeColor = Color.Green;
                     }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Bunke 3";
+                        string data3 = "Đã đầy";
+                        string data4 = "";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
                 }
                 if (getTagID == 20) //Tín hiệu đèn Auto
                 {
@@ -195,6 +332,24 @@ namespace Giaodiendieukhien
                     {
                         UC_Dieukhien.UCControl.symbLampAuto.DiscreteValue1 = false;
                     }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Tín hiệu Auto";
+                        string data3 = "Kích hoạt";
+                        string data4 = "";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
                 }
                 if (getTagID == 21)     //Tín hiệu đèn Manual
                 {
@@ -205,6 +360,24 @@ namespace Giaodiendieukhien
                     else
                     {
                         UC_Dieukhien.UCControl.symbLampMan.DiscreteValue1 = false;
+                    }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Tín hiệu Manual";
+                        string data3 = "Kích hoạt";
+                        string data4 = "";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
                     }
                 }
                 if (getTagID == 22)     //Tín hiệu đèn Dừng Khẩn cấp
@@ -218,6 +391,24 @@ namespace Giaodiendieukhien
                         UC_Dieukhien.UCControl.symbLampStopEMS.DiscreteValue1 = false;
 
                     }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Error";
+                        string data3 = "Kích hoạt";
+                        string data4 = "Dừng khẩn cấp";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
                 }
                 if (getTagID == 23)     //Tín hiệu đèn Reset phòng điều khiển
                 {
@@ -228,6 +419,24 @@ namespace Giaodiendieukhien
                     else
                     {
                         UC_Dieukhien.UCControl.symbLampResetIn.DiscreteValue1 = false;
+                    }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Error";
+                        string data3 = "Reset";
+                        string data4 = "Reset phòng điều khiển";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
                     }
                 }
                 if (getTagID == 24)     //Tín hiệu Reset tủ điện
@@ -240,18 +449,34 @@ namespace Giaodiendieukhien
                     {
                         UC_Dieukhien.UCControl.symbLampResetOut.DiscreteValue1 = false;
                     }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Error";
+                        string data3 = "Reset";
+                        string data4 = "Reset tủ điện";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
                 }
                 if (getTagID == 25)     //Thông số Loadcell 1
                 {
                     tag25value = tagValue;
                     UC_Dieukhien.UCControl.txtBoxLoadcell1.Text = tagValue;
-                    //ucwatch.txtBoxBunke1Weight.Text = tagValue;
                 }
                 if (getTagID == 26)     //Thông số Loadcell 2
                 {
                     tag26value = tagValue;
                     UC_Dieukhien.UCControl.txtBoxLoadcell2.Text = tagValue;
-                    //ucwatch.txtBoxBunke2Weight.Text = tagValue;
                 }
                 if (getTagID == 27)     //Tín hiệu đèn Băng tải 1
                 {
@@ -266,7 +491,42 @@ namespace Giaodiendieukhien
                         UC_Dieukhien.UCControl.lbStatusC1.Text = "Stopped";
                         UC_Dieukhien.UCControl.lbStatusC1.ForeColor = Color.Red;
                     }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Băng tải 1";
+                        string data3 = "Khởi động";
+                        string data4 = "";
 
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
+                    else if (tagValue == "False")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Băng tải 1";
+                        string data3 = "Dừng chạy";
+                        string data4 = "";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
                 }
                 if (getTagID == 28)     //Tín hiệu đèn Băng tải 2
                 {
@@ -281,6 +541,42 @@ namespace Giaodiendieukhien
                         UC_Dieukhien.UCControl.lbStatusC2.Text = "Stopped";
                         UC_Dieukhien.UCControl.lbStatusC2.ForeColor = Color.Red;
                     }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Băng tải 2";
+                        string data3 = "Khởi động";
+                        string data4 = "";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
+                    else if (tagValue == "False")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Băng tải 2";
+                        string data3 = "Dừng chạy";
+                        string data4 = "";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
                 }
                 if (getTagID == 29)     //Tín hiệu đèn Hệ thống
                 {
@@ -292,6 +588,42 @@ namespace Giaodiendieukhien
                     else
                     {
                         UC_Dieukhien.UCControl.symbLampSystemRunning.DiscreteValue1 = false;
+                    }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Hệ thống";
+                        string data3 = "Khởi động";
+                        string data4 = "";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
+                    else if (tagValue == "False")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Hệ thống";
+                        string data3 = "Dừng hoạt động";
+                        string data4 = "";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
                     }
                 }
                 if (getTagID == 44)     //Giá trị tối đa của Loadcell 1
@@ -310,12 +642,48 @@ namespace Giaodiendieukhien
                     {
                         statusdisplay.stt_Lamp(UC_Simulation.UCSim.symbLampSimError, tagValue);
                     }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Error Simulation";
+                        string data3 = "Kích hoạt";
+                        string data4 = "";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
                 }
                 if (getTagID == 69)
                 {
                     if (UC_Simulation.UCSim != null)
                     {
                         statusdisplay.stt_Lamp(UC_Simulation.UCSim.symbLampSimLoadcell, tagValue);
+                    }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Loadcells Simulation";
+                        string data3 = "Kích hoạt";
+                        string data4 = "";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
                     }
                 }
                 if (getTagID == 70)
@@ -324,12 +692,48 @@ namespace Giaodiendieukhien
                     {
                         statusdisplay.stt_Lamp(UC_Simulation.UCSim.symbLampPullC1, tagValue);
                     }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Error";
+                        string data3 = "Simulation";
+                        string data4 = "Cảm biến giật dây băng tải 1";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
                 }
                 if (getTagID == 71)
                 {
                     if (UC_Simulation.UCSim != null)
                     {
                         statusdisplay.stt_Lamp(UC_Simulation.UCSim.symbLampPullC2, tagValue);
+                    }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Error";
+                        string data3 = "Simulation";
+                        string data4 = "Cảm biến giật dây băng tải 2";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
                     }
                 }
                 if (getTagID == 72)
@@ -338,12 +742,48 @@ namespace Giaodiendieukhien
                     {
                         statusdisplay.stt_Lamp(UC_Simulation.UCSim.symbLampSwayC1, tagValue);
                     }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Error";
+                        string data3 = "Simulation";
+                        string data4 = "Cảm biến lệch băng băng tải 1";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
                 }
                 if (getTagID == 73)
                 {
                     if (UC_Simulation.UCSim != null)
                     {
                         statusdisplay.stt_Lamp(UC_Simulation.UCSim.symbLampSwayC2, tagValue);
+                    }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Error";
+                        string data3 = "Simulation";
+                        string data4 = "Cảm biến lệch băng băng tải 2";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
                     }
                 }
                 if (getTagID == 74)
@@ -352,6 +792,24 @@ namespace Giaodiendieukhien
                     {
                         statusdisplay.stt_Lamp(UC_Simulation.UCSim.symbLampOLC1, tagValue);
                     }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Error";
+                        string data3 = "Simulation";
+                        string data4 = "Cảm biến quá tải băng tải 1";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
                 }
                 if (getTagID == 75)
                 {
@@ -359,10 +817,52 @@ namespace Giaodiendieukhien
                     {
                         statusdisplay.stt_Lamp(UC_Simulation.UCSim.symbLampOLC2, tagValue);
                     }
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Error";
+                        string data3 = "Simulation";
+                        string data4 = "Cảm biến quá tải băng tải 2";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
                 }
                 if (getTagID == 76)
                 {
                     tag76value = tagValue;
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Bunke3_data";
+                        string collum1 = "date_time";
+                        string collum2 = "sensor_status";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "ĐÃ ĐẦY";
+
+                        class_Database.cmd_SQLWrite(sqltable_name,
+                            collum1, data1,
+                            collum2, data2);
+                    }
+                    else if (tagValue == "False")
+                    {
+                        string sqltable_name = "Bunke3_data";
+                        string collum1 = "date_time";
+                        string collum2 = "sensor_status";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "CHƯA ĐẦY";
+
+                        class_Database.cmd_SQLWrite(sqltable_name,
+                            collum1, data1,
+                            collum2, data2);
+                    }
                 }
 
                 if (getTagID == 77)
@@ -383,6 +883,124 @@ namespace Giaodiendieukhien
                     else
                     {
                         UC_Dieukhien.UCControl.symbLampErrorSignal.BlinkMode = SymbolFactoryNetEngine.BlinkModeOptions.NoBlink;
+                    }
+                }
+                if (getTagID == 80)
+                {
+                    tag80value = tagValue;
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Loadcell 1";
+                        string data3 = "Dừng cân";
+                        string data4 = "";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
+                }
+                if (getTagID == 81)
+                {
+                    tag81value = tagValue;
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Loadcell 1";
+                        string data3 = "Chạy cân";
+                        string data4 = "";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
+                }
+                if (getTagID == 82)
+                {
+                    tag82value = tagValue;
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Loadcell 2";
+                        string data3 = "Dừng cân";
+                        string data4 = "";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
+                }
+                if (getTagID == 83)
+                {
+                    tag83value = tagValue;
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Devices_data";
+                        string column1 = "date_time";
+                        string column2 = "device_name";
+                        string column3 = "device_status";
+                        string column4 = "note";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = "Loadcell 2";
+                        string data3 = "Chạy cân";
+                        string data4 = "";
+
+                        class_Database.cmd_SQLWrite1(sqltable_name,
+                            column1, data1,
+                            column2, data2,
+                            column3, data3,
+                            column4, data4);
+                    }
+                }
+                if (getTagID == 84)
+                {
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Bunke1_data";
+                        string collum1 = "date_time";
+                        string collum2 = "data_loadcell1";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = tag25value;
+
+                        class_Database.cmd_SQLWrite(sqltable_name,
+                            collum1, data1,
+                            collum2, data2);
+                    }
+                }
+                if (getTagID == 85)
+                {
+                    if (tagValue == "True")
+                    {
+                        string sqltable_name = "Bunke2_data";
+                        string collum1 = "date_time";
+                        string collum2 = "data_loadcell1";
+                        string data1 = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss.fff");
+                        string data2 = tag26value;
+
+                        class_Database.cmd_SQLWrite(sqltable_name,
+                            collum1, data1,
+                            collum2, data2);
                     }
                 }
 
@@ -422,10 +1040,12 @@ namespace Giaodiendieukhien
                     if (UC_Giamsat.UCWatch != null)
                     {
                         bringtofront_usercontrol(UC_Giamsat.UCWatch);
+                        UC_Giamsat.UCWatch.RunTimer();
                     }
                     else
                     {
                         add_usercontrol(new UC_Giamsat());
+                        ISUCWatchRunning = true;
                     }
                     pnlMonitorAF.BackColor = Color.Lime;
                     break;
@@ -532,6 +1152,11 @@ namespace Giaodiendieukhien
             {
                 UC_IO.UCIO.timer1.Enabled = true;
             }
+            if (LoadDatatoPLC == false && lbPLCStatusAF.Text == "Đã kết nối")
+            {
+                Loaddata();
+                LoadDatatoPLC = true;
+            }
             DateTime dataTime = DateTime.Now;   
             this.lbTime.Text = dataTime.ToString(); //Hiển thị thời gian thực.
         }
@@ -561,6 +1186,7 @@ namespace Giaodiendieukhien
                 this.Hide();
                 Form_Login loginform = new Form_Login();
                 loginform.ShowDialog();
+                LoadDatatoPLC = false;
                 this.Close();
             }
         }

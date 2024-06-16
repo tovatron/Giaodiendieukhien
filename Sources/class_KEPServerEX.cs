@@ -89,10 +89,17 @@ namespace Giaodiendieukhien.Sources
             string tagID_73 = "Channel1.Device1.symb_Sway_C2";
             string tagID_74 = "Channel1.Device1.symb_Overload_C1";
             string tagID_75 = "Channel1.Device1.symb_Overload_C2";
-            ////Xử lý thông tin khu vực: UC_IO
+            //Xử lý thông tin khu vực: UC_IO
             string tagID_77 = "Channel1.Device1.Analog_Loadcell1";
             string tagID_78 = "Channel1.Device1.Analog_Loadcell2";
             string tagID_79 = "Channel1.Device1.ERROR_Signal";
+            string tagID_80 = "Channel1.Device1.STOP_Weighting_Loadcell1";
+            string tagID_81 = "Channel1.Device1.START_Weighting_Loadcell1";
+            string tagID_82 = "Channel1.Device1.STOP_Weighting_Loadcell2";
+            string tagID_83 = "Channel1.Device1.START_Weighting_Loadcell2";
+            //Hiển thị dữ liệu trên DataGridView
+            string tagID_84 = "Channel1.Device1.Report_Trigger_Bunke1";
+            string tagID_85 = "Channel1.Device1.Report_Trigger_Bunke2";
 
 
 
@@ -177,6 +184,12 @@ namespace Giaodiendieukhien.Sources
             tags.SetValue(tagID_77, 77);
             tags.SetValue(tagID_78, 78);
             tags.SetValue(tagID_79, 79);
+            tags.SetValue(tagID_80, 80);
+            tags.SetValue(tagID_81, 81);
+            tags.SetValue(tagID_82, 82);
+            tags.SetValue(tagID_83, 83);
+            tags.SetValue(tagID_84, 84);
+            tags.SetValue(tagID_85, 85);
             return tags;
         }
         // Class tạo array đọc ID tags - mặc định không đổi

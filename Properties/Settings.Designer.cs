@@ -370,5 +370,16 @@ namespace Giaodiendieukhien.Properties {
                 this["Loadcell2_AutoZeroingWeight"] = value;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=DESKTOP-8Q4VA9P\\SQLEXPRESS;Initial Catalog=GATTHAN_DATA;Persist Secur" +
+            "ity Info=True;User ID=sa;Password=123456;TrustServerCertificate=True")]
+        public string GATTHAN_DATAConnectionString {
+            get {
+                return ((string)(this["GATTHAN_DATAConnectionString"]));
+            }
+        }
     }
 }
