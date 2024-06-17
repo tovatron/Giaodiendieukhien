@@ -23,6 +23,7 @@ namespace Giaodiendieukhien
         public bool IsTimerUCWatchRunning = false;
         public bool ISUCIORunning = false;
         public bool ISUCWatchRunning = false;
+        public bool ISTimerUCSimRunning = false;
         public bool LoadDatatoPLC = false;
         public string tag13value;       //Stepmotor 1 chạy thuận
         public string tag15value;       //Stepmotor 2 chạy thuận
@@ -37,6 +38,14 @@ namespace Giaodiendieukhien
         public string tag29value;       //Giá trị tín hiệu Hệ thống
         public string tag44value;       //Giá trị Max của Loadcell1
         public string tag45value;       //Giá trị Max của Loadcell2
+        public string tag68value;
+        public string tag69value;
+        public string tag70value;
+        public string tag71value;
+        public string tag72value;
+        public string tag73value;
+        public string tag74value;
+        public string tag75value;
         public string tag77value;       //Giá trị Analog Input của Loadcell 1
         public string tag78value;       //Giá trị Analog Input của Loadcell 2
         public string tag79value;       //Giá trị tín hiệu Error
@@ -638,6 +647,7 @@ namespace Giaodiendieukhien
                 }
                 if (getTagID == 68)
                 {
+                    tag68value = tagValue;
                     if (UC_Simulation.UCSim != null)
                     {
                         statusdisplay.stt_Lamp(UC_Simulation.UCSim.symbLampSimError, tagValue);
@@ -663,6 +673,7 @@ namespace Giaodiendieukhien
                 }
                 if (getTagID == 69)
                 {
+                    tag69value = tagValue;
                     if (UC_Simulation.UCSim != null)
                     {
                         statusdisplay.stt_Lamp(UC_Simulation.UCSim.symbLampSimLoadcell, tagValue);
@@ -688,6 +699,7 @@ namespace Giaodiendieukhien
                 }
                 if (getTagID == 70)
                 {
+                    tag70value = tagValue;
                     if (UC_Simulation.UCSim != null)
                     {
                         statusdisplay.stt_Lamp(UC_Simulation.UCSim.symbLampPullC1, tagValue);
@@ -713,6 +725,7 @@ namespace Giaodiendieukhien
                 }
                 if (getTagID == 71)
                 {
+                    tag71value = tagValue;
                     if (UC_Simulation.UCSim != null)
                     {
                         statusdisplay.stt_Lamp(UC_Simulation.UCSim.symbLampPullC2, tagValue);
@@ -738,6 +751,7 @@ namespace Giaodiendieukhien
                 }
                 if (getTagID == 72)
                 {
+                    tag72value = tagValue;
                     if (UC_Simulation.UCSim != null)
                     {
                         statusdisplay.stt_Lamp(UC_Simulation.UCSim.symbLampSwayC1, tagValue);
@@ -763,6 +777,7 @@ namespace Giaodiendieukhien
                 }
                 if (getTagID == 73)
                 {
+                    tag73value = tagValue;
                     if (UC_Simulation.UCSim != null)
                     {
                         statusdisplay.stt_Lamp(UC_Simulation.UCSim.symbLampSwayC2, tagValue);
@@ -788,6 +803,7 @@ namespace Giaodiendieukhien
                 }
                 if (getTagID == 74)
                 {
+                    tag74value = tagValue;
                     if (UC_Simulation.UCSim != null)
                     {
                         statusdisplay.stt_Lamp(UC_Simulation.UCSim.symbLampOLC1, tagValue);
@@ -813,6 +829,7 @@ namespace Giaodiendieukhien
                 }
                 if (getTagID == 75)
                 {
+                    tag75value = tagValue;
                     if (UC_Simulation.UCSim != null)
                     {
                         statusdisplay.stt_Lamp(UC_Simulation.UCSim.symbLampOLC2, tagValue);
@@ -1172,7 +1189,7 @@ namespace Giaodiendieukhien
         private void Reconnect_Timer_Tick(object sender, EventArgs e)       //Thời gian PLC tự động kết nối lại khi bị mất kết nối
         {
             Reconnect_Timer.Interval = Properties.Settings.Default.PLC_Reconnect_Time;
-            if (UC_Hethong.UCSystem.IsDisconnectPLCPressed == false && UC_Hethong.UCSystem.lbPLCStatus.Text == "Ngắt kết nối")
+            if (UC_Hethong.UCSystem.IsDisconnectPLCPressed == false && lbPLCStatusAF.Text == "Ngắt kết nối")
             {
                 KEPServerEX_Connect();
             }

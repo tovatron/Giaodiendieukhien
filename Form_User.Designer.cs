@@ -51,6 +51,8 @@
             this.btnLogout = new System.Windows.Forms.Button();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.pnlMainUF = new System.Windows.Forms.Panel();
+            this.Timer_Watchdog = new System.Windows.Forms.Timer(this.components);
+            this.Reconnect_Timer = new System.Windows.Forms.Timer(this.components);
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.pnlTabsUF.SuspendLayout();
@@ -297,6 +299,7 @@
             // 
             // timer1
             // 
+            this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // pnlMainUF
@@ -309,6 +312,15 @@
             this.pnlMainUF.Name = "pnlMainUF";
             this.pnlMainUF.Size = new System.Drawing.Size(1366, 654);
             this.pnlMainUF.TabIndex = 4;
+            // 
+            // Timer_Watchdog
+            // 
+            this.Timer_Watchdog.Interval = 3000;
+            this.Timer_Watchdog.Tick += new System.EventHandler(this.Timer_Watchdog_Tick);
+            // 
+            // Reconnect_Timer
+            // 
+            this.Reconnect_Timer.Tick += new System.EventHandler(this.Reconnect_Timer_Tick);
             // 
             // Form_User
             // 
@@ -359,5 +371,7 @@
         private System.Windows.Forms.Panel pnlMonitorUF;
         private System.Windows.Forms.Panel panel2;
         public System.Windows.Forms.Label lbPLCStatusUF;
+        private System.Windows.Forms.Timer Timer_Watchdog;
+        private System.Windows.Forms.Timer Reconnect_Timer;
     }
 }

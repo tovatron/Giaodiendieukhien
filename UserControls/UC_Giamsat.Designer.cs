@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtBoxLoadcell1Max = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
@@ -58,8 +57,7 @@
             this.dtGVDeviceBunke3 = new System.Windows.Forms.DataGridView();
             this.groupBox10 = new System.Windows.Forms.GroupBox();
             this.dtGVDevicesAndSignal = new System.Windows.Forms.DataGridView();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.zedGraphControl1 = new ZedGraph.ZedGraphControl();
+            this.zgchartBunkes = new ZedGraph.ZedGraphControl();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.timer_showdata = new System.Windows.Forms.Timer(this.components);
             this.groupBox1.SuspendLayout();
@@ -73,7 +71,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtGVDeviceBunke3)).BeginInit();
             this.groupBox10.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dtGVDevicesAndSignal)).BeginInit();
-            this.groupBox6.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -294,14 +291,6 @@
             // 
             this.dtGVWeightBunke1.AllowUserToAddRows = false;
             this.dtGVWeightBunke1.BackgroundColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dtGVWeightBunke1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.dtGVWeightBunke1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dtGVWeightBunke1.Location = new System.Drawing.Point(0, 19);
             this.dtGVWeightBunke1.Name = "dtGVWeightBunke1";
@@ -391,32 +380,22 @@
             this.dtGVDevicesAndSignal.Size = new System.Drawing.Size(836, 396);
             this.dtGVDevicesAndSignal.TabIndex = 55;
             // 
-            // groupBox6
+            // zgchartBunkes
             // 
-            this.groupBox6.Controls.Add(this.zedGraphControl1);
-            this.groupBox6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox6.Location = new System.Drawing.Point(1056, 441);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(836, 497);
-            this.groupBox6.TabIndex = 60;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "Đồ thị cân nặng Bunke";
-            // 
-            // zedGraphControl1
-            // 
-            this.zedGraphControl1.Location = new System.Drawing.Point(0, 19);
-            this.zedGraphControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.zedGraphControl1.Name = "zedGraphControl1";
-            this.zedGraphControl1.ScrollGrace = 0D;
-            this.zedGraphControl1.ScrollMaxX = 0D;
-            this.zedGraphControl1.ScrollMaxY = 0D;
-            this.zedGraphControl1.ScrollMaxY2 = 0D;
-            this.zedGraphControl1.ScrollMinX = 0D;
-            this.zedGraphControl1.ScrollMinY = 0D;
-            this.zedGraphControl1.ScrollMinY2 = 0D;
-            this.zedGraphControl1.Size = new System.Drawing.Size(836, 478);
-            this.zedGraphControl1.TabIndex = 0;
-            this.zedGraphControl1.UseExtendedPrintDialog = true;
+            this.zgchartBunkes.IsEnableHZoom = false;
+            this.zgchartBunkes.IsEnableVZoom = false;
+            this.zgchartBunkes.Location = new System.Drawing.Point(1056, 460);
+            this.zgchartBunkes.Name = "zgchartBunkes";
+            this.zgchartBunkes.ScrollGrace = 0D;
+            this.zgchartBunkes.ScrollMaxX = 0D;
+            this.zgchartBunkes.ScrollMaxY = 0D;
+            this.zgchartBunkes.ScrollMaxY2 = 0D;
+            this.zgchartBunkes.ScrollMinX = 0D;
+            this.zgchartBunkes.ScrollMinY = 0D;
+            this.zgchartBunkes.ScrollMinY2 = 0D;
+            this.zgchartBunkes.Size = new System.Drawing.Size(861, 478);
+            this.zgchartBunkes.TabIndex = 0;
+            this.zgchartBunkes.UseExtendedPrintDialog = true;
             // 
             // timer1
             // 
@@ -433,7 +412,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(212)))), ((int)(((byte)(255)))));
-            this.Controls.Add(this.groupBox6);
+            this.Controls.Add(this.zgchartBunkes);
             this.Controls.Add(this.groupBox10);
             this.Controls.Add(this.groupBox9);
             this.Controls.Add(this.groupBox5);
@@ -461,7 +440,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dtGVDeviceBunke3)).EndInit();
             this.groupBox10.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dtGVDevicesAndSignal)).EndInit();
-            this.groupBox6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -485,8 +463,7 @@
         private System.Windows.Forms.GroupBox groupBox5;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.GroupBox groupBox10;
-        private System.Windows.Forms.GroupBox groupBox6;
-        private ZedGraph.ZedGraphControl zedGraphControl1;
+        private ZedGraph.ZedGraphControl zgchartBunkes;
         public System.Windows.Forms.TextBox txtBoxBunke1Weight;
         public System.Windows.Forms.TextBox txtBoxStatusBunke1;
         public System.Windows.Forms.TextBox txtBoxLoadcell1Max;

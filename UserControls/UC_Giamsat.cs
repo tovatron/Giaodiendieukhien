@@ -1,4 +1,5 @@
 ﻿using Giaodiendieukhien.Sources;
+using Microsoft.Office.Interop.Excel;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -8,11 +9,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using ZedGraph;
 
 namespace Giaodiendieukhien
 {
     public partial class UC_Giamsat : UserControl
     {
+        //Khai báo 2 line trên đồ thị
+        LineItem line1;
+        LineItem line2;
+        //Thông số của các line hiển thị trên đồ thị
+        RollingPointPairList listvalue1;
+        RollingPointPairList listvalue2;
+        int TickStart;
+        //Chế độ nhìn của Đồ thị
         public static UC_Giamsat UCWatch;
         public UC_Giamsat()
         {
@@ -24,6 +34,57 @@ namespace Giaodiendieukhien
         {
             timer1.Enabled = true;
             timer_showdata.Enabled = true;
+            TickStart = Environment.TickCount;
+            KhoitaoZedgraph();
+        }
+        private void KhoitaoZedgraph()
+        {
+            GraphPane graphPane = zgchartBunkes.GraphPane;
+            graphPane.Title.Text = "Biểu đồ giá trị khối lượng Bunke 1, 2";
+            graphPane.YAxis.Title.Text = "Khối lượng";
+            graphPane.XAxis.Title.Text = "Thời gian";
+
+            listvalue1 = new RollingPointPairList(5000);
+            listvalue2 = new RollingPointPairList(5000);
+
+            line1 = graphPane.AddCurve("Khối lượng Bunke 1", listvalue1, Color.Blue, SymbolType.None);
+            line2 = graphPane.AddCurve("Khối lượng Bunke 2", listvalue2, Color.Black, SymbolType.None);
+
+            graphPane.YAxis.Scale.Min = 0;
+            graphPane.YAxis.Scale.Max = 1000;
+            graphPane.YAxis.Scale.MinorStep = 0;
+            graphPane.YAxis.Scale.MajorStep = 100;
+
+
+
+            graphPane.XAxis.Scale.Min = 0;
+            graphPane.XAxis.Scale.Max = 30;
+            graphPane.XAxis.Scale.MinorStep = 1;
+            graphPane.XAxis.Scale.MajorStep = 5;
+
+            zgchartBunkes.AxisChange();
+        }
+        public void Draw(float loadcell1, float loadcell2)
+        {
+            line1 = zgchartBunkes.GraphPane.CurveList[0] as LineItem;
+            line2 = zgchartBunkes.GraphPane.CurveList[1] as LineItem;
+            if (line1 == null || line2 == null)
+                return;
+            IPointListEdit listvalue1 = line1.Points as IPointListEdit;
+            IPointListEdit listvalue2 = line2.Points as IPointListEdit;
+            if (listvalue1 == null || listvalue2 == null)
+                return;
+            double time = (Environment.TickCount - TickStart) / 1000.0;
+            listvalue1.Add(time, loadcell1);
+            listvalue2.Add(time, loadcell2);
+            Scale xScale = zgchartBunkes.GraphPane.XAxis.Scale;
+            if (time > xScale.Max - xScale.MajorStep)
+            {
+                xScale.Max = time + xScale.MajorStep;
+                xScale.Min = xScale.Max - 30.0;
+            }
+            zgchartBunkes.AxisChange();
+            zgchartBunkes.Invalidate();
         }
         public void StopTimer()
         {
@@ -31,52 +92,118 @@ namespace Giaodiendieukhien
             timer1.Dispose();
             timer_showdata.Stop();
             timer_showdata.Dispose();
-            Form_Admin.frmAdmin.IsTimerUCWatchRunning = false;
+            if (Form_Admin.frmAdmin != null)
+            {
+                Form_Admin.frmAdmin.IsTimerUCWatchRunning = false;
+            }
+            else if (Form_User.frmUser != null)
+            {
+                Form_User.frmUser.IsTimerUCWatchRunning = false;
+            }
+
         }
         public void RunTimer()
         {
             timer1.Start();
             timer_showdata.Start();
-            Form_Admin.frmAdmin.IsTimerUCWatchRunning = true;
+            if (Form_Admin.frmAdmin != null)
+            {
+                Form_Admin.frmAdmin.IsTimerUCWatchRunning = true;
+            }
+            else if (Form_User.frmUser != null)
+            {
+                Form_User.frmUser.IsTimerUCWatchRunning = true;
+            }
         }
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if (Form_Admin.frmAdmin.tag17value == "True")
+            if (Form_Admin.frmAdmin != null)
             {
-                txtBoxStatusBunke1.Text = "Full";
-                txtBoxStatusBunke1.ForeColor = Color.Red;
-            }
-            else
-            {
-                txtBoxStatusBunke1.Text = "Not Full";
-                txtBoxStatusBunke1.ForeColor = Color.Green;
-            }
+                if (Form_Admin.frmAdmin.tag17value == "True")
+                {
+                    txtBoxStatusBunke1.Text = "Full";
+                    txtBoxStatusBunke1.ForeColor = Color.Red;
+                }
+                else
+                {
+                    txtBoxStatusBunke1.Text = "Not Full";
+                    txtBoxStatusBunke1.ForeColor = Color.Green;
+                }
 
-            if (Form_Admin.frmAdmin.tag18value == "True")
-            {
-                txtBoxStatusBunke2.Text = "Full";
-                txtBoxStatusBunke2.ForeColor = Color.Red;
-            }
-            else
-            {
-                txtBoxStatusBunke2.Text = "Not Full";
-                txtBoxStatusBunke2.ForeColor = Color.Green;
-            }
+                if (Form_Admin.frmAdmin.tag18value == "True")
+                {
+                    txtBoxStatusBunke2.Text = "Full";
+                    txtBoxStatusBunke2.ForeColor = Color.Red;
+                }
+                else
+                {
+                    txtBoxStatusBunke2.Text = "Not Full";
+                    txtBoxStatusBunke2.ForeColor = Color.Green;
+                }
 
-            if (Form_Admin.frmAdmin.tag19value == "True")
-            {
-                txtBoxStatusBunke3.Text = "Full";
-                txtBoxStatusBunke3 .ForeColor = Color.Red;
+                if (Form_Admin.frmAdmin.tag19value == "True")
+                {
+                    txtBoxStatusBunke3.Text = "Full";
+                    txtBoxStatusBunke3.ForeColor = Color.Red;
+                }
+                else
+                {
+                    txtBoxStatusBunke3.Text = "Not Full";
+                    txtBoxStatusBunke3.ForeColor = Color.Green;
+                }
+                txtBoxBunke1Weight.Text = Form_Admin.frmAdmin.tag25value;
+                txtBoxBunke2Weight.Text = Form_Admin.frmAdmin.tag26value;
+                txtBoxLoadcell1Max.Text = Form_Admin.frmAdmin.tag44value;
+                txtBoxLoadcell2Max.Text = Form_Admin.frmAdmin.tag45value;
+                if (Form_Admin.frmAdmin.tag25value != null || Form_Admin.frmAdmin.tag26value != null)
+                {
+                    Draw(float.Parse(Form_Admin.frmAdmin.tag25value), float.Parse(Form_Admin.frmAdmin.tag26value));
+                }
             }
-            else
+            else if (Form_User.frmUser != null)
             {
-                txtBoxStatusBunke3.Text = "Not Full";
-                txtBoxStatusBunke3.ForeColor = Color.Green;
+                if (Form_User.frmUser.tag17value == "True")
+                {
+                    txtBoxStatusBunke1.Text = "Full";
+                    txtBoxStatusBunke1.ForeColor = Color.Red;
+                }
+                else
+                {
+                    txtBoxStatusBunke1.Text = "Not Full";
+                    txtBoxStatusBunke1.ForeColor = Color.Green;
+                }
+
+                if (Form_User.frmUser.tag18value == "True")
+                {
+                    txtBoxStatusBunke2.Text = "Full";
+                    txtBoxStatusBunke2.ForeColor = Color.Red;
+                }
+                else
+                {
+                    txtBoxStatusBunke2.Text = "Not Full";
+                    txtBoxStatusBunke2.ForeColor = Color.Green;
+                }
+
+                if (Form_User.frmUser.tag19value == "True")
+                {
+                    txtBoxStatusBunke3.Text = "Full";
+                    txtBoxStatusBunke3.ForeColor = Color.Red;
+                }
+                else
+                {
+                    txtBoxStatusBunke3.Text = "Not Full";
+                    txtBoxStatusBunke3.ForeColor = Color.Green;
+                }
+                txtBoxBunke1Weight.Text = Form_User.frmUser.tag25value;
+                txtBoxBunke2Weight.Text = Form_User.frmUser.tag26value;
+                txtBoxLoadcell1Max.Text = Form_User.frmUser.tag44value;
+                txtBoxLoadcell2Max.Text = Form_User.frmUser.tag45value;
+                if (Form_User.frmUser.tag25value != null || Form_User.frmUser.tag26value != null)
+                {
+                    Draw(float.Parse(Form_User.frmUser.tag25value), float.Parse(Form_User.frmUser.tag26value));
+                }
             }
-            txtBoxBunke1Weight.Text = Form_Admin.frmAdmin.tag25value;
-            txtBoxBunke2Weight.Text = Form_Admin.frmAdmin.tag26value;
-            txtBoxLoadcell1Max.Text = Form_Admin.frmAdmin.tag44value;
-            txtBoxLoadcell2Max.Text = Form_Admin.frmAdmin.tag45value;
+           
         }
 
         private void ShowDatatoDTGV()
