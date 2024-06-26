@@ -38,7 +38,7 @@ namespace Giaodiendieukhien
                 string tablenameBunke2 = "Bunke2_data";
                 string tablenameBunke3 = "Bunke3_data";
                 string sqlSelect = $@"
-                        SELECT 
+                    SELECT 
                 COALESCE({tablenameBunke1}.ID, {tablenameBunke2}.ID, {tablenameBunke3}.ID) AS ID,
                 CASE 
                     WHEN {tablenameBunke1}.date_time BETWEEN '{Time_From}' AND '{Time_To}' THEN {tablenameBunke1}.date_time
@@ -64,16 +64,16 @@ namespace Giaodiendieukhien
                     WHEN {tablenameBunke3}.date_time BETWEEN '{Time_From}' AND '{Time_To}' THEN {tablenameBunke3}.sensor_status
                     ELSE NULL 
                 END AS sensor_status
-            FROM 
-                {tablenameBunke3}
-            LEFT JOIN 
-                {tablenameBunke1} ON {tablenameBunke3}.ID = {tablenameBunke1}.ID
-            LEFT JOIN 
-                {tablenameBunke2} ON {tablenameBunke3}.ID = {tablenameBunke2}.ID
-            WHERE 
-                ({tablenameBunke1}.date_time BETWEEN '{Time_From}' AND '{Time_To}') OR
-                ({tablenameBunke2}.date_time BETWEEN '{Time_From}' AND '{Time_To}') OR
-                ({tablenameBunke3}.date_time BETWEEN '{Time_From}' AND '{Time_To}');
+                FROM 
+                    {tablenameBunke3}
+                LEFT JOIN 
+                    {tablenameBunke1} ON {tablenameBunke3}.ID = {tablenameBunke1}.ID
+                LEFT JOIN 
+                    {tablenameBunke2} ON {tablenameBunke3}.ID = {tablenameBunke2}.ID
+                WHERE 
+                    ({tablenameBunke1}.date_time BETWEEN '{Time_From}' AND '{Time_To}') OR
+                    ({tablenameBunke2}.date_time BETWEEN '{Time_From}' AND '{Time_To}') OR
+                    ({tablenameBunke3}.date_time BETWEEN '{Time_From}' AND '{Time_To}');
             ";
 
                 class_Database.sqlDisplay(sqlSelect, dtGVShowReport);

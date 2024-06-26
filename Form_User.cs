@@ -48,7 +48,7 @@ namespace Giaodiendieukhien
             Timer_Watchdog.Interval = Properties.Settings.Default.PLC_Timeout;
         }
         //========================================KEPServerEX CONNECT======================================
-         static int tagNumber = 85;       // Cài đặt số lượng tag của project
+         static int tagNumber = 87;       // Cài đặt số lượng tag của project
          static int PLCscantime = Properties.Settings.Default.PLC_Scantime;  // Cài đặt thời gian quét PLC
 
         // Gọi các kết nối OPC

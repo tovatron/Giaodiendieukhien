@@ -41,6 +41,8 @@ namespace Giaodiendieukhien.Sources
             string tagID_27 = "Channel1.Device1.Conveyor01_Running";
             string tagID_28 = "Channel1.Device1.Conveyor02_Running";
             string tagID_29 = "Channel1.Device1.SYSTEM_Running";
+            string tagID_86 = "Channel1.Device1.Home_Command_Stepmotor01";
+            string tagID_87 = "Channel1.Device1.Home_Command_Stepmotor02";
             ////Xử lý thông tin khu vực: UC_Caidat
             string tagID_30 = "Channel1.Device1.START_AutoTime_C1";
             string tagID_31 = "Channel1.Device1.START_AutoTime_C2";
@@ -190,6 +192,8 @@ namespace Giaodiendieukhien.Sources
             tags.SetValue(tagID_83, 83);
             tags.SetValue(tagID_84, 84);
             tags.SetValue(tagID_85, 85);
+            tags.SetValue(tagID_86, 86);
+            tags.SetValue(tagID_87, 87);
             return tags;
         }
         // Class tạo array đọc ID tags - mặc định không đổi

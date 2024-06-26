@@ -155,6 +155,28 @@ namespace Giaodiendieukhien
             }
         }
 
+        private void btnHomeGT1_Click(object sender, EventArgs e)
+        {
+            if (Form_Admin.frmAdmin != null)
+            {
+                Form_Admin.frmAdmin.Button_PLC_Clicked(86);
+            }
+            else if (Form_User.frmUser != null)
+            {
+                Form_User.frmUser.Button_PLC_Clicked(86);
+            }
+        }
 
+        private void btnHomeGT2_Click(object sender, EventArgs e)
+        {
+            if (Form_Admin.frmAdmin != null)
+            {
+                Form_Admin.frmAdmin.Button_PLC_Clicked(87);
+            }
+            else if (Form_User.frmUser != null)
+            {
+                Form_User.frmUser.Button_PLC_Clicked(87);
+            }
+        }
     }
 }

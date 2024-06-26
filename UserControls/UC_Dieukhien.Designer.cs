@@ -102,6 +102,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.symbLampErrorSignal = new SymbolFactoryDotNet.StandardControl();
             this.label10 = new System.Windows.Forms.Label();
+            this.btnHomeGT1 = new System.Windows.Forms.Button();
+            this.btnHomeGT2 = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.symbLampSystemRunning)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.symbLampResetIn)).BeginInit();
@@ -398,6 +400,8 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.btnHomeGT2);
+            this.groupBox2.Controls.Add(this.btnHomeGT1);
             this.groupBox2.Controls.Add(this.lbStatusBunke3);
             this.groupBox2.Controls.Add(this.label31);
             this.groupBox2.Controls.Add(this.lbStatusBunke2);
@@ -1183,6 +1187,32 @@
             this.label10.TabIndex = 100;
             this.label10.Text = "ERROR DETECT";
             // 
+            // btnHomeGT1
+            // 
+            this.btnHomeGT1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnHomeGT1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHomeGT1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHomeGT1.Location = new System.Drawing.Point(571, 164);
+            this.btnHomeGT1.Name = "btnHomeGT1";
+            this.btnHomeGT1.Size = new System.Drawing.Size(107, 46);
+            this.btnHomeGT1.TabIndex = 102;
+            this.btnHomeGT1.Text = "Home GT1";
+            this.btnHomeGT1.UseVisualStyleBackColor = false;
+            this.btnHomeGT1.Click += new System.EventHandler(this.btnHomeGT1_Click);
+            // 
+            // btnHomeGT2
+            // 
+            this.btnHomeGT2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.btnHomeGT2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHomeGT2.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnHomeGT2.Location = new System.Drawing.Point(973, 164);
+            this.btnHomeGT2.Name = "btnHomeGT2";
+            this.btnHomeGT2.Size = new System.Drawing.Size(107, 46);
+            this.btnHomeGT2.TabIndex = 112;
+            this.btnHomeGT2.Text = "Home GT2";
+            this.btnHomeGT2.UseVisualStyleBackColor = false;
+            this.btnHomeGT2.Click += new System.EventHandler(this.btnHomeGT2_Click);
+            // 
             // UC_Dieukhien
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1303,5 +1333,7 @@
         private System.Windows.Forms.Label label9;
         public SymbolFactoryDotNet.StandardControl symbLampErrorSignal;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Button btnHomeGT2;
+        private System.Windows.Forms.Button btnHomeGT1;
     }
 }
