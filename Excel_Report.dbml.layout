@@ -2,28 +2,28 @@
 <ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="Excel_Report">
   <DataContextMoniker Name="/Excel_ReportDataContext" />
   <nestedChildShapes>
-    <classShape Id="e7b42871-139c-4069-8297-d1749ee6c5d9" absoluteBounds="0.5, 1.875, 2, 1.3862939453125">
+    <classShape Id="e7b42871-139c-4069-8297-d1749ee6c5d9" absoluteBounds="0.625, 1.75, 2, 1.3862939453125">
       <DataClassMoniker Name="/Excel_ReportDataContext/Bunke1_data" />
       <nestedChildShapes>
-        <elementListCompartment Id="b26c5a83-70c6-4516-ac66-c980514c1c90" absoluteBounds="0.51500000000000012, 2.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="b26c5a83-70c6-4516-ac66-c980514c1c90" absoluteBounds="0.64000000000000012, 2.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="4311a569-40c5-4a4f-8e02-1542a197ae6d" absoluteBounds="5.625, 1.875, 2, 1.3862939453125">
+    <classShape Id="4311a569-40c5-4a4f-8e02-1542a197ae6d" absoluteBounds="5.75, 1.75, 2, 1.3862939453125">
       <DataClassMoniker Name="/Excel_ReportDataContext/Bunke2_data" />
       <nestedChildShapes>
-        <elementListCompartment Id="d1275525-781c-4716-b6db-e0d84647b02a" absoluteBounds="5.64, 2.335, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="d1275525-781c-4716-b6db-e0d84647b02a" absoluteBounds="5.765, 2.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="a01ec7f6-2275-4a83-8a92-a5081cb09c14" absoluteBounds="3, 2, 2, 1.3862939453125">
+    <classShape Id="a01ec7f6-2275-4a83-8a92-a5081cb09c14" absoluteBounds="3.125, 1.75, 2, 1.3862939453125">
       <DataClassMoniker Name="/Excel_ReportDataContext/Bunke3_data" />
       <nestedChildShapes>
-        <elementListCompartment Id="4ebb7c84-b763-4985-8b25-f6ce0a9c1624" absoluteBounds="3.015, 2.46, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="4ebb7c84-b763-4985-8b25-f6ce0a9c1624" absoluteBounds="3.14, 2.21, 1.9700000000000002, 0.8262939453125" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
-    <classShape Id="0a45d423-bfda-4831-8e69-f11ba1a2b929" absoluteBounds="0.875, 4.125, 2, 1.7708968098958331">
+    <classShape Id="0a45d423-bfda-4831-8e69-f11ba1a2b929" absoluteBounds="0.625, 3.625, 2, 1.7708968098958331">
       <DataClassMoniker Name="/Excel_ReportDataContext/Devices_data" />
       <nestedChildShapes>
-        <elementListCompartment Id="7f67845e-c990-462d-9f4b-41a5b312fd56" absoluteBounds="0.89000000000000012, 4.585, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+        <elementListCompartment Id="7f67845e-c990-462d-9f4b-41a5b312fd56" absoluteBounds="0.64000000000000012, 4.085, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
       </nestedChildShapes>
     </classShape>
   </nestedChildShapes>

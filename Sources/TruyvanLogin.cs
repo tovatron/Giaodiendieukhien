@@ -4,11 +4,6 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing.Text;
-using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Giaodiendieukhien
 {
@@ -16,27 +11,30 @@ namespace Giaodiendieukhien
     {
         SqlCommand sqlCommand;
         SqlDataReader dataReader;
+        
+        // Định nghĩa phương thức Loginaccounts (query: truy vấn về SQL, username: gán username từ SQL, password: gán pass từ SQL)
         public List<Accounts> Loginaccounts(string query, string username, string password)
         {
-            List<Accounts> accounts = new List<Accounts>();
+            List<Accounts> accounts = new List<Accounts>(); // Tạo danh sách đối tượng List<Accounts> mới
 
+            // Truy cập vào SQL và đọc giá trị
             using (SqlConnection sqlConnection = ConnectionLogin.GetSqlConnection())
             {
                 sqlConnection.Open();
-                sqlCommand = new SqlCommand(query, sqlConnection);
+                sqlCommand = new SqlCommand(query, sqlConnection);      //Truy vấn
                 sqlCommand.Parameters.AddWithValue("@Username", username);
                 sqlCommand.Parameters.AddWithValue("@Password", password);
                 dataReader = sqlCommand.ExecuteReader();
-                while (dataReader.Read())
+                while (dataReader.Read())          
                 {
                     accounts.Add(new Accounts(dataReader.GetString(0),dataReader.GetString(1)));
                 }
                 sqlConnection.Close();
             }
 
-            return accounts;
+            return accounts;             // Đọc giá trị username và password truy vấn trong sql rồi trả về list accounts
         }
-        private string roleaccount;
+        // Định nghĩa phương thức Roles (query: truy vấn về SQL, username: gán username từ SQL, password: gán password từ SQL)
         public string Roles(string query, string username, string password)
         {
             string role = "";
@@ -53,7 +51,7 @@ namespace Giaodiendieukhien
                 }
                 sqlConnection.Close();
             }
-                return role;
+                return role;            // Đọc giá trị role truy vấn trong sql rồi trả về giá trị role
         }
     }
 }

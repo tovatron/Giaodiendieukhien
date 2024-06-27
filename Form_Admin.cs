@@ -38,14 +38,14 @@ namespace Giaodiendieukhien
         public string tag29value;       //Giá trị tín hiệu Hệ thống
         public string tag44value;       //Giá trị Max của Loadcell1
         public string tag45value;       //Giá trị Max của Loadcell2
-        public string tag68value;
-        public string tag69value;
-        public string tag70value;
-        public string tag71value;
-        public string tag72value;
-        public string tag73value;
-        public string tag74value;
-        public string tag75value;
+        public string tag68value;       //Mô phỏng Lỗi
+        public string tag69value;       //Mô phỏng Loadcell
+        public string tag70value;       //Sim giật dây 1
+        public string tag71value;       //Sim giật dây 2
+        public string tag72value;       //Sim lệch băng 1
+        public string tag73value;       //Sim lệch băng 2
+        public string tag74value;       //Sim quá tải 1
+        public string tag75value;       //Sim quá tải 2
         public string tag77value;       //Giá trị Analog Input của Loadcell 1
         public string tag78value;       //Giá trị Analog Input của Loadcell 2
         public string tag79value;       //Giá trị tín hiệu Error
@@ -67,7 +67,7 @@ namespace Giaodiendieukhien
             timer1.Start(); //Timer hiển thị ngày giờ.
             add_usercontrol(new UC_Dieukhien()); //Khởi chạy UC_Dieukhien khi vào Form1
             KEPServerEX_Connect(); // Kết nối với PLC
-            Loaddata();
+            Loaddata();     //Tải data từ Data C# xuống PLC
             Timer_Watchdog.Interval = Properties.Settings.Default.PLC_Timeout;
         }
         //========================================KEPServerEX CONNECT======================================
@@ -1023,7 +1023,6 @@ namespace Giaodiendieukhien
 
             }
         }
-        // Gửi giá trị Boolean từ C# lên KEPServerEX khu vực UC_Dieukhien
         public void Button_PLC_Clicked(int tagValue)
         {
             WriteItems.SetValue(1, tagValue);
@@ -1158,7 +1157,18 @@ namespace Giaodiendieukhien
         {
             this.WindowState = FormWindowState.Minimized;
         }
-
+        private void btnLogout_Click(object sender, EventArgs e)
+        {
+            DialogResult LogoutConfirm = MessageBox.Show("Bạn có muốn đăng xuất không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (LogoutConfirm == DialogResult.Yes)
+            {
+                this.Hide();
+                Form_Login loginform = new Form_Login();
+                loginform.ShowDialog();
+                LoadDatatoPLC = false;
+                this.Close();
+            }
+        }
         private void timer1_Tick(object sender, EventArgs e)
         {
             if (UC_Simulation.UCSim != null)
@@ -1195,18 +1205,7 @@ namespace Giaodiendieukhien
             }
         }
 
-        private void btnLogout_Click(object sender, EventArgs e)
-        {
-            DialogResult LogoutConfirm = MessageBox.Show("Bạn có muốn đăng xuất không ?","Xác nhận",MessageBoxButtons.YesNo, MessageBoxIcon.Question);
-            if(LogoutConfirm == DialogResult.Yes)
-            {
-                this.Hide();
-                Form_Login loginform = new Form_Login();
-                loginform.ShowDialog();
-                LoadDatatoPLC = false;
-                this.Close();
-            }
-        }
+
 
 
         private void Loaddata() //Tải data từ Data C# xuống PLC

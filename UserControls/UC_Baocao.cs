@@ -34,6 +34,7 @@ namespace Giaodiendieukhien
             string Time_To = dtpkTo.Value.ToString("yyyy-MM-dd HH:mm:ss.fff");
             if (cBoxSelectReport.SelectedIndex == 0)
             {
+                //Lệnh truy vấn hiển thị tất cả giá trị của 3 Bunke lên 1 Datagridview và chỉ hiện thị giá trong khoảng thời gian tìm
                 string tablenameBunke1 = "Bunke1_data";
                 string tablenameBunke2 = "Bunke2_data";
                 string tablenameBunke3 = "Bunke3_data";
@@ -75,7 +76,7 @@ namespace Giaodiendieukhien
                     ({tablenameBunke2}.date_time BETWEEN '{Time_From}' AND '{Time_To}') OR
                     ({tablenameBunke3}.date_time BETWEEN '{Time_From}' AND '{Time_To}');
             ";
-
+                // Hiển thị từng mục 1 lên Datagridview theo thứ tự Column
                 class_Database.sqlDisplay(sqlSelect, dtGVShowReport);
                 dtGVShowReport.Columns[0].HeaderText = "ID";
                 dtGVShowReport.Columns[1].HeaderText = "Thời gian (Bunke 1)";
@@ -88,7 +89,7 @@ namespace Giaodiendieukhien
                 dtGVShowReport.Columns[5].DefaultCellStyle.Format = "yyyy-MM-dd HH:mm:ss.fff";
                 dtGVShowReport.Columns[6].HeaderText = "Cảm biến Status (Bunke 3)";
             }
-            if (cBoxSelectReport.SelectedIndex == 1)
+            if (cBoxSelectReport.SelectedIndex == 1) //Tìm kiếm theo dữ liệu của bảng trạng thái thiết bị, trạng thái tín hiệu hệ thống.
             {
                 string tablenameDevices = "Devices_data";
                 string sqlSelect = "SELECT date_time, device_name, device_status, note FROM "
@@ -104,7 +105,7 @@ namespace Giaodiendieukhien
             }
         }
 
-        private void btnReport_Click(object sender, EventArgs e)
+        private void btnReport_Click(object sender, EventArgs e)            //Xuất báo cáo Excel
         {
             DialogResult ReportConfirm = MessageBox.Show("Bạn có muốn xuất báo cáo Excel không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (ReportConfirm == DialogResult.Yes)

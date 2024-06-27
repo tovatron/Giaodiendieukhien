@@ -25,26 +25,26 @@ namespace Giaodiendieukhien
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            this.AcceptButton = btnLogin;
+            this.AcceptButton = btnLogin;           // Phím enter để đăng nhập
         }
 
         private void btnCloseapp_Click(object sender, EventArgs e)
         {
-            Environment.Exit(0);
+            Environment.Exit(0);                    // Thoát khỏi ứng dụng
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Minimized;
+            this.WindowState = FormWindowState.Minimized;           //Thu nhỏ ứng dụng xuống Taskbar
         }
-        private void Drag_MouseDown(object sender, MouseEventArgs e)
+        private void Drag_MouseDown(object sender, MouseEventArgs e)            // Di chuyển windows
         {
-            mouseLocation = new Point(-e.X, -e.Y);
+            mouseLocation = new Point(-e.X, -e.Y);          
         }
 
-        private void Drag_MouseMove(object sender, MouseEventArgs e)
+        private void Drag_MouseMove(object sender, MouseEventArgs e)             // Di chuyển windows
         {
-            if (e.Button == MouseButtons.Left)
+            if (e.Button == MouseButtons.Left)              
             {
                 Point mousePose = Control.MousePosition;
                 mousePose.Offset(mouseLocation.X, mouseLocation.Y);
@@ -52,7 +52,7 @@ namespace Giaodiendieukhien
             }
         }
         TruyvanLogin truyvan = new TruyvanLogin();
-        private void btnLogin_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)             // Nút đăng nhập
         {
             string username = txtUsername.Text;
             string password = txtPassword.Text;
@@ -70,7 +70,7 @@ namespace Giaodiendieukhien
             else
             {
                 string query = "SELECT * FROM Loginaccount WHERE Username = @Username AND Password = @Password";
-                if (truyvan.Loginaccounts(query, username, password).Count != 0)
+                if (truyvan.Loginaccounts(query, username, password).Count != 0)        // Nếu Loginaccounts truy vấn thành công
                 {
                     MessageBox.Show("Đăng nhập thành công!");
                     string roleQuery = "SELECT Role FROM Loginaccount WHERE Username = @Username AND Password = @Password";

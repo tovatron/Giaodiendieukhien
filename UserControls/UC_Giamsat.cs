@@ -34,36 +34,37 @@ namespace Giaodiendieukhien
         {
             timer1.Enabled = true;
             timer_showdata.Enabled = true;
-            TickStart = Environment.TickCount;
+            TickStart = Environment.TickCount;          //Bắt đầu đếm từ thời điểm hệ thống chạy
             KhoitaoZedgraph();
         }
-        private void KhoitaoZedgraph()
+        private void KhoitaoZedgraph()      //Khởi tạo Đồ thị
         {
             GraphPane graphPane = zgchartBunkes.GraphPane;
-            graphPane.Title.Text = "Biểu đồ giá trị khối lượng Bunke 1, 2";
-            graphPane.YAxis.Title.Text = "Khối lượng";
-            graphPane.XAxis.Title.Text = "Thời gian";
+            graphPane.Title.Text = "Biểu đồ giá trị khối lượng Bunke 1, 2";         //Đặt tên cho biểu đồ
+            graphPane.YAxis.Title.Text = "Khối lượng";                              //Tên trục Y
+            graphPane.XAxis.Title.Text = "Thời gian";                               //Tên trục X
 
-            listvalue1 = new RollingPointPairList(5000);
+            listvalue1 = new RollingPointPairList(5000);                            //Hiển thị tối đa 5000 điểm
             listvalue2 = new RollingPointPairList(5000);
 
-            line1 = graphPane.AddCurve("Khối lượng Bunke 1", listvalue1, Color.Blue, SymbolType.None);
+            line1 = graphPane.AddCurve("Khối lượng Bunke 1", listvalue1, Color.Blue, SymbolType.None);              //Kiểu đường line.
             line2 = graphPane.AddCurve("Khối lượng Bunke 2", listvalue2, Color.Black, SymbolType.None);
 
-            graphPane.YAxis.Scale.Min = 0;
-            graphPane.YAxis.Scale.Max = 1000;
+            graphPane.YAxis.Scale.Min = 0;              //Min Y
+            graphPane.YAxis.Scale.Max = 1000;           //Max Y
             graphPane.YAxis.Scale.MinorStep = 0;
             graphPane.YAxis.Scale.MajorStep = 100;
 
 
 
-            graphPane.XAxis.Scale.Min = 0;
-            graphPane.XAxis.Scale.Max = 30;
+            graphPane.XAxis.Scale.Min = 0;              //Min X
+            graphPane.XAxis.Scale.Max = 30;             //Max Y
             graphPane.XAxis.Scale.MinorStep = 1;
             graphPane.XAxis.Scale.MajorStep = 5;
 
             zgchartBunkes.AxisChange();
         }
+        // Vẽ đường đồ thị theo thời gian theo các giá trị từ PLC trả về
         public void Draw(float loadcell1, float loadcell2)
         {
             line1 = zgchartBunkes.GraphPane.CurveList[0] as LineItem;
@@ -86,7 +87,7 @@ namespace Giaodiendieukhien
             zgchartBunkes.AxisChange();
             zgchartBunkes.Invalidate();
         }
-        public void StopTimer()
+        public void StopTimer()            //Dừng Timer
         {
             timer1.Stop();
             timer1.Dispose();
@@ -102,7 +103,7 @@ namespace Giaodiendieukhien
             }
 
         }
-        public void RunTimer()
+        public void RunTimer()              //Chạy timer
         {
             timer1.Start();
             timer_showdata.Start();
@@ -115,7 +116,7 @@ namespace Giaodiendieukhien
                 Form_User.frmUser.IsTimerUCWatchRunning = true;
             }
         }
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)        //Timer cập nhật trạng thái Bunke và vẽ đồ thị theo thời gian
         {
             if (Form_Admin.frmAdmin != null)
             {
@@ -206,7 +207,7 @@ namespace Giaodiendieukhien
            
         }
 
-        private void ShowDatatoDTGV()
+        private void ShowDatatoDTGV()           // Truy vấn, truyền câu lệnh query vào SQL để tìm và hiển thị các giá trị lên Datagridview
         {
             string sqlSelectBunke1 = "SELECT date_time, loadcell1_data FROM Bunke1_data WHERE date_time >= CONVERT (date, GETDATE())";
             class_Database.sqlDisplay(sqlSelectBunke1, dtGVWeightBunke1);
@@ -239,9 +240,9 @@ namespace Giaodiendieukhien
             class_AutoResize.AutoResize(dtGVDevicesAndSignal);
         }
 
-        private void timer_showdata_Tick(object sender, EventArgs e)
+        private void timer_showdata_Tick(object sender, EventArgs e)           //Hiển thị giá trị lên Datagridview sau mỗi vòng lặp timer
         {
-            ShowDatatoDTGV();
+            ShowDatatoDTGV();       
         }
     }
 }

@@ -104,7 +104,7 @@ namespace Giaodiendieukhien.Sources
             string tagID_85 = "Channel1.Device1.Report_Trigger_Bunke2";
 
 
-
+            // Ghi giá trị tag vào các tagnumber
             string[] tags;
             tags = new string[tagnumber];
             tags.SetValue(tagID_1, 1);

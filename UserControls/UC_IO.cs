@@ -29,7 +29,7 @@ namespace Giaodiendieukhien
         {
         }
 
-        private void btnOnIO_Click(object sender, EventArgs e)
+        private void btnOnIO_Click(object sender, EventArgs e)      // Bật chế độ IO để hiển thị các giá trị Input và Output lên giao diện
         {
             DialogResult OnIOConfirm = MessageBox.Show("Bạn có muốn bật chế độ IO không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (OnIOConfirm == DialogResult.Yes)
@@ -41,7 +41,7 @@ namespace Giaodiendieukhien
             }
         }
 
-        private void btnOffIO_Click(object sender, EventArgs e)
+        private void btnOffIO_Click(object sender, EventArgs e)     //Tắt chế độ IO
         {
             DialogResult OffIOConfirm = MessageBox.Show("Bạn có muốn bật chế độ IO không ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             if (OffIOConfirm == DialogResult.Yes)
@@ -118,7 +118,7 @@ namespace Giaodiendieukhien
             ButtonClicked(8);
         }
 
-        private void timer1_Tick(object sender, EventArgs e)
+        private void timer1_Tick(object sender, EventArgs e)        //Timer cập nhật giá trị đèn báo và các giá trị trong textbox trên giao diện UC_IO
         {
             symbLampAutoIO.DiscreteValue1 = UC_Dieukhien.UCControl.symbLampAuto.DiscreteValue1;
             symbLampManIO.DiscreteValue1 = UC_Dieukhien.UCControl.symbLampMan.DiscreteValue1;
@@ -131,7 +131,7 @@ namespace Giaodiendieukhien
             sttdp.stt_Lamp(symbLampC2IO, Form_Admin.frmAdmin.tag28value);
             if (Form_Admin.frmAdmin.tag79value == "True")
             {
-                symbLampErrorSignalIO.BlinkMode = SymbolFactoryNetEngine.BlinkModeOptions.Shaded;
+                symbLampErrorSignalIO.BlinkMode = SymbolFactoryNetEngine.BlinkModeOptions.Shaded;           //Chế độ nhấp nháy cho đèn báo lỗi
             }
             else
             {

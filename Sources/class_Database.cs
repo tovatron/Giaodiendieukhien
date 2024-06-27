@@ -14,16 +14,18 @@ namespace Giaodiendieukhien.Sources
     {
         public static void cmd_SQLWrite(string sqltable_name,
                                               string column1, string data1,
-                                              string column2, string data2)
+                                              string column2, string data2)       //Phương thức ghi dữ liệu xuống SQL để thực hiện lưu trữ với độ rộng là 2 columns
         {
+            // Thiết lập kết nối đến máy chủ SQL
             SqlConnection sql_connect;
             string ServerName = Properties.Settings.Default.Data_ServerName;
             string DatabaseName = Properties.Settings.Default.Data_Name;
             string Login_UserName = Properties.Settings.Default.Data_LoginUser;
             string Password = Properties.Settings.Default.Data_Password;
-            string sqlName = @"Data Source=" + ServerName + ";Initial Catalog=" + DatabaseName + ";User ID=" + Login_UserName + ";Password=" + Password;
+            string sqlName = @"Data Source=" + ServerName + ";Initial Catalog=" + DatabaseName + ";User ID=" + Login_UserName + ";Password=" + Password;            //Câu lệnh truy cập vào SQL
             sql_connect = new SqlConnection(sqlName);
             sql_connect.Open();
+            // Xây dựng truy vấn SQL
             string sql = " INSERT INTO " + sqltable_name + " ("
                 + column1 + ","
                 + column2 + ")"
@@ -33,14 +35,15 @@ namespace Giaodiendieukhien.Sources
                 + "@" + column2 + ")";
             using(SqlCommand cmd = new SqlCommand(sql, sql_connect))
             {
-                cmd.Parameters.AddWithValue(column1, data1);
+                cmd.Parameters.AddWithValue(column1, data1);            //Thêm tham số vào truy vấn
                 cmd.Parameters.AddWithValue(column2, data2);
-                cmd.ExecuteNonQuery();
+                cmd.ExecuteNonQuery();                                  //Bắt đầu thực hiện truy vấn.
             }
             sql_connect.Close();
         }
-        public static void sqlDisplay(string sqlSelect, DataGridView dtgv)
+        public static void sqlDisplay(string sqlSelect, DataGridView dtgv)          //Phương thức đọc dữ liệu từ SQL
         {
+            // Thiết lập kết nối đến máy chủ SQL
             SqlConnection sql_connect;
             string ServerName = Properties.Settings.Default.Data_ServerName;
             string DatabaseName = Properties.Settings.Default.Data_Name;
@@ -49,6 +52,7 @@ namespace Giaodiendieukhien.Sources
             string sqlName = @"Data Source=" + ServerName + ";Initial Catalog=" + DatabaseName + ";User ID=" + Login_UserName + ";Password=" + Password;
             sql_connect = new SqlConnection(sqlName);
             sql_connect.Open();
+            // Đọc dữ liệu và ghi vào table rồi ghi lên Datagridview
             SqlCommand cmd = new SqlCommand(sqlSelect, sql_connect);
             SqlDataReader dr = cmd.ExecuteReader();
             DataTable dt = new DataTable();
@@ -57,11 +61,11 @@ namespace Giaodiendieukhien.Sources
             dtgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             sql_connect.Close();
         }
-        public static void cmd_SQLWrite1(string sqltable_name,
+        public static void cmd_SQLWrite1(string sqltable_name,          
                                               string column1, string data1,
                                               string column2, string data2,
                                               string column3, string data3,
-                                              string column4, string data4)
+                                              string column4, string data4)      //Phương thức ghi dữ liệu xuống SQL để thực hiện lưu trữ với độ rộng là 4 columns
         {
             SqlConnection sql_connect;
             string ServerName = Properties.Settings.Default.Data_ServerName;
@@ -91,53 +95,6 @@ namespace Giaodiendieukhien.Sources
                 cmd.ExecuteNonQuery();
             }
             sql_connect.Close();
-        }
-        public static void sqlDisplay1(string query1, string query2, string query3, DataGridView dtgv)
-        {
-            SqlConnection sql_connect;
-            string ServerName = Properties.Settings.Default.Data_ServerName;
-            string DatabaseName = Properties.Settings.Default.Data_Name;
-            string Login_UserName = Properties.Settings.Default.Data_LoginUser;
-            string Password = Properties.Settings.Default.Data_Password;
-            string sqlName = @"Data Source=" + ServerName + ";Initial Catalog=" + DatabaseName + ";User ID=" + Login_UserName + ";Password=" + Password;
-            sql_connect = new SqlConnection(sqlName);
-            sql_connect.Open();
-            DataTable mergedTable = new DataTable();
-            // Add columns to mergedTable as needed
-            for (int i = 1; i <= 6; i++)
-                mergedTable.Columns.Add("Column" + i);
-
-            // Execute each query and load into DataTables
-            DataTable dt1 = ExecuteQuery(query1, sql_connect);
-            DataTable dt2 = ExecuteQuery(query2, sql_connect);
-            DataTable dt3 = ExecuteQuery(query3, sql_connect);
-
-            // Assuming each DataTable has two columns, merge them into mergedTable
-            foreach (DataRow row in dt1.Rows)
-            {
-                mergedTable.Rows.Add(row[0], row[1], DBNull.Value, DBNull.Value, DBNull.Value, DBNull.Value);
-            }
-            foreach (DataRow row in dt2.Rows)
-            {
-                mergedTable.Rows.Add(DBNull.Value, DBNull.Value, row[0], row[1], DBNull.Value, DBNull.Value);
-            }
-            foreach (DataRow row in dt3.Rows)
-            {
-                mergedTable.Rows.Add(DBNull.Value, DBNull.Value, DBNull.Value, DBNull.Value, row[0], row[1]);
-            }
-
-            // Set the mergedTable as the DataSource for your DataGridView
-            dtgv.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
-            dtgv.DataSource = mergedTable;
-        }
-
-        private static DataTable ExecuteQuery(string query, SqlConnection connection)
-        {
-            SqlCommand cmd = new SqlCommand(query, connection);
-            SqlDataReader dr = cmd.ExecuteReader();
-            DataTable dt = new DataTable();
-            dt.Load(dr);
-            return dt;
         }
     }
 }

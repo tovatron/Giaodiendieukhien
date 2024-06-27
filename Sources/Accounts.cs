@@ -8,6 +8,7 @@ namespace Giaodiendieukhien
 {
     class Accounts
     {
+        //Đóng gói dữ liệu
         private string Username;
         private string Password;
         public Accounts()
